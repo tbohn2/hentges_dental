@@ -3,10 +3,27 @@
 :root {
   --primary: #F9FAFB;
   --secondary: #3B82F6;
-  --tertiary: #34D399;
+  --tertiary: #09c9c9;
+  /* --tertiary: #34D399; */
 }
 
 body {
-  background: linear-gradient(135deg, var(--secondary) 0%, var(--tertiary) 100%);
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--tertiary) 50%, var(--secondary) 100%);
   min-height: 100vh;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown ul {
+  display: none;
+  position: absolute;
+}
+
+.dropdown:hover ul {
+  display: block;
 }
