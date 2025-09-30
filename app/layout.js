@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className="flex flex-col min-h-screen"
       >
-        <main className="flex flex-grow flex-col justify-between w-full">
+        <main className="flex flex-col justify-between w-full min-h-screen">
           <Header />
           {children}
           <Footer />
