@@ -66,7 +66,7 @@ export default function Home() {
           ))}
         </div>
         <h2 className="font-bold text-dark text-4xl py-2">WELCOME TO HENTGES DENTAL</h2>
-        <p className="font-bold text-center text-xl px-20">Healthy smiles for healthy families start with professional family dentistry. At Christensen Family Dentistry, your bright, healthy smile is our top priority. Of course, you'll only smile if you're as happy with our service as you are with our dental treatment. That's why we take the time to listen to your needs and concerns. Not only do we listen to your concerns, but we use gentle, efficient cleaning techniques.</p>
+        <p className="font-bold text-center text-xl px-20">Healthy smiles for healthy families start with professional family dentistry. At Hentges Dental, your bright, healthy smile is our top priority. Of course, you'll only smile if you're as happy with our service as you are with our dental treatment. That's why we take the time to listen to your needs and concerns. Not only do we listen to your concerns, but we use gentle, efficient cleaning techniques.</p>
         <button className="button-1 font-bold text-2xl my-4"><Link href="/about">Learn More</Link></button>
         <div className="flex flex-row items-center justify-center gap-2">
           {officePics.map((pic, index) => (
