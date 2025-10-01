@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Dropdown from "./Dropdown";
+import Image from "next/image";
+import tooth from "../public/images/tooth.png";
 
 export default function Header() {
 
@@ -24,24 +26,30 @@ export default function Header() {
         <Dropdown title="Patient Information" items={patientInformationItems} />,
         <Dropdown title="Services" items={servicesItems} />,
         <Link href="/contact">Contact</Link>,
-        <Link href="/request-appointment">Request Appointment</Link>,
-        <Link href="">Pay Online</Link>
+        <button className="button-1"><Link href="/request-appointment">Request Appointment</Link></button>,
+        <button className="button-2"><Link href="">Pay Online</Link></button>
     ];
 
     return (
-        <header className="p-3 flex flex-wrap gap-2 justify-between">
-            <div className="flex flex-row items-center justify-evenly w-full">
+        <header className="flex flex-wrap gap-2 justify-between text-dark">
+            <div className="p-3 font-bold flex flex-row items-center justify-evenly w-full bg-primary">
                 {contactItems.map((item, index) => (
                     <div className="flex flex-row flex-nowrap items-center justify-center gap-2 w-1/2" key={index}>
                         <a href={item.href} className="flex justify-center items-center gap-2 flex-nowrap">{item.svg}{item.name}</a>
                     </div>
                 ))}
             </div>
-            <div className="text-2xl font-bold">Hentges Dental</div>
-            <nav className="flex flex-grow">
-                <ul className="flex flex-grow justify-evenly">
+            <Link href="/" className="flex flex-row items-center justify-center gap-1 w-1/5 py-2">
+                <Image src={tooth} alt="Hentges Dental" className="w-1/4" />
+                <div className="flex flex-col justify-center geist-sans">
+                    <span className="text-4xl font-bold flex items-center">Hentges</span>
+                    <span className="text-4xl font-bold flex items-center">Dental</span>
+                </div>
+            </Link>
+            <nav className="flex flex-grow py-2">
+                <ul className="flex flex-grow justify-evenly items-center font-bold text-xl text-primary">
                     {navElements.map((element, index) => (
-                        <li className="text-lg" key={index}>{element}</li>
+                        <li key={index}>{element}</li>
                     ))}
                 </ul>
             </nav>

@@ -4,21 +4,35 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-tertiary: var(--tertiary);
-  --color-quaternary: var(--quaternary);
+  --color-dark: var(--dark);
 }
 
 :root {
   --primary: #F9FAFB;
   --secondary: #3B82F6;
-  --tertiary: #09c9c9;
-  --quaternary: #45524a;
+  --tertiary: #2896df;
+  --dark: #2c332f;
 }
 
 /* Global */
 
 body {
+  font-family: var(--font-instrument-sans);
   background: linear-gradient(180deg, var(--secondary) 0%, var(--primary) 50%, var(--secondary) 100%);
   min-height: 100vh;
+}
+
+.geist-sans {
+  font-family: var(--font-geist-sans) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-geist-sans) !important;
 }
 
 button {
@@ -30,25 +44,26 @@ button {
   transition: all 0.5s ease;
 }
 
-.button-primary {
-  background-color: var(--secondary);
+.button-1 {
+  background-color: var(--primary);
+  color: var(--tertiary);
+}
+
+.button-1:hover {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  box-shadow: 0 0 25px 0 var(--primary);
+}
+
+.button-2 {
+  background-color: var(--tertiary);
   color: var(--primary);
 }
 
-.button-primary:hover {
-  background-color: var(--primary);
-  color: var(--secondary);
-  box-shadow: 0 0 25px 0 var(--tertiary);
-}
-
-.button-secondary {
-  background-color: var(--primary);
-  color: var(--secondary);
-}
-
-.button-secondary:hover {
-  background-color: var(--secondary);
+.button-2:hover {
+  background-color: var(--tertiary);
   color: var(--primary);
+  box-shadow: 0 0 25px 0 var(--primary);
 }
 
 .button-tertiary {
@@ -59,17 +74,6 @@ button {
 .button-tertiary:hover {
   background-color: var(--secondary);
   color: var(--tertiary);
-}
-
-/* Home */
-#welcome {
-  min-height: 70vh;
-  position: relative;
-}
-
-#great-experience {
-  min-height: 70vh;
-  position: relative;
 }
 
 /* Dropdown */
@@ -86,4 +90,25 @@ button {
 
 .dropdown:hover ul {
   display: block;
+}
+
+/* Home */
+#welcome {
+  min-height: 70vh;
+  position: relative;
+}
+
+#great-experience {
+  min-height: 70vh;
+  position: relative;
+}
+
+.dental-icons {
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.dental-icons:hover {
+  box-shadow: 0 0 25px 0 var(--tertiary);
+  transform: scale(1.1);
 }

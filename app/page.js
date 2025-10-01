@@ -39,29 +39,29 @@ export default function Home() {
           priority
         />
         <div className="relative z-10 flex flex-col items-center justify-center gap-4 w-full">
-          <div className="flex flex-col items-center justify-center gap-6 bg-primary p-4 rounded-lg opacity-90">
-            <h1 className="font-bold text-8xl text-secondary">Hentges Dental</h1>
-            <p className="font-bold text-4xl text-secondary">Mesa, Arizona</p>
+          <div className="flex flex-col items-center justify-center gap-6 bg-primary p-4 rounded-lg opacity-90 text-tertiary">
+            <h1 className="font-bold text-8xl">Hentges Dental</h1>
+            <p className="font-bold text-4xl">Mesa, Arizona</p>
           </div>
-          <button className="button-primary text-4xl my-4"><Link href="/about">Request Appointment</Link></button>
+          <button className="button-2 text-4xl my-4"><Link href="/about">Request Appointment</Link></button>
         </div>
       </div>
 
       <div className="flex flex-col items-center justify-center gap-2 bg-primary text-secondary p-4">
         <div className="flex flex-row items-center justify-center gap-6 w-full py-4">
           {icons.map((icon) => (
-            <Link href={icon.link} key={icon.title} className="flex flex-col items-center justify-between gap-2 w-1/6">
+            <Link href={icon.link} key={icon.title} className="flex flex-col items-center justify-between gap-2 w-1/6 dental-icons">
               <Image src={icon.image} alt={icon.title} className="w-1/2" />
               <div className="flex flex-col items-center justify-center">
-                <h2 className="font-bold text-2xl text-quaternary">{icon.title}</h2>
+                <h2 className="font-bold text-2xl text-dark">{icon.title}</h2>
                 <p className="font-bold text-xl text-secondary">{icon.subtext}</p>
               </div>
             </Link>
           ))}
         </div>
-        <h1 className="font-bold text-4xl">Welcome to Hentges Dental</h1>
-        <p className="font-bold text-center text-xl">Healthy smiles for healthy families start with professional family dentistry. At Christensen Family Dentistry, your bright, healthy smile is our top priority. Of course, you'll only smile if you're as happy with our service as you are with our dental treatment. That's why we take the time to listen to your needs and concerns. Not only do we listen to your concerns, but we use gentle, efficient cleaning techniques.</p>
-        <button className="button-primary text-2xl my-4"><Link href="/about">Learn More</Link></button>
+        <h1 className="font-bold text-dark text-4xl py-2">WELCOME TO HENTGES DENTAL</h1>
+        <p className="font-bold text-center text-xl px-20">Healthy smiles for healthy families start with professional family dentistry. At Christensen Family Dentistry, your bright, healthy smile is our top priority. Of course, you'll only smile if you're as happy with our service as you are with our dental treatment. That's why we take the time to listen to your needs and concerns. Not only do we listen to your concerns, but we use gentle, efficient cleaning techniques.</p>
+        <button className="button-1 font-bold text-2xl my-4"><Link href="/about">Learn More</Link></button>
         <div className="flex flex-row items-center justify-center gap-2">
           {officePics.map((pic, index) => (
             <Image key={index} src={pic} alt="Office" className="w-1/4" />
@@ -77,14 +77,14 @@ export default function Home() {
           className="object-cover"
         />
         <div className="relative z-10 flex items-center justify-evenly gap-2 w-full bg-secondary opacity-90 p-4">
-          <div className="flex flex-col justify-center gap-2 w-2/3">
+          <div className="flex flex-col justify-center gap-2 w-3/4">
             <h1 className="font-bold text-6xl">ALWAYS A GREAT EXPERIENCE</h1>
             <p className="font-bold text-2xl">At Hentges Dental, we make sure you have a great experience every time you come in. We use the latest technology and techniques to ensure you have a great experience. We also make sure you have a great experience every time you come in.</p>
           </div>
-          <div className="flex flex-col items-center justify-center gap-6 w-1/3">
-            <div className="flex flex-row items-center justify-center gap-2 w-1/3">
+          <div className="flex flex-col items-center justify-center gap-6">
+            <div className="flex flex-row items-center justify-center gap-2">
               {socialIcons.map((icon, index) => (
-                <Image key={index} src={icon} alt="Social Icon" className="w-1/4" />
+                <Image key={index} src={icon} alt="Social Icon" className="w-1/3" />
               ))}
             </div>
             <Link href="/reviews">READ MORE REVIEWS</Link>

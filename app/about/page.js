@@ -4,12 +4,12 @@ import office5 from "../../public/images/office5.jpg";
 export default function About() {
     return (
         <div className="p-8 flex flex-col justify-center bg-primary">
-            <div className="flex flex-row items-center justify-center gap-4 w-full">
-                <div className="flex flex-col justify-center gap-4 w-full">
-                    <h1 className="text-6xl py-4 font-bold text-secondary">ABOUT US</h1>
-                    <p className="text-2xl">Above all else, we here at Hentges Dental want our patients to maintain healthy, bright, and beautiful smiles! Next to that, we want our patients to feel comfortable and content during their appointments with us. Both of these goals begin with patient education! Staying informed can help you better understand the tenants of good oral health, prevent potential problems, and reveal why certain treatments are necessary.</p>
+            <div className="flex flex-row md:flex-nowrap sm:flex-wrap justify-center gap-4 w-full pb-4">
+                <div className="flex flex-col flex-grow gap-4 w-full h-full">
+                    <h1 className="text-6xl font-bold text-secondary">ABOUT US</h1>
+                    <p className="text-2xl py-4">Above all else, we here at Hentges Dental want our patients to maintain healthy, bright, and beautiful smiles! Next to that, we want our patients to feel comfortable and content during their appointments with us. Both of these goals begin with patient education! Staying informed can help you better understand the tenants of good oral health, prevent potential problems, and reveal why certain treatments are necessary.</p>
                 </div>
-                <Image src={office5} alt="Hentges Dental Office" title="Hentges Dental Office" />
+                <Image src={office5} alt="Hentges Dental Office" title="Hentges Dental Office" className="w-1/3" />
             </div>
             <div className="flex flex-col justify-center gap-8 w-full">
                 <h2 className="text-4xl font-bold text-quaternary">Your Doctor, Your Team, and Our Technology</h2>
