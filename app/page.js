@@ -15,6 +15,12 @@ import DrHentgesAndFamilySmall2 from "../public/images/DrHentgesAndFamilySmall2.
 import azLake from "../public/images/az-lake.jpg";
 import water from "../public/images/water.jpg";
 
+export const metadata = {
+  title: "Dentist Mesa, AZ | Hentges Dental",
+  description: "At Hentges Dental, your smile is our top priority. Call us today to schedule an appointment with the best family dentist in Mesa.",
+  keywords: "Dentist Mesa, AZ",
+};
+
 export default function Home() {
 
   const icons = [
@@ -59,7 +65,7 @@ export default function Home() {
             </Link>
           ))}
         </div>
-        <h1 className="font-bold text-dark text-4xl py-2">WELCOME TO HENTGES DENTAL</h1>
+        <h2 className="font-bold text-dark text-4xl py-2">WELCOME TO HENTGES DENTAL</h2>
         <p className="font-bold text-center text-xl px-20">Healthy smiles for healthy families start with professional family dentistry. At Christensen Family Dentistry, your bright, healthy smile is our top priority. Of course, you'll only smile if you're as happy with our service as you are with our dental treatment. That's why we take the time to listen to your needs and concerns. Not only do we listen to your concerns, but we use gentle, efficient cleaning techniques.</p>
         <button className="button-1 font-bold text-2xl my-4"><Link href="/about">Learn More</Link></button>
         <div className="flex flex-row items-center justify-center gap-2">
@@ -78,7 +84,7 @@ export default function Home() {
         />
         <div className="relative z-10 flex items-center justify-evenly gap-2 w-full bg-secondary opacity-90 p-4">
           <div className="flex flex-col justify-center gap-2 w-3/4">
-            <h1 className="font-bold text-6xl">ALWAYS A GREAT EXPERIENCE</h1>
+            <h2 className="font-bold text-6xl">ALWAYS A GREAT EXPERIENCE</h2>
             <p className="font-bold text-2xl">At Hentges Dental, we make sure you have a great experience every time you come in. We use the latest technology and techniques to ensure you have a great experience. We also make sure you have a great experience every time you come in.</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-6">
@@ -95,12 +101,10 @@ export default function Home() {
       <div className="flex items-center justify-center gap-2 bg-primary text-quaternary p-4 w-full">
         <Image src={DrHentgesAndFamilySmall2} alt="Dr. Hentges and Family" className="w-1/3" />
         <div className="flex flex-col gap-6 w-2/3 p-4">
-          <h1 className="font-bold text-6xl">Dr. Hentges and Family</h1>
+          <h2 className="font-bold text-6xl">Dr. Hentges and Family</h2>
           <p className="font-bold text-2xl">Dr. Zach Hentges is a dedicated and experienced dentist with over 10 years of practice. He grew up in Mesa, attended Mesa High School and graduated from Arizona State University before earning his dental degree from Midwestern University. He is married and a proud father of four children. In his free time, Dr. Hentges enjoys playing sports with his kids and wakeboarding. Dr. Hentges is committed to providing the same high-quality care and friendly service that you've come to expect at Christensen Family Dentistry. I'm confident that you will find him to be a caring and communicative provider who truly understands the needs of our community.</p>
         </div>
       </div>
-
-
     </div>
   );
 }

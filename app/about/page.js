@@ -1,13 +1,21 @@
 import Image from "next/image";
 import office5 from "../../public/images/office5.jpg";
 
+export const metadata = {
+    title: "About Us | Hentges Dental",
+    description: "Learn about Hentges Dental (formerly Christensen Family Dentistry), your trusted family dentist in Mesa, AZ. We offer comprehensive dental care, including implants, veneers, crowns, and more.",
+};
+
 export default function About() {
     return (
-        <div className="p-8 flex flex-col justify-center bg-primary">
+        <div className="p-12 flex flex-col justify-center bg-primary">
             <div className="flex flex-row md:flex-nowrap sm:flex-wrap justify-center gap-4 w-full pb-4">
                 <div className="flex flex-col flex-grow gap-4 w-full h-full">
                     <h1 className="text-6xl font-bold text-secondary">ABOUT US</h1>
-                    <p className="text-2xl py-4">Above all else, we here at Hentges Dental want our patients to maintain healthy, bright, and beautiful smiles! Next to that, we want our patients to feel comfortable and content during their appointments with us. Both of these goals begin with patient education! Staying informed can help you better understand the tenants of good oral health, prevent potential problems, and reveal why certain treatments are necessary.</p>
+                    <p className="text-2xl py-4">Above all else, we here at Hentges Dental (formerly Christensen Family Dentistry) want our patients to
+                        maintain healthy, bright, and beautiful smiles! Next to that, we want our patients to feel comfortable and content during their
+                        appointments with us. Both of these goals begin with patient education! Staying informed can help you better understand the
+                        tenants of good oral health, prevent potential problems, and reveal why certain treatments are necessary.</p>
                 </div>
                 <Image src={office5} alt="Hentges Dental Office" title="Hentges Dental Office" className="w-1/3" />
             </div>
