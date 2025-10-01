@@ -14,7 +14,7 @@ export default function ContentDisplay({ pageTitle, content }) {
                                     src={item.imgSrc}
                                     alt={item.heading}
                                     title={item.heading}
-                                    className="w-1/4 float-right m-2 p-1"
+                                    className="w-1/4 float-right m-2 p-1 max-h-[200px] object-cover"
                                 />
                             )}
                             {item.text.map((text, index) => (

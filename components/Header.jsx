@@ -6,11 +6,11 @@ import tooth from "../public/images/tooth.png";
 export default function Header() {
 
     const aboutItems = [{ name: "Zach Hentges, DMD", href: "/Dr-Zach-Hentges" }, { name: "Leo Christensen, DDS", href: "/Dr-Leo-Christensen" }, { name: "About Us", href: "/about" }, { name: "Dental Technology", href: "/dental-technology" }];
-    const patientInformationItems = [{ name: "New Patient Forms", href: "/new-patient-forms" }, { name: "Financial & Insurance", href: "/financial-insurance" }, { name: "Patient Testimonials", href: "/patient-testimonials" }, { name: "Dental Blog", href: "/dental-blog" }];
+    const patientInformationItems = [{ name: "New Patient Forms", href: "/new-patient-forms" }, { name: "Financial & Insurance", href: "/financial-and-insurance" }, { name: "Patient Testimonials", href: "/patient-testimonials" }, { name: "Dental Blog", href: "/dental-blog" }];
     const servicesItems = [{ name: "Family Dentistry", href: "/family-dentistry" }, { name: "Restorative Dentistry", href: "/restorative-dentistry" }, { name: "Cosmetic Dentistry", href: "/cosmetic-dentistry" }, { name: "Emergency Dentistry", href: "/emergency-dentistry" }];
 
     const contactItems = [{
-        href: "https://maps.app.goo.gl/KSnY73NxWP46MLpG8", name: "560 N. Stapley Dr. Mesa, AZ 85203 Suite 102", svg: <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+        href: "https://maps.app.goo.gl/KSnY73NxWP46MLpG8", name: "560 N. Stapley Dr. Mesa, AZ 85203 Suite 2", svg: <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
             <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
         </svg>
@@ -22,9 +22,9 @@ export default function Header() {
 
     const navElements = [
         <Link href="/">Home</Link>,
-        <Dropdown title="About" items={aboutItems} />,
-        <Dropdown title="Patient Information" items={patientInformationItems} />,
-        <Dropdown title="Services" items={servicesItems} />,
+        <Dropdown title="About" url="/about" items={aboutItems} />,
+        <Dropdown title="Patient Information" url="/patient-information" items={patientInformationItems} />,
+        <Dropdown title="Services" url="/services" items={servicesItems} />,
         <Link href="/contact">Contact</Link>,
         <button className="button-1"><Link href="/request-appointment">Request Appointment</Link></button>,
         <button className="button-2"><Link href="">Pay Online</Link></button>
