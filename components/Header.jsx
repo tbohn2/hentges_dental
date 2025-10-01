@@ -5,9 +5,9 @@ import tooth from "../public/images/tooth.png";
 
 export default function Header() {
 
-    const aboutItems = [{ name: "Zach Hentges, DMD", href: "/Dr-Zach-Hentges" }, { name: "Dental Technology", href: "/Dental-Technology" }];
-    const patientInformationItems = [{ name: "New Patient Forms", href: "/New-Patient-Forms" }, { name: "Financial & Insurance", href: "/Financial-Insurance" }, { name: "Patient Testimonials", href: "/Patient-Testimonials" }, { name: "Dental Blog", href: "/Dental-Blog" }];
-    const servicesItems = [{ name: "Family Dentistry", href: "/Family-Dentistry" }, { name: "Restorative Dentistry", href: "/Restorative-Dentistry" }, { name: "Cosmetic Dentistry", href: "/Cosmetic-Dentistry" }, { name: "Emergency Dentistry", href: "/Emergency-Dentistry" }];
+    const aboutItems = [{ name: "Zach Hentges, DMD", href: "/Dr-Zach-Hentges" }, { name: "Dental Technology", href: "/dental-technology" }];
+    const patientInformationItems = [{ name: "New Patient Forms", href: "/new-patient-forms" }, { name: "Financial & Insurance", href: "/financial-insurance" }, { name: "Patient Testimonials", href: "/patient-testimonials" }, { name: "Dental Blog", href: "/dental-blog" }];
+    const servicesItems = [{ name: "Family Dentistry", href: "/family-dentistry" }, { name: "Restorative Dentistry", href: "/restorative-dentistry" }, { name: "Cosmetic Dentistry", href: "/cosmetic-dentistry" }, { name: "Emergency Dentistry", href: "/emergency-dentistry" }];
 
     const contactItems = [{
         href: "https://maps.app.goo.gl/KSnY73NxWP46MLpG8", name: "560 N. Stapley Dr. Mesa, AZ 85203 Suite 102", svg: <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
