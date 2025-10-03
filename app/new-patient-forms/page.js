@@ -17,9 +17,9 @@ If you have questions about any of the paperwork, please give us a call at (480)
 `
 
 const content = [
-    { heading: '', text: ["The following forms are provided to our patients online for download. Please print and complete the forms and bring them to your appointment."] },
-    { heading: '', text: [<>If you have questions about any of the paperwork, please give us a call at <a href="tel:(480) 964-2131" className="text-secondary hover:underline">(480) 964-2131</a> and our staff will be happy to help you.</>] },
-    { heading: '', text: [<a href='' className="text-tertiary hover:underline">New Patient Forms</a>] }
+    { heading: '', text: ["Access our new patient forms online to save time at your dental appointment. Simply download, print, and fill out the forms before your visit to Hentges Dental in Mesa, AZ. Bring the completed paperwork with you to help us streamline your check-in process."] },
+    { heading: '', text: [<>If you have any questions about our dental forms or need assistance, please contact our office at <a href="tel:(480) 964-2131" className="text-secondary hover:underline">(480) 964-2131</a>. Our friendly dental team is here to help!</>] },
+    { heading: '', text: [<a href='' className="text-tertiary hover:underline">Download New Patient Forms</a>] }
 ]
 
 export default function NewPatientForms() {

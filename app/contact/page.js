@@ -16,13 +16,12 @@ export default function Contact() {
 
     return (
         <div className="bg-primary w-full p-12 flex flex-wrap justify-center">
-            <div className="flex flex-wrap justify-center bg-primary w-2/3">
+            <div className="flex flex-wrap justify-center bg-primary w-2/3 px-4">
                 <h1 className="text-6xl font-bold text-secondary pb-4 w-full">CONTACT US</h1>
                 <p className="text-xl text-wrap pb-4 font-semibold w-full">
-                    We gladly welcome new patients! Feel free to give our office a call to ask about procedures, billing, or any other
-                    questions you may have. Our friendly receptionists will be happy to help.
+                    New patients are always welcome at Hentges Dental! Contact our Mesa dental office with any questions about dental treatments, insurance, or your oral health—our knowledgeable team is here to assist you.
                 </p>
-                <p className="text-xl text-wrap pb-4 font-semibold w-full">You may also contact us through our secure <Link href="/request-appointment" className="text-secondary hover:underline">Online Appointment Request Form</Link>.</p>
+                <p className="text-xl text-wrap pb-4 font-semibold w-full">You may also request an appointment through our <Link href="/request-appointment" className="text-secondary hover:underline">Online Appointment Request Form</Link>.</p>
                 <div className="flex flex-col items-center justify-start gap-4 w-1/2">
                     <h2 className="text-4xl font-bold w-full">Hentges Dental</h2>
                     <p className="text-xl text-wrap pb-4 font-semibold w-full">Address: <br /> 560 N. Stapley Dr. Ste 2 <br /> Mesa, AZ 85203</p>

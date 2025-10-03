@@ -10,14 +10,46 @@ export default function CosmeticDentistry() {
     const title = "COSMETIC DENTISTRY";
 
     const content = [
-        { heading: '', text: ["Cosmetic dentistry has skyrocketed in popularity over the past few decades. At Hentges Dental, we specialize in several cosmetic services aimed at improving the appearance of your teeth and overall smile. From minor cosmetic changes to full-tooth restorations, we have got you covered!"] },
-        { heading: <Link href='/procedures/teeth-whitening' className="text-tertiary hover:underline">TEETH WHITENING</Link>, text: ["One of the most common complaints we receive involves the brightness of our patients’ smiles. For this reason, we offer professional teeth whitening treatment. Teeth whitening is one of the most basic and cost-effective ways to improve your smile.", "As we get older, our teeth pick up stains from certain foods, drinks, medications, and personal habits. These stains, also known as extrinsic stains, are easy to remove with a bleaching solution. However, many store-bought bleaching products leave people dissatisfied with the results. Because we are trained professionals, we use a bleaching agent with a much higher concentration than store-bought alternatives. Our whitening treatment could make your teeth up to eight shades brighter in just a single appointment!"] },
-        { heading: <Link href='/procedures/dental-crown' className="text-tertiary hover:underline">PORCELAIN CROWNS</Link>, text: ["A dental crown is a tooth-shaped cap that completely covers the visible portion of a damaged or decayed tooth. In previous years, a dental crown was fabricated using a gold or silver amalgam. These days, porcelain is usually the material of choice. Porcelain is a ceramic compound that mimics the light-reflective properties of natural enamel. It can also be textured and color-matched to your existing teeth. Thanks to porcelain and other ceramics, crowns can also be used to fix the aesthetics of an unsightly tooth."] },
-        { heading: <Link href='/procedures/crowns-cerec' className="text-tertiary hover:underline">CEREC CROWNS</Link>, text: ["With CEREC crowns, we can make your crown right in our office. We take pictures of your tooth, and create a 3D model that we can use to make a crown for you while you’re here. The crown is the same porcelain over metal you would expect from a traditional crown - but in less time than a traditional crown takes."] },
-        { heading: <Link href='/procedures/dental-veneers' className="text-tertiary hover:underline">DENTAL VENEERS</Link>, text: ["A dental veneer is a razor-thin shell that is bonded to the front surface of a tooth. Like our dental crowns, our veneers are typically made from porcelain. Veneers can be used to fix teeth that are severely discolored, worn down, chipped or broken, misaligned, uneven, irregularly shaped, or even gapped. During the procedure, we have to remove a small amount of enamel to accommodate the thickness of the veneer. For this reason, the veneer procedure is considered irreversible."] },
-        { heading: <Link href='/procedures/dental-bonding' className="text-tertiary hover:underline">DENTAL BONDING</Link>, text: ["Patients looking for a less-invasive and more cost-effective solution may benefit from dental bonding. Dental bonding involves the application of composite resin, a putty-like material, to the surface of an aesthetically displeasing tooth. For example, dental bonding is an excellent solution for minor chips or cracks. During the procedure, the composite resin will be color-matched to the existing shade of your enamel, making it virtually indistinguishable from the rest of your tooth."] },
-        { heading: <Link href='/procedures/snap-on-smile' className="text-tertiary hover:underline">SNAP-ON SMILE</Link>, text: ["The Snap-On-Smile is made from a thin but very strong dental resin that looks just like your natural teeth. It fits right over your own teeth to give you a beautiful, natural-looking smile - even if you have stains, chips, gaps or missing teeth."] },
-        { heading: 'SCHEDULE YOUR CONSULTATION', text: [<>If you are unsatisfied with the current state of your smile, you may qualify for cosmetic dentistry! Call <a href="tel:(480) 964-2131" className="text-secondary hover:underline">(480) 964-2131</a> to schedule your consultation now!</>] }
+        {
+            heading: '', text: [
+                "Cosmetic dentistry is more popular than ever, helping countless patients achieve the beautiful, confident smiles they desire. At Hentges Dental in Mesa, AZ, we offer a full range of cosmetic dental services designed to enhance the look of your teeth and boost your self-esteem. Whether you’re interested in subtle improvements or a complete smile makeover, our team is here to help you reach your goals."
+            ]
+        },
+        {
+            heading: <Link href='/procedures/teeth-whitening' className="text-tertiary hover:underline">TEETH WHITENING</Link>, text: [
+                "Many patients come to us hoping for a brighter, whiter smile. Our professional teeth whitening treatments deliver dramatic results that over-the-counter products simply can’t match. Everyday habits, certain foods and drinks, medications, and aging can all cause tooth discoloration. Our in-office whitening uses powerful, safe bleaching agents that can lighten your teeth by several shades in just one visit, giving you a noticeably whiter smile."
+            ]
+        },
+        {
+            heading: <Link href='/procedures/dental-crown' className="text-tertiary hover:underline">PORCELAIN CROWNS</Link>, text: [
+                "Porcelain dental crowns are custom-made caps that restore the shape, strength, and appearance of damaged or decayed teeth. Unlike older metal crowns, today’s porcelain crowns are crafted to look just like your natural teeth, reflecting light and matching your unique tooth color. Crowns are a great solution for restoring both function and aesthetics to your smile."
+            ]
+        },
+        {
+            heading: <Link href='/procedures/crowns-cerec' className="text-tertiary hover:underline">CEREC CROWNS</Link>, text: [
+                "With CEREC technology, we can design and create your custom dental crown right here in our Mesa office—often in a single appointment. Using digital imaging, we capture a precise 3D model of your tooth and craft a high-quality porcelain crown on-site. This means you get the same durable, natural-looking results as a traditional crown, but with less waiting and fewer visits."
+            ]
+        },
+        {
+            heading: <Link href='/procedures/dental-veneers' className="text-tertiary hover:underline">DENTAL VENEERS</Link>, text: [
+                "Dental veneers are ultra-thin porcelain shells that are bonded to the front of your teeth to correct a variety of cosmetic concerns. Veneers can transform teeth that are stained, chipped, worn, uneven, misaligned, or have gaps. The process involves removing a small amount of enamel to ensure a perfect fit and natural look. Veneers are a long-lasting way to achieve a flawless, radiant smile."
+            ]
+        },
+        {
+            heading: <Link href='/procedures/dental-bonding' className="text-tertiary hover:underline">DENTAL BONDING</Link>, text: [
+                "Dental bonding is a quick, affordable cosmetic treatment that can repair minor imperfections such as chips, cracks, or gaps. We apply a tooth-colored composite resin to the affected area, sculpt it for a seamless appearance, and harden it with a special light. The result is a natural-looking restoration that blends beautifully with your existing teeth."
+            ]
+        },
+        {
+            heading: <Link href='/procedures/snap-on-smile' className="text-tertiary hover:underline">SNAP-ON SMILE</Link>, text: [
+                "Snap-On Smile is a removable dental appliance made from strong, thin resin that fits comfortably over your natural teeth. It instantly gives you a full, attractive smile—even if you have stains, chips, gaps, or missing teeth. Snap-On Smile is a non-invasive, affordable way to achieve a dramatic cosmetic improvement without permanent dental work."
+            ]
+        },
+        {
+            heading: 'SCHEDULE YOUR CONSULTATION', text: [
+                <>Ready to love your smile? Discover your cosmetic dentistry options at Hentges Dental. Call <a href="tel:(480) 964-2131" className="text-secondary hover:underline">(480) 964-2131</a> to book your cosmetic consultation today!</>
+            ]
+        }
     ]
 
     return (

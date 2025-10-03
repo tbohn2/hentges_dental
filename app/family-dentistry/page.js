@@ -9,15 +9,55 @@ export const metadata = {
 const title = "FAMILY DENTISTRY";
 
 const content = [
-    { heading: '', text: ["At Hentges Dental, we pride ourselves on treating every member of the family. Family dentistry is focused on preventing potential complications, rather than treating them. If you and your family are in need of professional dental services, we can help!"] },
-    { heading: 'CLEANINGS, EXAMS, AND ORAL CANCER SCREENINGS', text: ["The American Dental Association (ADA) recommends a routine check-up up roughly twice a year. A routine appointment with Dr. Zach Hentges will typically include a professional cleaning and a detailed examination of your teeth, gums, and other oral tissues. We may also recommend an oral cancer screening for our older patients."] },
-    { heading: <Link href='/procedures/dentistry-for-kids' className="text-tertiary hover:underline">DENTISTRY FOR KIDS</Link>, text: ["Professional dental care is a crucial part of your child's oral health. Be sure to schedule your child's first appointment by the time their first teeth erupt, or before their first birthday. Scheduling regular appointments allows us to monitor the development of their oral health. Developmental problems are easier to treat in the beginning stages."] },
-    { heading: "", text: 'AS YOUR CHILD GROWS OLDER, WE CAN ESTABLISH A STRONG FOUNDATION FOR THEIR ORAL HEALTH, ONE THAT WILL ENSURE A LIFETIME OF HEALTHY, BEAUTIFUL TEETH.', text: [] },
-    { heading: <Link href='/procedures/periodontal-care' className="text-tertiary hover:underline">PERIODONTAL CARE</Link>, text: ["Your periodontal (gum) tissues are just as important as your teeth. Periodontal disease is the leading cause of tooth loss in the United States. Periodontal disease is the result of an infection in the gum tissues, connective ligaments, and eventually the alveolar bone."] },
-    { heading: "MOUTHGUARDS (NIGHT) / MOUTHGUARDS (SPORT)", text: ["If you participate in physical activities that put you at risk for dental trauma or injury, we strongly recommend a sportguard. A mouthguard will protect your teeth and prevent dental emergencies. If you suffer from bruxism (teeth grinding), we may also recommend a night guard. Many patients with bruxism tend to grind their teeth during sleep. A night guard acts as a barrier that prevents enamel wear."] },
-    { heading: <Link href='/procedures/sleep-apnea' className="text-tertiary hover:underline">SLEEP APNEA/ORAL APPLIANCES</Link>, text: ["If you have obstructive sleep apnea, you may benefit from an oral appliance. An oral appliance will keep your jaw in the proper position during sleep. This opens your airway and improves your breathing during sleep. With an oral appliance, you may find yourself feeling more well-rested, alert and happy, thanks to a full night's sleep. We offer several resources to learn more about What Sleep Apnea Is and which Oral Appliances can help."] },
-    { heading: 'SCHEDULE AN APPOINTMENT', text: [<>To learn more about our family dentistry services call <a href="tel:(480) 964-2131" className="text-secondary hover:underline">(480) 964-2131</a>, and schedule an appointment now!</>] },
-]
+    {
+        heading: '',
+        text: [
+            "At Hentges Dental, we welcome patients of all ages and are dedicated to providing comprehensive family dentistry in Mesa, AZ. Our focus is on proactive dental care and prevention, helping your family avoid dental issues before they start. If you’re searching for a trusted family dentist, our team is here to support your oral health at every stage of life."
+        ]
+    },
+    {
+        heading: 'CLEANINGS, EXAMS, AND ORAL CANCER SCREENINGS',
+        text: [
+            "We recommend visiting our office for a dental checkup and cleaning every six months, as advised by the American Dental Association (ADA). During your visit with Dr. Zach Hentges, you’ll receive a thorough cleaning and a comprehensive exam of your teeth, gums, and mouth. For adult patients, we may also suggest an oral cancer screening to ensure your ongoing health."
+        ]
+    },
+    {
+        heading: <Link href='/procedures/dentistry-for-kids' className="text-tertiary hover:underline">DENTISTRY FOR KIDS</Link>,
+        text: [
+            "Children’s dental care is essential for building a healthy smile that lasts a lifetime. We recommend bringing your child for their first dental visit when their first tooth appears or by their first birthday. Regular dental checkups help us track your child’s oral development and address any concerns early, making treatment easier and more effective."
+        ]
+    },
+    {
+        heading: "",
+        text: [
+            "As your child grows, we work with you to create strong oral hygiene habits and a solid foundation for lifelong dental health and confidence."
+        ]
+    },
+    {
+        heading: <Link href='/procedures/periodontal-care' className="text-tertiary hover:underline">PERIODONTAL CARE</Link>,
+        text: [
+            "Healthy gums are vital for a healthy smile. Gum disease (periodontal disease) is the leading cause of tooth loss in adults and develops when infection affects the gums, ligaments, and supporting bone. Our family dental team provides periodontal care to help prevent, detect, and treat gum disease, protecting your smile for years to come."
+        ]
+    },
+    {
+        heading: "MOUTHGUARDS (NIGHT) / MOUTHGUARDS (SPORT)",
+        text: [
+            "If you or your child play sports or grind your teeth at night (bruxism), custom mouthguards are an important part of preventive dental care. Athletic mouthguards help shield teeth from injury during physical activity, while night guards protect against enamel wear caused by grinding during sleep. Ask us about the right mouthguard for your needs."
+        ]
+    },
+    {
+        heading: <Link href='/procedures/sleep-apnea' className="text-tertiary hover:underline">SLEEP APNEA/ORAL APPLIANCES</Link>,
+        text: [
+            "For patients with obstructive sleep apnea, we offer oral appliances designed to keep your airway open and improve your sleep quality. These custom devices gently reposition your jaw, helping you breathe easier and wake up feeling refreshed. Learn more about how oral appliances can help manage sleep apnea and support your overall health."
+        ]
+    },
+    {
+        heading: 'SCHEDULE AN APPOINTMENT',
+        text: [
+            <>Ready to experience quality family dentistry in Mesa, AZ? Call <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a> to book your appointment with Hentges Dental today!</>
+        ]
+    },
+];
 
 
 export default function FamilyDentistry() {

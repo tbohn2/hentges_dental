@@ -10,12 +10,43 @@ export default function FinancialAndInsurance() {
     const title = "FINANCIAL AND INSURANCE";
 
     const content = [
-        { heading: '', text: ["At Hentges Dental we pride ourselves on providing safe, effective, and affordable treatment for every member of the family. We understand that the financial side of dental treatment can become confusing at times. To make things easier for you, we have fostered working relationships with the top insurance companies. We also offer discount programs and payment systems for qualifying patients. Above all else, we want you to have a clear understanding of your financial and insurance options, as well as your patient responsibilities."], imgSrc: patientOnComputer },
-        { heading: 'INSURANCE AND PATIENT CO-PAYMENTS', text: ["Dental insurance can play a significant role in your treatment fees. This is why it’s important to properly fill out your new patient paperwork with any insurance information. Submitting your paperwork in advance allows us to prepare your benefit materials before you receive treatment. This includes any fees and co-payments dictated by your insurance policy. We are happy to work with your insurance provider and answer any questions you may have in regards to your policy."] },
-        { heading: '', text: ["When working with insurance, it is important to note that you are solely responsible for fees and co-payments. Our team is happy to assist you when filing a dental or medical claim, but we ask that you follow our financial policy when payment is due. Talk with our staff during your consultation to learn more about our financial policy."] },
-        { heading: 'APPOINTMENTS AND CONSULTATIONS', text: ["If you are a first-time patient, we will ask you to schedule a consultation visit. During your consultation Dr. Zach Hentges will perform a comprehensive exam and review your dental and medical histories. Most regular appointments consist of a checkup and professional cleaning. If we notice any protentional instances of decay, damage, or gum disease we may recommend additional treatment. Once we develop an appropriate treatment plan, our front office team will provide you with a detailed list of fees. We can also provide an estimate of out-of-pocket fees based on your insurance policy."] },
-        { heading: '', text: ["There is a $25 no-show fee to any appointment that is missed or cancelled within 24 hours of the set appointment time."] },
-        { heading: 'SCHEDULE YOUR APPOINTMENT TODAY!', text: [<>If you are interested in learning more about our services, please call <a href="tel:(480) 964-2131" className="text-secondary hover:underline">(480) 964-2131</a>, and schedule your appointment today!</>] }
+        {
+            heading: '',
+            text: [
+                "At Hentges Dental, our mission is to deliver high-quality, affordable dental care for families in Mesa, AZ. We know that understanding dental insurance and payment options can sometimes feel overwhelming. To help simplify the process, we work closely with leading dental insurance providers and offer flexible payment plans and discount programs for eligible patients. Our goal is to ensure you feel confident about your dental financial options and patient responsibilities every step of the way."
+            ],
+            imgSrc: patientOnComputer
+        },
+        {
+            heading: 'DENTAL INSURANCE & PATIENT CO-PAYMENTS',
+            text: [
+                "Dental insurance coverage can significantly impact your out-of-pocket costs for dental treatment. To maximize your benefits, please complete your new patient forms with accurate insurance details before your first visit. This allows our team to verify your coverage and provide you with a clear breakdown of any co-payments or fees required by your insurance plan. We are happy to coordinate with your insurance company and answer any questions about your dental benefits."
+            ]
+        },
+        {
+            heading: '',
+            text: [
+                "Please remember that patients are ultimately responsible for all treatment fees and co-payments, regardless of insurance coverage. Our staff is here to help you file dental or medical claims, but payment is expected according to our financial policy. If you have questions about our payment policies, our team will be glad to review them with you during your dental consultation."
+            ]
+        },
+        {
+            heading: 'DENTAL APPOINTMENTS & CONSULTATIONS',
+            text: [
+                "For new patients, we recommend scheduling a dental consultation to get started. During this visit, Dr. Zach Hentges will perform a thorough dental exam and review your medical and dental history. Most routine appointments include a dental checkup and professional teeth cleaning. If we detect any signs of tooth decay, gum disease, or dental damage, we will discuss recommended treatment options. Our front office will provide a detailed estimate of all dental fees, including an insurance-based estimate of your out-of-pocket costs."
+            ]
+        },
+        {
+            heading: '',
+            text: [
+                "Please note: A $25 no-show fee applies to any dental appointment missed or cancelled with less than 24 hours’ notice."
+            ]
+        },
+        {
+            heading: 'BOOK YOUR DENTAL APPOINTMENT IN MESA, AZ',
+            text: [
+                <>To learn more about our dental services or to schedule your next appointment, call <a href="tel:(480) 964-2131" className="text-secondary hover:underline">(480) 964-2131</a> today. We look forward to helping you achieve a healthy, confident smile!</>
+            ]
+        }
     ]
 
     return (

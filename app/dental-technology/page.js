@@ -13,14 +13,50 @@ export default function DentalTechnology() {
     const title = "Dental Technology";
 
     const content = [
-        { heading: "Intraoral Camera", text: ["An intraoral camera is a handheld appliance that is shaped like a wand. The tiny camera at the tip of the appliance takes hundreds of pictures per second to capture an in-depth and accurate image of your mouth. This image is sometimes used to create a digital impression of your teeth and gums. A digital impression is particularly useful for same-day dental crowns."] },
-        { heading: "Digital X-ray", text: ["In the past, most dental professionals had to use the traditional x-ray systems, which require film development. These days, we use digital x-rays due to their many benefits. A digital x-ray is safer and much quicker than its film predecessor. If the image comes out blurry, we can instantly retake a new one. Digital x-rays are a crucial diagnostic tool that helps us gain a better understanding of the inner workings of your mouth, more specifically the teeth, roots, and alveolar bone."], imgSrc: dentalXray },
-        // { heading: "Same Day Crowns", text: ["Dr. Zach Hentges understands how valuable your time is, which is why we offer same-day dental crowns. This means we can prepare your tooth, take an impression, and fabricate your restoration, all within a single appointment.", "Traditional dental crowns typically require multiple appointments for multiple procedures. The data we capture with our intraoral wand is wirelessly transferred to our computer system. We then use CAD/CAM software to design your crown “chairside” as you watch in real-time. Next, this information is sent to our milling unit, which transforms a single block of porcelain into your aesthetically-pleasing restoration."] },
-        { heading: "Diagnodent Laser", text: ["The diagnodent laser allows us to more effectively identify the presence of decay in the occlusal (bite) surface of a tooth. The diagnodent laser measures laser fluorescence within the mineral structure of a tooth. This allows for the detection of healthy tooth structure, as well as smooth surface dental caries (tooth decay) at their earliest stage. Early detection of tooth decay helps us effectively treat the problem before it requires a costly and invasive restoration."] },
-        { heading: "Soft Tissue Laser", text: ["A soft tissue laser simultaneously cauterizes and cuts an incision in the tissue. For this reason, laser treatment may reduce bleeding, discomfort, and swelling both during and after your procedure. We may use a soft tissue laser to treat periodontal disease by removing the infected lining of the gum tissue. This allows for the regeneration of healthy tissue around the teeth. Soft tissue lasers are also effective for gum contouring and crown lengthening if you want to improve the aesthetics of your smile."] },
-        { heading: "3D Imaging", text: ["3D imaging gives Dr. Zach Hentges a more comprehensive overview of your teeth and gum tissues. This allows us to better diagnose any potential problems and determine the next step in an effective treatment plan. We may utilize 3D imaging for cosmetic or restorative purposes, orthodontic treatment, and dental implants."] },
-        { heading: "Cone Beam CT Scan", text: ["A cone beam CT scan is a diagnostic tool that produces a 3D representation of your teeth, gums, nerve pathways, and underlying bone structure within a single image. We typically utilize cone beam CT scans when a regular x-ray is not enough. Cone beam CT scans are ideal for surgical planning, the diagnosis of TMJ disorders and tumors, and the evaluation of bone structure and tooth orientation."], imgSrc: panoramicMachine },
-        { heading: "Schedule Your Appointment", text: [<>If you want the very best in professional dental care call <a href="tel:(480) 964-2131" className="text-secondary hover:underline">(480) 964-2131</a>, and schedule your appointment today!</>] }
+        {
+            heading: "Intraoral Camera",
+            text: [
+                "Our intraoral camera is a small, wand-shaped device that captures high-resolution images inside your mouth. This advanced dental technology allows us to take detailed pictures of your teeth and gums in real time, providing a clear view for both diagnosis and patient education. Digital impressions created with the intraoral camera are especially helpful for procedures like same-day dental crowns."
+            ]
+        },
+        {
+            heading: "Digital X-ray",
+            text: [
+                "We utilize digital x-ray technology at Hentges Dental for safer, faster, and more precise dental imaging. Unlike traditional film x-rays, digital x-rays produce images instantly and with significantly less radiation exposure. If a retake is needed, we can do so immediately. Digital x-rays help us thoroughly evaluate your teeth, roots, and jawbone, supporting accurate diagnosis and effective treatment planning."
+            ],
+            imgSrc: dentalXray
+        },
+        {
+            heading: "Diagnodent Laser",
+            text: [
+                "The Diagnodent laser is a cutting-edge tool for early cavity detection. By measuring laser fluorescence within your tooth structure, this technology helps us identify even the smallest areas of decay on the biting surfaces of your teeth. Early detection with the Diagnodent laser allows for prompt, minimally invasive treatment and helps preserve healthy tooth enamel."
+            ]
+        },
+        {
+            heading: "Soft Tissue Laser",
+            text: [
+                "Our soft tissue laser technology enables us to perform precise gum treatments with minimal discomfort. The laser can cut and cauterize tissue at the same time, which reduces bleeding, swelling, and recovery time. We use soft tissue lasers for procedures such as periodontal therapy, gum contouring, and crown lengthening, as well as to promote healthy tissue regeneration around your teeth."
+            ]
+        },
+        {
+            heading: "3D Imaging",
+            text: [
+                "3D dental imaging provides Dr. Zach Hentges with a comprehensive, three-dimensional view of your teeth, gums, and jaw. This advanced diagnostic tool enhances our ability to detect dental issues, plan treatments, and achieve optimal results. 3D imaging is valuable for cosmetic dentistry, restorative procedures, orthodontics, and dental implant placement."
+            ]
+        },
+        {
+            heading: "Cone Beam CT Scan",
+            text: [
+                "A cone beam CT scan delivers a detailed 3D image of your teeth, jawbone, nerves, and surrounding structures in a single scan. We recommend cone beam CT imaging when standard x-rays are not sufficient for diagnosis or treatment planning. This technology is especially useful for dental implant planning, evaluating TMJ disorders, assessing bone quality, and identifying tumors or other abnormalities."
+            ],
+            imgSrc: panoramicMachine
+        },
+        {
+            heading: "Schedule Your Appointment",
+            text: [
+                <>Experience the benefits of advanced dental technology at Hentges Dental. Call <a href="tel:(480) 964-2131" className="text-secondary hover:underline">(480) 964-2131</a> to book your appointment and receive top-quality dental care in Mesa, AZ!</>
+            ]
+        }
     ]
 
     return (

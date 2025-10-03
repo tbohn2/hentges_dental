@@ -3,7 +3,7 @@ import Image from "next/image";
 import thumbsUp from "../../public/images/thumbs-up.jpg";
 
 export const metadata = {
-    title: "Patient Testimonials | Hentges Dental",
+    title: "Patient Testimonials | Mesa, AZ | Hentges Dental",
     description: "Read what our patients have to say about their experience at Hentges Dental. Call us today!",
 };
 
