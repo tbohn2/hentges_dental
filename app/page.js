@@ -47,7 +47,7 @@ export default function Home() {
           className="object-cover rounded-lg"
           priority
         />
-        <div className="relative z-10 flex flex-col items-center justify-center gap-4 w-full">
+        <div className="relative flex flex-col items-center justify-center gap-4 w-full">
           <div className="flex flex-col items-center justify-center gap-6 bg-primary p-4 rounded-lg opacity-90 text-tertiary">
             <h1 className="font-bold text-8xl">Hentges Dental</h1>
             <p className="font-bold text-3xl italic">Trusted Family & Cosmetic Dentistry in Mesa, AZ</p>

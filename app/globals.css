@@ -79,7 +79,6 @@ button {
 
 /* Dropdown */
 .dropdown {
-  position: relative;
   display: inline-block;
   cursor: pointer;
 }

@@ -39,7 +39,7 @@ export default function DentalProcedures() {
     ]
 
     return (
-        <div className="flex flex-wrap items-center justify-evenly gap-4 bg-primary py-12">
+        <div className="flex flex-wrap items-center justify-evenly gap-4 bg-primary py-12 w-2/3 self-center rounded-2xl">
             <h1 className="text-4xl font-bold text-secondary w-full text-center">DENTAL PROCEDURES</h1>
             {articles.map((article) => (
                 <button key={article.name} className="button-3 w-1/4 text-center">

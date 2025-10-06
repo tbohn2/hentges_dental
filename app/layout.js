@@ -75,15 +75,17 @@ export default function RootLayout({ children }) {
       /> */}
       <body className={`flex flex-col min-h-screen`}>
         <main className="flex flex-col justify-between w-full min-h-screen text-dark">
-          <div className="p-3 font-bold text-xl flex flex-row items-center justify-evenly w-full bg-primary border-b-2 border-secondary sticky top-0 z-50">
+          <div className="p-3 font-bold lg:text-xl md:text-lg sm:text-base flex flex-row flex-wrap items-center justify-evenly gap-2 w-full bg-primary border-b-2 border-secondary sticky top-0 z-50">
             {contactItems.map((item, index) => (
-              <div className="flex flex-row flex-nowrap items-center justify-center gap-2 w-1/2" key={index}>
+              <div className="flex flex-row flex-nowrap items-center justify-center gap-2" key={index}>
                 <a href={item.href} className="flex justify-center items-center gap-2 flex-nowrap hover:underline">{item.svg}{item.name}</a>
               </div>
             ))}
           </div>
           <Header />
-          {children}
+          <div className="w-full flex flex-col items-center justify-center">
+            {children}
+          </div>
           <Footer />
         </main>
 
