@@ -25,12 +25,12 @@ export default function Header() {
     ];
 
     return (
-        <header className="flex flex-wrap gap-2 lg:justify-between justify-center">
-            <Link href="/" className="mx-6 flex flex-row items-center justify-center gap-1 py-2 text-primary border-b-1 border-primary rounded-4xl md:self-start self-center">
+        <header className="flex flex-wrap justify-between py-2 px-4 md:px-0">
+            <Link href="/" className="sm:w-auto w-2/3 md:mx-6 flex flex-row items-center justify-center gap-1 py-2 text-primary border-b-1 border-primary rounded-4xl md:self-start self-center">
                 <Image src={tooth} alt="Hentges Dental" className="lg:w-1/4 md:w-1/8 w-1/12" />
-                <div className="flex lg:flex-col lg:gap-0 gap-2 flex-row justify-center geist-sans">
-                    <span className="text-4xl font-semibold flex items-center">Hentges</span>
-                    <span className="text-4xl font-semibold flex items-center">Dental</span>
+                <div className="flex lg:flex-col lg:gap-0 gap-2 flex-row justify-center geist-sans text-2xl md:text-4xl font-semibold ">
+                    <span className="flex items-center">Hentges</span>
+                    <span className="flex items-center">Dental</span>
                 </div>
             </Link>
             {isMobile ? (

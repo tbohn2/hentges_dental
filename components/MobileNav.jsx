@@ -27,16 +27,16 @@ export default function MobileNav() {
     const mobileNavElements = [
         { name: "Home", href: "/" },
         { name: "Request Appointment", href: "/request-appointment" },
-        { name: "Pay Online", href: "" },
         { name: "About", href: "/about", subitems: [{ name: "Zach Hentges, DMD", href: "/Dr-Zach-Hentges" }, { name: "Leo Christensen, DDS", href: "/Dr-Leo-Christensen" }, { name: "About Us", href: "/about" }, { name: "Dental Technology", href: "/dental-technology" }] },
         { name: "Patient Information", href: "/patient-information", subitems: [{ name: "New Patient Forms", href: "/new-patient-forms" }, { name: "Financial & Insurance", href: "/financial-and-insurance" }, { name: "Patient Testimonials", href: "/patient-testimonials" }, { name: "Dental Blog", href: "/dental-blog" }] },
         { name: "Services", href: "/services", subitems: [{ name: "Emergency Dentistry", href: "/emergency-dentistry" }, { name: "Family Dentistry", href: "/family-dentistry" }, { name: "Restorative Dentistry", href: "/restorative-dentistry" }, { name: "Cosmetic Dentistry", href: "/cosmetic-dentistry" }, { name: "Dental Procedures", href: "/dental-procedures" }] },
-        { name: "Contact", href: "/contact" }
+        { name: "Contact", href: "/contact" },
+        { name: "Pay Online", href: "" }
     ];
 
     return (
-        <div className="mobile-dropdown z-10 self-center relative">
-            <span className="text-2xl cursor-pointer" onClick={() => setIsOpen(!isOpen)}>☰</span>
+        <div className="mobile-dropdown z-50 self-center relative">
+            <span className="text-2xl cursor-pointer text-primary" onClick={() => setIsOpen(!isOpen)}>☰</span>
             <ul className={`absolute right-0 top-full mt-2 w-64 border-2 border-tertiary z-51 divide-y-2 text-tertiary ${isOpen ? "block" : "hidden"}`}>
                 {mobileNavElements.map((item, index) => (
                     <li className="whitespace-nowrap inline-block bg-primary w-full" key={item.name}>
