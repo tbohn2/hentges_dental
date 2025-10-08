@@ -19,27 +19,27 @@ export default function Header() {
         <Dropdown title="About" url="/about" items={aboutItems} />,
         <Dropdown title="Patient Information" url="/patient-information" items={patientInformationItems} />,
         <Dropdown title="Services" url="/services" items={servicesItems} />,
-        <Link href="/contact">Contact</Link>,
+        <Link href="/contact" className="hover:opacity-50 ease-in-out duration-300">Contact</Link>,
         <button className="button-1"><Link href="/request-appointment">Request Appointment</Link></button>,
         <button className="button-2"><Link href="">Pay Online</Link></button>
     ];
 
     return (
         <header className="flex flex-wrap gap-2 lg:justify-between justify-center">
-            <Link href="/" className="flex flex-row items-center justify-center gap-1 lg:w-1/5 py-2 text-dark rounded-2xl md:self-start self-center">
+            <Link href="/" className="mx-6 flex flex-row items-center justify-center gap-1 py-2 text-primary border-b-1 border-primary rounded-4xl md:self-start self-center">
                 <Image src={tooth} alt="Hentges Dental" className="lg:w-1/4 md:w-1/8 w-1/12" />
                 <div className="flex lg:flex-col lg:gap-0 gap-2 flex-row justify-center geist-sans">
-                    <span className="text-4xl font-bold flex items-center">Hentges</span>
-                    <span className="text-4xl font-bold flex items-center">Dental</span>
+                    <span className="text-4xl font-semibold flex items-center">Hentges</span>
+                    <span className="text-4xl font-semibold flex items-center">Dental</span>
                 </div>
             </Link>
             {isMobile ? (
                 <MobileNav />
             ) : (
                 <nav className="flex flex-grow py-2">
-                    <ul className="flex flex-grow justify-evenly items-center font-bold xl:text-2xl md:text-lg sm:text-base text-primary">
+                    <ul className="flex flex-grow justify-evenly items-center font-light xl:text-2xl md:text-lg sm:text-base text-primary">
                         {navElements.map((element, index) => (
-                            <li key={index} className="hover:underline">{element}</li>
+                            <li key={index}>{element}</li>
                         ))}
                     </ul>
                 </nav>

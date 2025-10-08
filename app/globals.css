@@ -5,13 +5,15 @@
   --color-secondary: var(--secondary);
   --color-tertiary: var(--tertiary);
   --color-dark: var(--dark);
+  --color-success: var(--success);
 }
 
 :root {
   --primary: #F9FAFB;
-  --secondary: #3B82F6;
+  --secondary: #30415c;
   --tertiary: #2896df;
-  --dark: #2c332f;
+  --dark: #4c4e4d;
+  --success: #009236;
 }
 
 /* Global */
@@ -75,6 +77,26 @@ button {
   background-color: var(--primary);
   color: var(--secondary);
   box-shadow: 0 0 25px 0 var(--secondary);
+}
+
+.button-4 {
+  background-color: var(--success);
+  color: var(--primary);
+  border: none;
+}
+
+.button-4:hover {
+  background-color: var(--primary);
+  color: var(--success);
+  box-shadow: 0 0 25px 0 var(--success);
+}
+
+.button-4:disabled {
+  background-color: var(--success);
+  color: var(--primary);
+  border: none;
+  box-shadow: none;
+  cursor: default;
 }
 
 /* Dropdown */
