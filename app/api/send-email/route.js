@@ -28,15 +28,13 @@ export async function POST(request) {
                 <hr/>
                 <p><strong>Name:</strong> ${name}</p>
                 <hr/>
-                <p><strong>Contact Info:</strong></p>
                 <p><strong>Preferred Contact Method:</strong> ${preferredContactMethod}</p>
+                <p><strong>Contact Info:</strong></p>
                 <p><strong>Phone Number:</strong> ${number}</p>
                 <p><strong>Email:</strong> ${email}</p>
             </div>
             `
         };
-
-        console.log(mailOptions);
 
         await transporter.sendMail(mailOptions);
 
