@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
     title: "Cosmetic Dentistry | Mesa, AZ | Hentges Dental",
-    description: "At Hentges Dental, we provide cosmetic dentistry services to help you improve your smile. Call us today!",
+    description: "Cosmetic dentistry in Mesa, AZ transforms your smile. Whitening, veneers, crowns & more. Call (480) 964-2131 for consultation.",
 };
 
 export default function CosmeticDentistry() {

@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
     title: "All-on-4 | Dental Implants | Mesa, AZ | Hentges Dental",
-    description: "All-on-4 is a complete denture that is supported by dental implants, effectively replacing an entire set of teeth. Call us today to findout if you are a candidate!",
+    description: "All-on-4 dental implants in Mesa, AZ replace full arch with 4 implants. Secure, natural-looking dentures. Call (480) 964-2131 today!",
 };
 
 export default function AllOn4() {

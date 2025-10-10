@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
     title: "Dentistry for Kids | Mesa, AZ | Hentges Dental",
-    description: "Dentistry for kids is a specialized field of dentistry that focuses on the oral health of children. It is a great solution for restoring both function and aesthetics to your smile. Call today!",
+    description: "Pediatric dentistry in Mesa, AZ. Fun, gentle dental care for children. Build healthy habits early. Call (480) 964-2131 today!",
 };
 
 export default function DentistryForKids() {

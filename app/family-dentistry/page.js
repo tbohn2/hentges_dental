@@ -2,8 +2,8 @@ import ContentDisplay from "../../components/ContentDisplay";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Family Dentistry | Hentges Dental",
-    description: "At Hentges Dental, we provide family dentistry services to help you and your family maintain excellent oral health. Call us today!",
+    title: "Family Dentistry | Hentges Dental | Mesa, AZ",
+    description: "Family dentistry in Mesa, AZ for all ages. Preventive care, cleanings & exams. Call (480) 964-2131 for your family's dental health.",
 };
 
 const title = "FAMILY DENTISTRY";

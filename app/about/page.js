@@ -3,8 +3,8 @@ import ContentDisplay from "../../components/ContentDisplay";
 import Link from "next/link";
 
 export const metadata = {
-    title: "About Us | Hentges Dental",
-    description: `Learn about Hentges Dental (formerly Christensen Family Dentistry), your trusted family dentist in Mesa, AZ. We offer comprehensive dental care, including implants, veneers, crowns, and more.`,
+    title: "About Us | Hentges Dental | Mesa, AZ",
+    description: "Learn about Hentges Dental in Mesa, AZ. Dr. Zach Hentges provides comprehensive family & cosmetic dentistry with advanced technology.",
 };
 
 const pageContent = [

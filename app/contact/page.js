@@ -2,6 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import receptionPhone from "../../public/images/reception-phone.jpg";
 
+export const metadata = {
+    title: "Contact Us | Hentges Dental | Mesa, AZ",
+    description: "Contact Hentges Dental in Mesa, AZ. Call (480) 964-2131 for appointments. Open Mon-Thu 7:30 AM-5:00 PM. New patients welcome!",
+};
+
 export default function Contact() {
 
     const hours = [

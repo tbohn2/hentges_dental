@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
     title: "Dental Bridge | Mesa, AZ | Hentges Dental",
-    description: "A dental bridge is a tooth replacement that typically consists of two dental crowns linked together by a pontic, or false tooth. A traditional bridge is supported by the two surrounding teeth, known as abutment teeth, that we reshape to receive the crowns. A bridge can also be supported by a series of dental implants if multiple adjacent teeth are missing. If you are missing a tooth, a bridge will prevent the remaining teeth from shifting out of their proper position.",
+    description: "Replace missing teeth with custom dental bridges in Mesa, AZ. Restore your smile and bite — call (480) 964-2131 today!",
 };
 
 export default function DentalBridge() {

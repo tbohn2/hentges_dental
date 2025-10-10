@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
     title: "Dental Veneers | Mesa, AZ | Hentges Dental",
-    description: "Dental veneers are a cosmetic dental treatment that can improve the appearance of your teeth. They are a great solution for restoring both function and aesthetics to your smile. Call today!",
+    description: "Porcelain veneers in Mesa, AZ transform your smile. Custom-made shells correct chips, gaps & stains. Call (480) 964-2131 for consultation.",
 };
 
 export default function DentalVeneers() {

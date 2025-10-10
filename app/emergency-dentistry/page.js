@@ -2,7 +2,7 @@ import ContentDisplay from "../../components/ContentDisplay";
 
 export const metadata = {
     title: "Emergency Dentistry | Mesa, AZ | Hentges Dental",
-    description: "At Hentges Dental, we provide emergency dentistry services to help you restore your smile.",
+    description: "Emergency dental care in Mesa, AZ. Same-day appointments for tooth pain, broken teeth & dental trauma. Call (480) 964-2131 now!",
 };
 
 export default function EmergencyDentistry() {

@@ -3,7 +3,7 @@ import RequestForm from "../../components/RequestForm";
 
 export const metadata = {
     title: "Request Appointment | Mesa, AZ | Hentges Dental",
-    description: "Use this form to request an appointment with Hentges Dental in Mesa, AZ",
+    description: "Schedule your dental appointment online with Hentges Dental in Mesa, AZ. Emergency & routine care available. Call (480) 964-2131.",
 }
 
 

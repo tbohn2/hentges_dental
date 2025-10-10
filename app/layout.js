@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className={`${instrumentSans.variable} ${geistSans.variable}`}>
-      {/* <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -43,13 +43,14 @@ export default function RootLayout({ children }) {
             "image": "https://hentgesdental.com/og-image.jpg",
             "@id": "https://hentgesdental.com",
             "url": "https://hentgesdental.com",
-            "telephone": "+14805551234",
+            "telephone": "+14809642131",
+            "email": "hentgesdental@gmail.com",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "1234 Example St",
+              "streetAddress": "560 N. Stapley Dr. Ste 2",
               "addressLocality": "Mesa",
               "addressRegion": "AZ",
-              "postalCode": "85201",
+              "postalCode": "85203",
               "addressCountry": "US"
             },
             "openingHoursSpecification": [
@@ -61,7 +62,7 @@ export default function RootLayout({ children }) {
                   "Wednesday",
                   "Thursday"
                 ],
-                "opens": "08:00",
+                "opens": "07:30",
                 "closes": "17:00"
               }
             ],
@@ -72,7 +73,7 @@ export default function RootLayout({ children }) {
             ]
           }),
         }}
-      /> */}
+      />
       <body className={`flex flex-col min-h-screen`}>
         <main className="flex flex-col justify-between w-full min-h-screen text-dark">
           <div className="p-3 font-bold lg:text-xl md:text-lg sm:text-base flex flex-row flex-wrap items-center justify-evenly gap-2 w-full bg-primary border-b-2 border-secondary sticky top-0 z-50">

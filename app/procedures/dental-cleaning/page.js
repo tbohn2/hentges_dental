@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
     title: "Dental Cleaning | Mesa, AZ | Hentges Dental",
-    description: "Regular dental cleanings are essential for maintaining good oral health. Our experienced dental team provides comprehensive cleaning services to remove plaque, tartar, and bacteria from your teeth, preventing cavities, gum disease, and bad breath. Call today!",
+    description: "Gentle dental cleanings in Mesa, AZ remove plaque and tartar for a healthy smile. Prevent cavities and gum disease — call (480) 964-2131 today!",
 };
 
 export default function DentalCleaning() {

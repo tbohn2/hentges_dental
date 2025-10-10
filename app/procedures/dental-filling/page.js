@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
     title: "Dental Filling | Mesa, AZ | Hentges Dental",
-    description: "A dental filling is a restoration that repairs a tooth that has been damaged by decay or other damage. It is placed over a tooth to restore its shape, strength, and appearance. Dental fillings are a great solution for restoring both function and aesthetics to your smile.",
+    description: "Restore your smile with tooth-colored fillings in Mesa, AZ. Composite resin blends naturally with your teeth — call (480) 964-2131 today!",
 };
 
 export default function DentalFilling() {

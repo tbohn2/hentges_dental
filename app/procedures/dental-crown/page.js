@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
     title: "Dental Crown | Mesa, AZ | Hentges Dental",
-    description: "A dental crown is a custom-made cap that restores the shape, strength, and appearance of a tooth. Dental crowns are a great solution for restoring both function and aesthetics to your smile. Call Hentges Dental today!",
+    description: "Dental crowns in Mesa, AZ restore damaged teeth with custom porcelain caps. Strengthen & protect your smile. Call (480) 964-2131 today!",
 };
 
 export default function DentalCrown() {

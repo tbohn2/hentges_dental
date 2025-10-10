@@ -2,8 +2,8 @@ import ContentDisplay from "../../components/ContentDisplay";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Patient Information | Hentges Dental",
-    description: "If you have any questions about our practice, our team is standing by to help! The best way to learn more is always in person, call for an appointment.",
+    title: "Patient Information | Hentges Dental | Mesa, AZ",
+    description: "New patient resources for Hentges Dental in Mesa, AZ. Forms, insurance info, testimonials & dental blog. Call (480) 964-2131.",
 };
 
 const title = "Patient Information";

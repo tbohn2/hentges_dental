@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
     title: "Periodontal Care | Mesa, AZ | Hentges Dental",
-    description: "We provide comprehensive periodontal treatment and deep cleanings to prevent, diagnose, and treat gum disease. Healthy gums are essential for maintaining strong teeth and overall oral health. Call today!",
+    description: "Gum disease treatment in Mesa, AZ. Deep cleanings & periodontal care prevent tooth loss. Call (480) 964-2131 for healthy gums!",
 };
 
 export default function PeriodontalCare() {

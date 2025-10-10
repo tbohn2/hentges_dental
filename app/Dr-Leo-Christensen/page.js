@@ -3,8 +3,8 @@ import DrLeoChristensenFamily from "../../public/images/Dr-Leo-Christensen-and-F
 import DrHentgesAndFamily from "../../public/images/DrHentgesAndFamilySmall2.jpg";
 
 export const metadata = {
-    title: "Dr. Leo Christensen, DDS | Hentges Dental",
-    description: "Dr. Leo Christensen is a fine family dentist and the previous owner of Hentges Dental (formerly Christensen Family Dentistry).",
+    title: "Dr. Leo Christensen, DDS | Hentges Dental | Mesa, AZ",
+    description: "Dr. Leo Christensen, former owner of Christensen Family Dentistry in Mesa, AZ. Now, he introduces Dr. Zach Hentges to the practice.",
 };
 
 const title = "Dr. Leo Christensen";

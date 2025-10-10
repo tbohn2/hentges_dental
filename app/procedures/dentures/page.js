@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
     title: "Dentures | Mesa, AZ | Hentges Dental",
-    description: "Dentures are a removable replacement for missing teeth. They are a great solution for restoring both function and aesthetics to your smile. Call today!",
+    description: "Custom dentures in Mesa, AZ restore your smile with natural-looking comfort. Complete and partial options available — call (480) 964-2131!",
 };
 
 export default function Dentures() {

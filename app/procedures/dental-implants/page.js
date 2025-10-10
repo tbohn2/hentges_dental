@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
     title: "Dental Implants | Mesa, AZ | Hentges Dental",
-    description: "Dental implants are a permanent solution for missing teeth. They are made of titanium and are placed in the jawbone to replace the root of the tooth. Dental implants are a great solution for restoring both function and aesthetics to your smile. Call today!",
+    description: "Dental implants in Mesa, AZ restore missing teeth permanently. Titanium posts with natural-looking crowns. Call (480) 964-2131 for consultation.",
 };
 
 export default function DentalImplants() {

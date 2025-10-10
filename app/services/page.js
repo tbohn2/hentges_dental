@@ -3,8 +3,8 @@ import Link from "next/link";
 import dentalExam from "../../public/images/dental-exam.jpg";
 
 export const metadata = {
-    title: "Services | Hentges Dental",
-    description: "We offer a wide range of services to help you achieve and maintain a healthy, beautiful smile.",
+    title: "Services | Hentges Dental | Mesa, AZ",
+    description: "Comprehensive dental services in Mesa, AZ. Family, cosmetic, restorative & emergency dentistry. Call (480) 964-2131 for appointments.",
 };
 
 const title = "Dental Services";

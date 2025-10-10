@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
     title: "Restorative Dentistry | Mesa, AZ | Hentges Dental",
-    description: "At Hentges Dental, we provide restorative dentistry services to help you restore your smile.",
+    description: "Restorative dentistry in Mesa, AZ repairs damaged teeth. Crowns, fillings, implants & bridges. Call (480) 964-2131 today!",
 };
 
 export default function RestorativeDentistry() {
