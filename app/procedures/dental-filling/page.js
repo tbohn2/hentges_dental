@@ -2,7 +2,8 @@ import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
     title: "Dental Filling | Mesa, AZ | Hentges Dental",
-    description: "Restore your smile with tooth-colored fillings in Mesa, AZ. Composite resin blends naturally with your teeth — call (480) 964-2131 today!",
+    description: "Tooth-colored composite fillings in Mesa, AZ restore cavities naturally. Durable, aesthetic fillings that blend with your teeth. Call (480) 964-2131.",
+    keywords: "dental fillings Mesa AZ, composite fillings Mesa, tooth-colored fillings Mesa, cavity treatment Mesa, filling dentist Mesa, tooth restoration Mesa",
 };
 
 export default function DentalFilling() {

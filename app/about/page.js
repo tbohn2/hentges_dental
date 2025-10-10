@@ -4,7 +4,8 @@ import Link from "next/link";
 
 export const metadata = {
     title: "About Us | Hentges Dental | Mesa, AZ",
-    description: "Learn about Hentges Dental in Mesa, AZ. Dr. Zach Hentges provides comprehensive family & cosmetic dentistry with advanced technology.",
+    description: "Meet Dr. Zach Hentges & our experienced dental team in Mesa, AZ. 10+ years of family & cosmetic dentistry with advanced technology. Call (480) 964-2131.",
+    keywords: "about Hentges Dental, Dr. Zach Hentges Mesa AZ, family dentist Mesa, dental team Mesa AZ, experienced dentist Mesa, East Valley dentist, Tempe dentist, Chandler dentist, Gilbert dentist, Apache Junction dentist",
 };
 
 const pageContent = [

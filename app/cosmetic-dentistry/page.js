@@ -3,7 +3,8 @@ import Link from "next/link";
 
 export const metadata = {
     title: "Cosmetic Dentistry | Mesa, AZ | Hentges Dental",
-    description: "Cosmetic dentistry in Mesa, AZ transforms your smile. Whitening, veneers, crowns & more. Call (480) 964-2131 for consultation.",
+    description: "Transform your smile with cosmetic dentistry in Mesa, AZ. Professional teeth whitening, porcelain veneers, dental crowns & bonding. Beautiful smiles. Call (480) 964-2131.",
+    keywords: "cosmetic dentistry Mesa AZ, teeth whitening Mesa, porcelain veneers Mesa, dental crowns Mesa, smile makeover Mesa AZ",
 };
 
 export default function CosmeticDentistry() {
@@ -52,8 +53,51 @@ export default function CosmeticDentistry() {
         }
     ]
 
+    const schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "MedicalSpecialty",
+        "name": "Cosmetic Dentistry",
+        "description": "Transform your smile with cosmetic dentistry including teeth whitening, porcelain veneers, dental crowns, and bonding for beautiful smiles",
+        "url": "https://hentgesdental.com/cosmetic-dentistry",
+        "image": "https://hentgesdental.com/images/tooth-sparkle.svg",
+        "provider": {
+            "@type": "DentalClinic",
+            "name": "Hentges Dental",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "560 N. Stapley Dr. Suite 2",
+                "addressLocality": "Mesa",
+                "addressRegion": "AZ",
+                "postalCode": "85203",
+                "addressCountry": "US"
+            },
+            "telephone": "(480) 964-2131",
+            "url": "https://hentgesdental.com"
+        },
+        "medicalSpecialty": "Cosmetic Dentistry",
+        "bodyLocation": "Teeth, Smile",
+        "procedure": [
+            "Teeth Whitening",
+            "Porcelain Veneers",
+            "Dental Crowns",
+            "CEREC Crowns",
+            "Dental Bonding",
+            "Snap-On Smile"
+        ],
+        "audience": {
+            "@type": "MedicalAudience",
+            "audienceType": "Adults seeking smile enhancement"
+        }
+    };
+
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+            />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

@@ -2,7 +2,8 @@ import ContentDisplay from "../../components/ContentDisplay";
 
 export const metadata = {
     title: "Emergency Dentistry | Mesa, AZ | Hentges Dental",
-    description: "Emergency dental care in Mesa, AZ. Same-day appointments for tooth pain, broken teeth & dental trauma. Call (480) 964-2131 now!",
+    description: "Emergency dental care in Mesa, AZ. Same-day appointments for tooth pain, broken teeth, knocked-out teeth & dental trauma. Urgent care. Call (480) 964-2131.",
+    keywords: "emergency dentist Mesa AZ, dental emergency Mesa, tooth pain Mesa, broken tooth Mesa, knocked out tooth Mesa, urgent dental care Mesa, East Valley emergency dentist, North Mesa emergency dentist, Tempe emergency dentist, Chandler emergency dentist, Gilbert emergency dentist, Apache Junction emergency dentist",
 };
 
 export default function EmergencyDentistry() {
@@ -13,7 +14,7 @@ export default function EmergencyDentistry() {
         {
             heading: '',
             text: [
-                "Dental emergencies in Mesa, AZ can happen suddenly, often due to accidents, injuries, or trauma to the mouth or face. Acting quickly during a dental emergency can be the key to saving your tooth and preventing further complications. At Hentges Dental, we reserve time each day for emergency dental appointments to ensure you get the urgent care you need. Below are some essential tips to help you handle common dental emergencies until you can see our emergency dentist."
+                "Dental emergencies in North Mesa, AZ and throughout the East Valley can happen suddenly, often due to accidents, injuries, or trauma to the mouth or face. Acting quickly during a dental emergency can be the key to saving your tooth and preventing further complications. At Hentges Dental, we reserve time each day for emergency dental appointments to ensure you get the urgent care you need. Whether you're in North Mesa, Tempe, Chandler, Gilbert, or Apache Junction, we're here to help. Below are some essential tips to help you handle common dental emergencies until you can see our emergency dentist."
             ]
         },
         {
@@ -61,8 +62,56 @@ export default function EmergencyDentistry() {
     ]
 
 
+    const schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "MedicalSpecialty",
+        "name": "Emergency Dentistry",
+        "description": "Same-day emergency dental care for tooth pain, broken teeth, knocked-out teeth, and dental trauma in Mesa, AZ",
+        "url": "https://hentgesdental.com/emergency-dentistry",
+        "image": "https://hentgesdental.com/images/tooth-pain.svg",
+        "provider": {
+            "@type": "DentalClinic",
+            "name": "Hentges Dental",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "560 N. Stapley Dr. Suite 2",
+                "addressLocality": "Mesa",
+                "addressRegion": "AZ",
+                "postalCode": "85203",
+                "addressCountry": "US"
+            },
+            "telephone": "(480) 964-2131",
+            "url": "https://hentgesdental.com"
+        },
+        "medicalSpecialty": "Emergency Dentistry",
+        "bodyLocation": "Teeth, Mouth, Jaw",
+        "procedure": [
+            "Emergency Tooth Extraction",
+            "Broken Tooth Repair",
+            "Knocked-Out Tooth Treatment",
+            "Tooth Pain Relief",
+            "Dental Trauma Care",
+            "Broken Filling Repair"
+        ],
+        "audience": {
+            "@type": "MedicalAudience",
+            "audienceType": "Patients with dental emergencies"
+        },
+        "availableService": {
+            "@type": "Service",
+            "name": "Same-Day Emergency Appointments",
+            "description": "Urgent dental care available same day"
+        }
+    };
+
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+            />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

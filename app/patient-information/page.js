@@ -3,7 +3,8 @@ import Link from "next/link";
 
 export const metadata = {
     title: "Patient Information | Hentges Dental | Mesa, AZ",
-    description: "New patient resources for Hentges Dental in Mesa, AZ. Forms, insurance info, testimonials & dental blog. Call (480) 964-2131.",
+    description: "Complete patient resources for Hentges Dental in Mesa, AZ. New patient forms, insurance info, testimonials & dental care tips. Call (480) 964-2131.",
+    keywords: "patient information Mesa AZ, dental resources Mesa, new patient info Mesa, dental care tips Mesa, patient resources Mesa, dental information Mesa",
 };
 
 const title = "Patient Information";

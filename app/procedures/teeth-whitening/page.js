@@ -2,17 +2,51 @@ import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
     title: "Teeth Whitening | Mesa, AZ | Hentges Dental",
-    description: "Brighten your smile with professional teeth whitening. Safe, effective whitening treatments at Hentges Dental in Mesa, AZ. Get results in one visit.",
+    description: "Professional teeth whitening in Mesa, AZ brightens your smile safely & effectively. In-office & take-home whitening treatments. Get dramatic results. Call (480) 964-2131.",
+    keywords: "teeth whitening Mesa AZ, professional whitening Mesa, in-office whitening Mesa, take-home whitening Mesa, bright smile Mesa, whitening dentist Mesa",
 };
 
 export default function TeethWhitening() {
     const title = "TEETH WHITENING";
 
+    const schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Dr. Zach Hentges - Teeth Whitening",
+        "description": "Professional teeth whitening treatment to brighten and whiten teeth safely and effectively",
+        "url": "https://hentgesdental.com/procedures/teeth-whitening",
+        "image": "https://hentgesdental.com/images/tooth-sparkle.svg",
+        "procedureType": "Cosmetic Dentistry",
+        "bodyLocation": "Teeth",
+        "preparation": "Consultation, dental cleaning, shade assessment",
+        "followup": "Maintenance treatments as needed",
+        "possibleComplications": "Temporary sensitivity, gum irritation",
+        "outcome": "Brighter, whiter smile with improved appearance",
+        "howPerformed": "Professional whitening gel applied to teeth, activated with special light or custom trays for home use",
+        "provider": {
+            "@type": "DentalClinic",
+            "name": "Hentges Dental",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "560 N. Stapley Dr. Suite 2",
+                "addressLocality": "Mesa",
+                "addressRegion": "AZ",
+                "postalCode": "85203",
+                "addressCountry": "US"
+            },
+            "telephone": "(480) 964-2131",
+            "url": "https://hentgesdental.com"
+        },
+        "medicalSpecialty": "Cosmetic Dentistry",
+        "cost": "Varies by treatment type",
+        "duration": "1-2 weeks for take-home, 1-2 hours for in-office"
+    };
+
     const content = [
         {
             heading: "",
             text: [
-                "Professional teeth whitening is one of the most popular cosmetic dental procedures, offering Mesa residents a safe and effective way to brighten their smiles. At Hentges Dental, Dr. Zach Hentges provides both in-office and take-home whitening treatments to help East Valley patients achieve whiter, more confident smiles that can last for years with proper care."
+                "Professional teeth whitening is one of the most popular cosmetic dental procedures, offering Mesa residents a safe and effective way to brighten their smiles. If you're looking for the best teeth whitening dentist in Mesa AZ, Dr. Zach Hentges provides both in-office and take-home whitening treatments to help East Valley patients achieve whiter, more confident smiles that can last for years with proper care."
             ]
         },
         {
@@ -44,9 +78,34 @@ export default function TeethWhitening() {
             ]
         },
         {
+            heading: "BENEFITS OF PROFESSIONAL TEETH WHITENING",
+            text: [
+                "Professional teeth whitening offers numerous advantages for achieving a brighter smile. It's safer than over-the-counter products, with controlled concentrations of whitening agents. Professional treatments provide faster, more dramatic results that last longer. Custom-fitted trays ensure even whitening and protect your gums from irritation. The results are predictable and can be customized to your desired shade."
+            ]
+        },
+        {
             heading: "MAINTAINING YOUR WHITENED SMILE",
             text: [
                 "To preserve your whitening results, avoid dark beverages and foods, quit smoking, maintain good oral hygiene, and consider touch-up treatments every 6-12 months. We can provide custom take-home trays for periodic maintenance and recommend whitening toothpaste to help extend your results."
+            ]
+        },
+        {
+            heading: "FREQUENTLY ASKED QUESTIONS",
+            text: [
+                "Q: How white can my teeth get?",
+                "A: Results vary by individual, but most patients can achieve 2-8 shades lighter. We'll discuss realistic expectations during your consultation.",
+                "",
+                "Q: Is teeth whitening safe?",
+                "A: Yes, when performed by a dental professional. We use controlled concentrations of whitening agents and protect your gums during treatment.",
+                "",
+                "Q: How long do whitening results last?",
+                "A: Results typically last 1-3 years with proper maintenance. Avoiding staining foods and maintaining good oral hygiene helps preserve results.",
+                "",
+                "Q: Will whitening work on all types of stains?",
+                "A: Whitening works best on extrinsic (surface) stains. Intrinsic stains or discoloration from medications may require alternative treatments like veneers.",
+                "",
+                "Q: How much does teeth whitening cost in Mesa, AZ?",
+                "A: Costs vary by treatment type. We offer both in-office and take-home options with flexible payment plans. Contact us for pricing information."
             ]
         },
         {
@@ -58,7 +117,13 @@ export default function TeethWhitening() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+            />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

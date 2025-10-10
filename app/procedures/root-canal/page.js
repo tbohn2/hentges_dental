@@ -2,17 +2,51 @@ import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
     title: "Root Canal Treatment | Mesa, AZ | Hentges Dental",
-    description: "Save your tooth with comfortable root canal treatment. Expert endodontic care at Hentges Dental in Mesa, AZ. Pain-free, effective treatment.",
+    description: "Save your tooth with comfortable root canal treatment in Mesa, AZ. Pain-free, effective endodontic care to relieve tooth pain & preserve your natural tooth. Call (480) 964-2131.",
+    keywords: "root canal Mesa AZ, root canal treatment Mesa, endodontic treatment Mesa, tooth pain Mesa, save tooth Mesa, root canal dentist Mesa",
 };
 
 export default function RootCanal() {
     const title = "ROOT CANAL TREATMENT";
 
+    const schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Dr. Zach Hentges - Root Canal Treatment",
+        "description": "Endodontic treatment to save infected or damaged teeth by removing infected pulp and sealing the tooth",
+        "url": "https://hentgesdental.com/procedures/root-canal",
+        "image": "https://hentgesdental.com/images/tooth-pain.svg",
+        "procedureType": "Endodontic Treatment",
+        "bodyLocation": "Tooth Root",
+        "preparation": "X-rays, local anesthesia, tooth isolation",
+        "followup": "Crown placement, regular checkups",
+        "possibleComplications": "Infection, need for retreatment, tooth fracture",
+        "outcome": "Saved natural tooth with restored function",
+        "howPerformed": "Infected pulp removed from tooth root canals, canals cleaned and sealed, tooth restored with crown",
+        "provider": {
+            "@type": "DentalClinic",
+            "name": "Hentges Dental",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "560 N. Stapley Dr. Suite 2",
+                "addressLocality": "Mesa",
+                "addressRegion": "AZ",
+                "postalCode": "85203",
+                "addressCountry": "US"
+            },
+            "telephone": "(480) 964-2131",
+            "url": "https://hentgesdental.com"
+        },
+        "medicalSpecialty": "Endodontics",
+        "cost": "Varies by tooth complexity",
+        "duration": "1-2 appointments, 60-90 minutes each"
+    };
+
     const content = [
         {
             heading: "",
             text: [
-                "Root canal treatment is a highly effective procedure designed to save teeth that are severely infected or damaged. Despite its reputation, modern root canal therapy, as performed at Hentges Dental in Mesa, Arizona, is usually pain-free and completed in just one or two visits. Dr. Zach Hentges uses advanced techniques and anesthesia to ensure your comfort throughout the procedure."
+                "Root canal treatment is a highly effective procedure designed to save teeth that are severely infected or damaged. Despite its reputation, modern root canal therapy, as performed at Hentges Dental in Mesa, Arizona, is usually pain-free and completed in just one or two visits. If you're looking for the best endodontist in Mesa AZ, Dr. Zach Hentges uses advanced techniques and anesthesia to ensure your comfort throughout the procedure."
             ]
         },
         {
@@ -53,6 +87,25 @@ export default function RootCanal() {
             ]
         },
         {
+            heading: "FREQUENTLY ASKED QUESTIONS",
+            text: [
+                "Q: Is root canal treatment painful?",
+                "A: Modern root canal treatment is virtually pain-free. We use local anesthesia to numb the area, and most patients report feeling comfortable during the procedure.",
+                "",
+                "Q: How long does a root canal take?",
+                "A: Most root canals can be completed in one or two visits, typically lasting 60-90 minutes per visit. Complex cases may require additional appointments.",
+                "",
+                "Q: Will I need a crown after a root canal?",
+                "A: Yes, most teeth that receive root canal treatment need a crown to protect and strengthen the tooth. This is usually placed in a separate appointment.",
+                "",
+                "Q: How long do root canal results last?",
+                "A: With proper care, root canal treatment can last a lifetime. The success rate is over 95% when performed by an experienced dentist.",
+                "",
+                "Q: What happens if I don't get a root canal?",
+                "A: Without treatment, the infection can spread, causing severe pain, abscess formation, and eventual tooth loss. Early treatment is always better."
+            ]
+        },
+        {
             heading: "",
             text: [
                 <>Experiencing severe tooth pain? Don&apos;t wait – contact Dr. Zach Hentges at Hentges Dental in Mesa, Arizona at <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a> to schedule your root canal consultation. We can help save your tooth and relieve your pain.</>
@@ -61,7 +114,13 @@ export default function RootCanal() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+            />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

@@ -4,7 +4,8 @@ import DrHentgesAndFamily from "../../public/images/DrHentgesAndFamilySmall2.jpg
 
 export const metadata = {
     title: "Dr. Leo Christensen, DDS | Hentges Dental | Mesa, AZ",
-    description: "Dr. Leo Christensen, former owner of Christensen Family Dentistry in Mesa, AZ. Now, he introduces Dr. Zach Hentges to the practice.",
+    description: "Dr. Leo Christensen, DDS - Former owner of Christensen Family Dentistry in Mesa, AZ. Now introducing Dr. Zach Hentges to continue exceptional dental care.",
+    keywords: "Dr. Leo Christensen Mesa AZ, Christensen Family Dentistry, former dentist Mesa, dental practice transition Mesa AZ",
 };
 
 const title = "Dr. Leo Christensen";
@@ -31,7 +32,55 @@ const pageContent = [
 ]
 
 export default function DrLeoChristensen() {
+    const schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dr. Leo Christensen",
+        "jobTitle": "Former Dentist",
+        "description": "Former owner of Christensen Family Dentistry in Mesa, AZ. Now introducing Dr. Zach Hentges to continue exceptional dental care.",
+        "url": "https://hentgesdental.com/Dr-Leo-Christensen",
+        "image": "https://hentgesdental.com/images/Dr-Leo-Christensen-and-Family.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "560 N. Stapley Dr. Suite 2",
+            "addressLocality": "Mesa",
+            "addressRegion": "AZ",
+            "postalCode": "85203",
+            "addressCountry": "US"
+        },
+        "telephone": "(480) 964-2131",
+        "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "degree",
+            "educationalLevel": "Doctor of Dental Surgery"
+        },
+        "knowsAbout": [
+            "Family Dentistry",
+            "General Dentistry",
+            "Dental Practice Management"
+        ],
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Indiana University School of Dentistry"
+        },
+        "founder": {
+            "@type": "DentalClinic",
+            "name": "Christensen Family Dentistry",
+            "url": "https://hentgesdental.com"
+        },
+        "memberOf": {
+            "@type": "Organization",
+            "name": "American Dental Association"
+        }
+    };
+
     return (
-        <ContentDisplay pageTitle={title} content={pageContent} />
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+            />
+            <ContentDisplay pageTitle={title} content={pageContent} />
+        </>
     );
 }

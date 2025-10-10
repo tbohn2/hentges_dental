@@ -4,7 +4,8 @@ import dentalExam from "../../public/images/dental-exam.jpg";
 
 export const metadata = {
     title: "Services | Hentges Dental | Mesa, AZ",
-    description: "Comprehensive dental services in Mesa, AZ. Family, cosmetic, restorative & emergency dentistry. Call (480) 964-2131 for appointments.",
+    description: "Complete dental services in Mesa, AZ: family dentistry, cosmetic procedures, restorative treatments & emergency care. Expert dental care. Call (480) 964-2131.",
+    keywords: "dental services Mesa AZ, family dentistry Mesa, cosmetic dentistry Mesa, restorative dentistry Mesa, emergency dental care Mesa, East Valley dental services, Tempe dental care, Chandler dental services, Gilbert dental care, Apache Junction dental services",
 };
 
 const title = "Dental Services";

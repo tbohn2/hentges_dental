@@ -2,7 +2,8 @@ import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
     title: "Dental Bonding | Mesa, AZ | Hentges Dental",
-    description: "Dental bonding is a quick, affordable cosmetic treatment that can repair minor imperfections such as chips, cracks, or gaps. We apply a tooth-colored composite resin to the affected area, sculpt it for a seamless appearance, and harden it with a special light. Call today for a natural-looking restoration that blends beautifully with your existing teeth.",
+    description: "Quick, affordable dental bonding in Mesa, AZ repairs chips, cracks & gaps. Tooth-colored composite resin for natural-looking restorations. Call (480) 964-2131.",
+    keywords: "dental bonding Mesa AZ, tooth bonding Mesa, composite bonding Mesa, chipped tooth Mesa, cracked tooth Mesa, cosmetic bonding Mesa",
 };
 
 

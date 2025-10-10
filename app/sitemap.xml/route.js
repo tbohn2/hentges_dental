@@ -20,11 +20,18 @@ export async function GET() {
         { url: '/Dr-Zach-Hentges', priority: '0.8', changefreq: 'monthly', lastmod: "2025-10-10" },
         { url: '/Dr-Leo-Christensen', priority: '0.7', changefreq: 'monthly', lastmod: "2025-10-10" },
 
+        // Location pages (high priority for local SEO)
+        { url: '/locations/tempe', priority: '0.8', changefreq: 'monthly', lastmod: "2025-10-10" },
+        { url: '/locations/chandler', priority: '0.8', changefreq: 'monthly', lastmod: "2025-10-10" },
+        { url: '/locations/gilbert', priority: '0.8', changefreq: 'monthly', lastmod: "2025-10-10" },
+        { url: '/locations/apache-junction', priority: '0.8', changefreq: 'monthly', lastmod: "2025-10-10" },
+
         // Patient information pages (medium-high priority)
         { url: '/patient-information', priority: '0.7', changefreq: 'monthly', lastmod: "2025-10-10" },
         { url: '/patient-testimonials', priority: '0.7', changefreq: 'weekly', lastmod: "2025-10-10" },
         { url: '/new-patient-forms', priority: '0.7', changefreq: 'monthly', lastmod: "2025-10-10" },
         { url: '/financial-and-insurance', priority: '0.7', changefreq: 'monthly', lastmod: "2025-10-10" },
+        { url: '/dental-blog', priority: '0.6', changefreq: 'weekly', lastmod: "2025-10-10" },
 
         // Procedure pages (medium priority)
         { url: '/procedures/dental-implants', priority: '0.6', changefreq: 'monthly', lastmod: "2025-10-10" },

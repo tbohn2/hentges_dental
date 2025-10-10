@@ -3,7 +3,8 @@ import drHentgesAndFamily from "../../public/images/DrHentgesAndFamilySmall2.jpg
 
 export const metadata = {
     title: "Dr. Zach Hentges | Mesa, AZ Dentist | Hentges Dental",
-    description: "Meet Dr. Zach Hentges, experienced Mesa dentist with 10+ years practice. ASU & Midwestern University graduate. Call (480) 964-2131.",
+    description: "Dr. Zach Hentges, DMD - Experienced family dentist in Mesa, AZ with 10+ years practice. ASU & Midwestern University graduate. Call (480) 964-2131.",
+    keywords: "Dr. Zach Hentges Mesa AZ, family dentist Mesa, experienced dentist Mesa, ASU dentist, Midwestern University dentist, Mesa dentist",
 };
 
 const title = "DR. ZACH HENTGES";
@@ -17,8 +18,67 @@ const pageContent = [
 ]
 
 export default function DrZachHentges() {
+    const schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dr. Zach Hentges",
+        "jobTitle": "Dentist",
+        "description": "Experienced family dentist in Mesa, AZ with 10+ years practice. ASU & Midwestern University graduate.",
+        "url": "https://hentgesdental.com/Dr-Zach-Hentges",
+        "image": "https://hentgesdental.com/images/DrHentgesAndFamilySmall2.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "560 N. Stapley Dr. Suite 2",
+            "addressLocality": "Mesa",
+            "addressRegion": "AZ",
+            "postalCode": "85203",
+            "addressCountry": "US"
+        },
+        "telephone": "(480) 964-2131",
+        "email": "info@hentgesdental.com",
+        "alumniOf": [
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "Arizona State University"
+            },
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "Midwestern University"
+            }
+        ],
+        "worksFor": {
+            "@type": "DentalClinic",
+            "name": "Hentges Dental",
+            "url": "https://hentgesdental.com"
+        },
+        "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "degree",
+            "educationalLevel": "Doctor of Dental Medicine"
+        },
+        "knowsAbout": [
+            "Family Dentistry",
+            "Cosmetic Dentistry",
+            "Restorative Dentistry",
+            "Emergency Dentistry",
+            "Dental Implants",
+            "Dental Veneers",
+            "Dental Crowns"
+        ],
+        "memberOf": {
+            "@type": "Organization",
+            "name": "American Dental Association"
+        }
+    };
+
     return (
-        <ContentDisplay pageTitle={title} content={pageContent} />
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+            />
+            <ContentDisplay pageTitle={title} content={pageContent} />
+        </>
     );
 }
 

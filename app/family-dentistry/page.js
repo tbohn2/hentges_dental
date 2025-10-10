@@ -3,7 +3,8 @@ import Link from "next/link";
 
 export const metadata = {
     title: "Family Dentistry | Hentges Dental | Mesa, AZ",
-    description: "Family dentistry in Mesa, AZ for all ages. Preventive care, cleanings & exams. Call (480) 964-2131 for your family's dental health.",
+    description: "Comprehensive family dentistry in Mesa, AZ for all ages. Preventive care, cleanings, exams & pediatric dentistry. Gentle, expert care. Call (480) 964-2131.",
+    keywords: "family dentistry Mesa AZ, pediatric dentist Mesa, dental cleanings Mesa, preventive dental care Mesa, family dentist Mesa AZ, East Valley family dentist, North Mesa family dentist, Tempe family dentist, Chandler family dentist, Gilbert family dentist, Apache Junction family dentist",
 };
 
 const title = "FAMILY DENTISTRY";
@@ -12,7 +13,7 @@ const content = [
     {
         heading: '',
         text: [
-            "At Hentges Dental, we welcome patients of all ages and are dedicated to providing comprehensive family dentistry in Mesa, AZ. Our focus is on proactive dental care and prevention, helping your family avoid dental issues before they start. If you’re searching for a trusted family dentist, our team is here to support your oral health at every stage of life."
+            "At Hentges Dental, we welcome patients of all ages and are dedicated to providing comprehensive family dentistry in North Mesa, AZ and throughout the East Valley. Our focus is on proactive dental care and prevention, helping your family avoid dental issues before they start. If you're searching for a trusted family dentist serving North Mesa, Tempe, Chandler, Gilbert, and Apache Junction, our team is here to support your oral health at every stage of life."
         ]
     },
     {
@@ -61,8 +62,51 @@ const content = [
 
 
 export default function FamilyDentistry() {
+    const schemaMarkup = {
+        "@context": "https://schema.org",
+        "@type": "MedicalSpecialty",
+        "name": "Family Dentistry",
+        "description": "Comprehensive dental care for patients of all ages, from children to seniors, including preventive care, cleanings, and routine exams",
+        "url": "https://hentgesdental.com/family-dentistry",
+        "image": "https://hentgesdental.com/images/general-dentistry.svg",
+        "provider": {
+            "@type": "DentalClinic",
+            "name": "Hentges Dental",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "560 N. Stapley Dr. Suite 2",
+                "addressLocality": "Mesa",
+                "addressRegion": "AZ",
+                "postalCode": "85203",
+                "addressCountry": "US"
+            },
+            "telephone": "(480) 964-2131",
+            "url": "https://hentgesdental.com"
+        },
+        "medicalSpecialty": "Family Dentistry",
+        "bodyLocation": "Teeth, Gums, Mouth",
+        "procedure": [
+            "Dental Cleanings",
+            "Dental Exams",
+            "Oral Cancer Screenings",
+            "Fluoride Treatments",
+            "Preventive Care",
+            "Pediatric Dentistry"
+        ],
+        "audience": {
+            "@type": "MedicalAudience",
+            "audienceType": "All Ages"
+        }
+    };
+
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+            />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

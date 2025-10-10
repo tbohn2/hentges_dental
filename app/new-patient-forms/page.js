@@ -3,8 +3,9 @@ import patientOnComputer from "../../public/images/patient-on-computer.jpg";
 import SEOImage from "../../components/SEOImage";
 
 export const metadata = {
-    title: "New Patient Forms | Hentges Dental",
-    description: "Forms are provided to our patients online for download. Please print and complete the forms and bring them to your appointment. Call us today!",
+    title: "New Patient Forms | Hentges Dental | Mesa, AZ",
+    description: "Download new patient forms for Hentges Dental in Mesa, AZ. Complete forms online before your appointment for faster check-in. Call (480) 964-2131.",
+    keywords: "new patient forms Mesa AZ, dental forms Mesa, patient registration Mesa, dental paperwork Mesa, new patient Mesa, dental forms download Mesa",
 };
 
 const title = "New Patient Forms";
