@@ -94,12 +94,12 @@ export default function Home() {
   };
 
   const icons = [
-    { title: "Emergency", subtext: "Same Day Treatment", image: toothPain, link: "/emergency-dentistry" },
-    { title: "General Dentistry", subtext: "Routine Care", image: generalDentistry, link: "/family-dentistry" },
-    { title: "Implants", subtext: "Replace Missing Teeth", image: implant, link: "/procedures/dental-implants" },
-    { title: "Crowns", subtext: "Restore Damaged Teeth", image: crown, link: "/procedures/dental-crown" },
-    { title: "Veneers", subtext: "Improve Your Smile", image: veneers, link: "/procedures/dental-veneers" },
-    { title: "Other", subtext: "See All Services", image: toothSparkle, link: "/dental-procedures" }
+    { title: "Emergency", subtext: "Same Day Service", image: toothPain, link: "/emergency-dentistry" },
+    { title: "General Dentistry", subtext: "Routine Checkups", image: generalDentistry, link: "/family-dentistry" },
+    { title: "Implants", subtext: "Replace Lost Teeth", image: implant, link: "/procedures/dental-implants" },
+    { title: "Crowns", subtext: "Restore Your Teeth", image: crown, link: "/procedures/dental-crown" },
+    { title: "Veneers", subtext: "Upgrade Your Smile", image: veneers, link: "/procedures/dental-veneers" },
+    { title: "Other", subtext: "View More Services", image: toothSparkle, link: "/dental-procedures" }
   ];
 
   const officePics = [office1, office2, office3, office4];
@@ -134,7 +134,7 @@ export default function Home() {
 
         <div className="flex flex-wrap items-center justify-center w-full bg-primary text-secondary px-2 md:px-4 py-8 gap-4">
           {icons.map((icon) => (
-            <Link href={icon.link} key={icon.title} className="flex flex-col items-center justify-between gap-2 w-1/3 sm:w-1/4 lg:w-1/7 dental-icons p-2">
+            <Link href={icon.link} key={icon.title} className="flex flex-col items-center justify-between gap-2 w-1/3 sm:w-1/4 xl:w-1/7 dental-icons p-2">
               <SEOImage
                 src={icon.image}
                 alt={`${icon.title} dental service icon - ${icon.subtext} at Hentges Dental Mesa`}
@@ -145,8 +145,8 @@ export default function Home() {
                 sizes="(max-width: 768px) 25vw, 12vw"
               />
               <div className="flex flex-col items-center justify-center text-center">
-                <h2 className="font-bold text-sm md:text-lg lg:text-2xl text-secondary">{icon.title}</h2>
-                <p className="font-bold text-xs md:text-sm lg:text-xl text-tertiary">{icon.subtext}</p>
+                <h2 className="font-bold text-sm md:text-lg lg:text-xl text-secondary">{icon.title}</h2>
+                <p className="font-bold text-xs md:text-sm lg:text-lg text-tertiary">{icon.subtext}</p>
               </div>
             </Link>
           ))}
@@ -171,8 +171,10 @@ export default function Home() {
             })}
           </div>
           <div className="flex flex-col items-center justify-center gap-4 w-full lg:w-1/2 text-primary bg-secondary p-4">
-            <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl py-2 text-center">WELCOME TO HENTGES DENTAL</h2>
-            <p className="text-center text-base md:text-lg lg:text-2xl px-4">Creating beautiful, confident smiles for North Mesa and East Valley families is what drives us at Hentges Dental. As the best family dentist in Mesa AZ, we believe exceptional dental care goes beyond treatment – it&apos;s about building lasting relationships with our patients. Our team combines advanced technology with personalized attention to ensure every visit exceeds your expectations. From routine cleanings to complex procedures, we&apos;re committed to making your dental experience comfortable, effective, and stress-free.</p>
+            <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl py-2 flex flex-col items-center justify-center gap-4">WELCOME TO <br /> <span className="font-bold text-3xl md:text-4xl lg:text-5xl">HENTGES DENTAL</span></h2>
+            <p className="text-center text-base md:text-lg lg:text-2xl px-4">
+              At Hentges Dental, patient satisfaction is at the heart of everything we do. We're proud to help North Mesa and East Valley families achieve healthy, beautiful smiles. Our commitment goes beyond treatment—we focus on building relationships and truly listening to our patients' needs. With personalized care and advanced technology, we strive to ensure every visit is comfortable, effective, and leaves you fully satisfied with your dental experience.
+            </p>
             <button className="button-1 text-lg md:text-xl lg:text-2xl my-4 px-4 py-2"><Link href="/patient-testimonials">Read Our Reviews</Link></button>
           </div>
           <div className="flex lg:flex-col flex-row items-center justify-center w-1/3 sm:w-1/3 lg:w-1/4 gap-4">
@@ -194,26 +196,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <div id="great-experience" className="relative flex text-primary bg-primary w-full">
-        {officePics.map((pic, index) => (
-          <Image
-            key={index}
-            src={pic}
-            alt={`Office Picture ${index + 1}`}
-            className={`w-1/4 ${index % 2 === 0 ? 'self-start' : 'self-end'} rounded-lg p-4`}
-          />
-        ))}
-        <div className="absolute inset-0 z-10 self-center flex items-center justify-evenly gap-2 w-full bg-tertiary opacity-95 p-4 border-t-4 border-b-4 border-secondary">
-          <div className="flex flex-col justify-center gap-2 w-3/4">
-            <h2 className="font-bold text-6xl">ALWAYS A GREAT EXPERIENCE</h2>
-            <p className="text-2xl">At Hentges Dental, we make sure you have a great experience every time you come in. We use the latest technology and techniques to ensure you have a great experience. Our patients love us because we are friendly, efficient, and always put their needs first.</p>
-          </div>
-          <div className="flex flex-col items-center justify-center gap-6">
-            <Link href="/patient-testimonials" className="font-bold text-2xl hover:underline">READ REVIEWS</Link>
-          </div>
-        </div>
-      </div> */}
-
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 bg-primary text-quaternary p-4 w-full">
           <SEOImage
             src={DrHentgesAndFamilySmall2}
@@ -221,12 +203,12 @@ export default function Home() {
             title="Dr. Zach Hentges and Family - Hentges Dental"
             width={400}
             height={300}
-            className="w-11/12 lg:w-1/3 rounded-lg"
+            className="w-11/12 md:w-1/2 lg:w-1/3 rounded-lg"
             sizes="(max-width: 768px) 90vw, 30vw"
           />
           <div className="flex flex-col gap-4 lg:gap-6 w-full lg:w-2/3 p-4">
-            <h2 className="font-bold text-3xl md:text-4xl lg:text-6xl text-center lg:text-left">Dr. Hentges and Family</h2>
-            <p className="font-bold text-base md:text-lg lg:text-2xl text-center lg:text-left">Dr. Zach Hentges is a dedicated and experienced dentist with over 10 years of practice. As one of the best dentists in North Mesa AZ, he grew up in Mesa, attended Mesa High School and graduated from Arizona State University before earning his dental degree from Midwestern University. He is married and a proud father of four children. In his free time, Dr. Hentges enjoys playing sports with his kids and wakeboarding. Dr. Hentges is committed to providing the same high-quality care and friendly service that you&apos;ve come to expect at Christensen Family Dentistry. I&apos;m confident that you will find him to be a caring and communicative provider who truly understands the needs of our East Valley community.</p>
+            <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left">Dr. Hentges and Family</h2>
+            <p className="font-bold text-base sm:text-lg md:text-xl lg:text-2xl text-center lg:text-left">Dr. Zach Hentges is a dedicated and experienced dentist with over 10 years of practice. As one of the best dentists in North Mesa AZ, he grew up in Mesa, attended Mesa High School and graduated from Arizona State University before earning his dental degree from Midwestern University. He is married and a proud father of four children. In his free time, Dr. Hentges enjoys playing sports with his kids and wakeboarding. Dr. Hentges is committed to providing the same high-quality care and friendly service that you&apos;ve come to expect at Christensen Family Dentistry. I&apos;m confident that you will find him to be a caring and communicative provider who truly understands the needs of our East Valley community.</p>
           </div>
         </div>
       </div>

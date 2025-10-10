@@ -45,7 +45,7 @@ export default function FinancialAndInsurance() {
         {
             heading: 'BOOK YOUR DENTAL APPOINTMENT IN MESA, AZ',
             text: [
-                <>To learn more about our dental services or to schedule your next appointment, call <a href="tel:(480) 964-2131" className="text-secondary hover:underline">(480) 964-2131</a> today. We look forward to helping you achieve a healthy, confident smile!</>
+                <>To learn more about our dental services or to schedule your next appointment, call <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a> today. We look forward to helping you achieve a healthy, confident smile!</>
             ]
         }
     ]

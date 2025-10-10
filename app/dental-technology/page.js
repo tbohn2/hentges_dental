@@ -54,7 +54,7 @@ export default function DentalTechnology() {
         {
             heading: "Schedule Your Appointment",
             text: [
-                <>Experience the benefits of advanced dental technology at Hentges Dental. Call <a href="tel:(480) 964-2131" className="text-secondary hover:underline">(480) 964-2131</a> to book your appointment and receive top-quality dental care in Mesa, AZ!</>
+                <>Experience the benefits of advanced dental technology at Hentges Dental. Call <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a> to book your appointment and receive top-quality dental care in Mesa, AZ!</>
             ]
         }
     ]

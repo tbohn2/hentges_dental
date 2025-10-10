@@ -56,7 +56,7 @@ export default function EmergencyDentistry() {
         {
             heading: "SCHEDULE YOUR EMERGENCY APPOINTMENT NOW!",
             text: [
-                <>If you’re experiencing a dental emergency in Mesa, AZ, don’t wait—call <a href="tel:(480) 964-2131" className="text-secondary hover:underline">(480) 964-2131</a> to schedule your emergency dental appointment with Hentges Dental right away!</>
+                <>If you're experiencing a dental emergency in Mesa, AZ, don't wait—call <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a> to schedule your emergency dental appointment with Hentges Dental right away!</>
             ]
         },
     ]

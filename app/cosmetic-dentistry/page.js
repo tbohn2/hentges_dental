@@ -48,7 +48,7 @@ export default function CosmeticDentistry() {
         },
         {
             heading: 'SCHEDULE YOUR CONSULTATION', text: [
-                <>Ready to love your smile? Discover your cosmetic dentistry options at Hentges Dental. Call <a href="tel:(480) 964-2131" className="text-secondary hover:underline">(480) 964-2131</a> to book your cosmetic consultation today!</>
+                <>Ready to love your smile? Discover your cosmetic dentistry options at Hentges Dental. Call <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a> to book your cosmetic consultation today!</>
             ]
         }
     ]
