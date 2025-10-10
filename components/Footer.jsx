@@ -110,7 +110,8 @@ export default function Footer() {
                     <p className="text-primary text-opacity-80">
                         © {new Date().getFullYear()} Hentges Dental. All rights reserved. |
                         <Link href="/privacy-policy" className="ml-2 hover:text-tertiary transition-colors">Privacy Policy</Link> |
-                        <Link href="/terms-of-service" className="ml-2 hover:text-tertiary transition-colors">Terms of Service</Link>
+                        <Link href="/terms-of-service" className="ml-2 hover:text-tertiary transition-colors">Terms of Service</Link> |
+                        <Link href="/sitemap.xml" className="ml-2 hover:text-tertiary transition-colors">Sitemap</Link>
                     </p>
                 </div>
             </div>
