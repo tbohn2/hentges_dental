@@ -51,10 +51,10 @@ export default function ToothExtraction() {
             heading: "REPLACEMENT OPTIONS AFTER EXTRACTION",
             text: [
                 "After tooth extraction, we'll discuss options to replace missing teeth to maintain your oral health and prevent shifting of remaining teeth. Dr. Hentges will help you choose the best solution based on your specific needs, budget, and long-term oral health goals:",
-                <Link href="/procedures/dental-implants" className="text-tertiary hover:underline">Dental Implants</Link>,
-                <Link href="/procedures/dental-bridge" className="text-tertiary hover:underline">Bridges</Link>,
-                <Link href="/procedures/dentures" className="text-tertiary hover:underline">Partial Dentures</Link>,
-                <Link href="/procedures/dentures" className="text-tertiary hover:underline">Full Dentures</Link>
+                <Link key="dental-implants" href="/procedures/dental-implants" className="text-tertiary hover:underline">Dental Implants</Link>,
+                <Link key="bridges" href="/procedures/dental-bridge" className="text-tertiary hover:underline">Bridges</Link>,
+                <Link key="partial-dentures" href="/procedures/dentures" className="text-tertiary hover:underline">Partial Dentures</Link>,
+                <Link key="full-dentures" href="/procedures/dentures" className="text-tertiary hover:underline">Full Dentures</Link>
             ]
         },
         {

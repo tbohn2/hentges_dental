@@ -55,7 +55,7 @@ export default function RootCanal() {
         {
             heading: "",
             text: [
-                <>Experiencing severe tooth pain? Don't wait – contact Dr. Zach Hentges at Hentges Dental in Mesa, Arizona at <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a> to schedule your root canal consultation. We can help save your tooth and relieve your pain.</>
+                <>Experiencing severe tooth pain? Don&apos;t wait – contact Dr. Zach Hentges at Hentges Dental in Mesa, Arizona at <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a> to schedule your root canal consultation. We can help save your tooth and relieve your pain.</>
             ]
         },
     ];

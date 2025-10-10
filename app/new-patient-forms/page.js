@@ -1,6 +1,6 @@
 import ContentDisplay from "../../components/ContentDisplay";
 import patientOnComputer from "../../public/images/patient-on-computer.jpg";
-import Image from "next/image";
+import SEOImage from "../../components/SEOImage";
 
 export const metadata = {
     title: "New Patient Forms | Hentges Dental",
@@ -21,10 +21,10 @@ const content = [
     { heading: '', text: [<>If you have any questions about our dental forms or need assistance, please contact our office at <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a>. Our friendly dental team is here to help!</>] },
     {
         heading: 'Download New Patient Forms', text: [
-            <a href="/documents/Patient_Registration.pdf" download className="text-tertiary hover:underline">Patient Registration (PDF)</a>,
-            <a href="/documents/Medical_History.pdf" download className="text-tertiary hover:underline">Medical History (PDF)</a>,
-            <a href="/documents/Welcome_Financial.pdf" download className="text-tertiary hover:underline">Welcome & Financial Policy (PDF)</a>,
-            <a href="/documents/HIPAA.pdf" download className="text-tertiary hover:underline">HIPAA Acknowledgment (PDF)</a>
+            <a key="patient-registration" href="/documents/Patient_Registration.pdf" download className="text-tertiary hover:underline">Patient Registration (PDF)</a>,
+            <a key="medical-history" href="/documents/Medical_History.pdf" download className="text-tertiary hover:underline">Medical History (PDF)</a>,
+            <a key="welcome-financial" href="/documents/Welcome_Financial.pdf" download className="text-tertiary hover:underline">Welcome & Financial Policy (PDF)</a>,
+            <a key="hipaa" href="/documents/HIPAA.pdf" download className="text-tertiary hover:underline">HIPAA Acknowledgment (PDF)</a>
         ]
     }
 ]

@@ -8,6 +8,9 @@ const nextConfig = {
     turbopack: {
         root: __dirname,
     },
+    images: {
+        qualities: [75, 85, 95, 100],
+    },
 };
 
 export default nextConfig;

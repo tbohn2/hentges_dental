@@ -36,7 +36,7 @@ export default function WisdomToothExtractions() {
         {
             heading: "",
             text: [
-                <>If you are experiencing pain or other problems with your wisdom teeth, don't wait to seek treatment. At Hentges Dental in Mesa, AZ, we can quickly and comfortably remove your wisdom teeth in a single visit. Call us today at <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a> to schedule your appointment.</>
+                <>If you are experiencing pain or other problems with your wisdom teeth, don&apos;t wait to seek treatment. At Hentges Dental in Mesa, AZ, we can quickly and comfortably remove your wisdom teeth in a single visit. Call us today at <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a> to schedule your appointment.</>
             ]
         },
     ];

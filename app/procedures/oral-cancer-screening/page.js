@@ -62,7 +62,7 @@ export default function OralCancerScreening() {
         {
             heading: "",
             text: [
-                <>Don't wait for symptoms to appear. Schedule your oral cancer screening at Hentges Dental in Mesa, AZ by calling <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a>. Early detection could save your life.</>
+                <>Don&apos;t wait for symptoms to appear. Schedule your oral cancer screening at Hentges Dental in Mesa, AZ by calling <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a>. Early detection could save your life.</>
             ]
         },
     ];

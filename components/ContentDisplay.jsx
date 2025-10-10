@@ -1,4 +1,4 @@
-import Image from "next/image";
+import SEOImage from "./SEOImage";
 
 export default function ContentDisplay({ pageTitle, content }) {
     return (
@@ -9,11 +9,14 @@ export default function ContentDisplay({ pageTitle, content }) {
                     {item.heading && <h2 className="md:text-4xl text-2xl font-bold w-full">{item.heading}</h2>}
                     <div className="w-full">
                         {item.imgSrc && (
-                            <Image
+                            <SEOImage
                                 src={item.imgSrc}
-                                alt={item.heading}
-                                title={item.heading}
+                                alt={item.heading ? `${item.heading} - Hentges Dental Mesa, Arizona` : `${pageTitle} - Hentges Dental`}
+                                title={item.heading || pageTitle}
+                                width={400}
+                                height={300}
                                 className="md:w-1/4 w-5/6 md:float-right float-center m-2 p-1 object-cover"
+                                sizes="(max-width: 768px) 80vw, 25vw"
                             />
                         )}
                         {item.text.map((text, index) => (

@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AccessibilityTab from "../components/AccessibilityTab";
+// import PageTransition from "../components/PageTransition";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,56 +42,65 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className={`${instrumentSans.variable} ${geistSans.variable}`}>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Dentist",
-            "name": "Hentges Dental",
-            "image": "https://hentgesdental.com/og-image.jpg",
-            "@id": "https://hentgesdental.com",
-            "url": "https://hentgesdental.com",
-            "telephone": "+14809642131",
-            "email": "hentgesdental@gmail.com",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "560 N. Stapley Dr. Ste 2",
-              "addressLocality": "Mesa",
-              "addressRegion": "AZ",
-              "postalCode": "85203",
-              "addressCountry": "US"
-            },
-            "openingHoursSpecification": [
-              {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday"
-                ],
-                "opens": "07:30",
-                "closes": "17:00"
-              }
-            ],
-            "priceRange": "$$",
-            "sameAs": [
-              "https://www.facebook.com/hentgesdental",
-              "https://www.google.com/maps/place/Hentges+Dental"
-            ],
-            "accessibilityFeature": [
-              "textSize",
-              "highContrast",
-              "screenReaderCompatible",
-              "keyboardNavigation"
-            ],
-            "accessibilityHazard": "none",
-            "accessibilityAPI": "ARIA",
-            "accessibilityControl": "fullKeyboardControl"
-          }),
-        }}
-      />
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Dentist",
+              "name": "Hentges Dental",
+              "image": "https://hentgesdental.com/og-image.png",
+              "@id": "https://hentgesdental.com",
+              "url": "https://hentgesdental.com",
+              "telephone": "+14809642131",
+              "email": "hentgesdental@gmail.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "560 N. Stapley Dr. Ste 2",
+                "addressLocality": "Mesa",
+                "addressRegion": "AZ",
+                "postalCode": "85203",
+                "addressCountry": "US"
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday"
+                  ],
+                  "opens": "07:30",
+                  "closes": "17:00"
+                }
+              ],
+              "priceRange": "$$",
+              "sameAs": [
+                "https://www.facebook.com/hentgesdental",
+                "https://www.google.com/maps/place/Hentges+Dental"
+              ],
+              "accessibilityFeature": [
+                "textSize",
+                "highContrast",
+                "screenReaderCompatible",
+                "keyboardNavigation"
+              ],
+              "accessibilityHazard": "none",
+              "accessibilityAPI": "ARIA",
+              "accessibilityControl": "fullKeyboardControl",
+              "image": [
+                "https://hentgesdental.com/images/office1.jpg",
+                "https://hentgesdental.com/images/office2.jpg",
+                "https://hentgesdental.com/images/office3.jpg",
+                "https://hentgesdental.com/images/office4.jpg",
+                "https://hentgesdental.com/images/DrHentgesAndFamilySmall2.jpg"
+              ]
+            }),
+          }}
+        />
+      </head>
       <body className={`flex flex-col min-h-screen`}>
         <main className="flex flex-col justify-between w-full min-h-screen text-dark">
           <div className="p-3 font-bold lg:text-xl md:text-lg sm:text-base flex flex-row flex-wrap items-center justify-evenly gap-2 w-full bg-primary border-b-2 border-secondary sticky top-0 z-50">
@@ -102,7 +112,9 @@ export default function RootLayout({ children }) {
           </div>
           <Header />
           <div className="w-full flex flex-col items-center justify-center my-4">
+            {/* <PageTransition> */}
             {children}
+            {/* </PageTransition> */}
           </div>
           <Footer />
           <AccessibilityTab />

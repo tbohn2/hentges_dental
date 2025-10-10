@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import SEOImage from "./SEOImage";
 import tooth from "../public/images/tooth.png";
 
 export default function Footer() {
@@ -10,7 +10,15 @@ export default function Footer() {
                     {/* Logo and Description */}
                     <div className="lg:col-span-1">
                         <Link href="/" className="flex flex-row items-center justify-start gap-2 mb-4">
-                            <Image src={tooth} alt="Hentges Dental" className="w-12 h-12" />
+                            <SEOImage
+                                src={tooth}
+                                alt="Hentges Dental logo - Tooth icon representing family dentistry in Mesa, Arizona"
+                                title="Hentges Dental Logo"
+                                width={48}
+                                height={48}
+                                className="w-12 h-12"
+                                sizes="48px"
+                            />
                             <div className="flex flex-col">
                                 <span className="text-2xl font-bold geist-sans">Hentges</span>
                                 <span className="text-2xl font-bold geist-sans">Dental</span>

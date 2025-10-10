@@ -24,10 +24,10 @@ const pageContent = [
     {
         heading: '',
         text: [
-            <Link href='/new-patient-forms' className="text-tertiary hover:underline">New Patient Forms</Link>,
-            <Link href='/financial-and-insurance' className="text-tertiary hover:underline">Financial & Insurance</Link>,
-            <Link href='/patient-testimonials' className="text-tertiary hover:underline">Patient Testimonials</Link>,
-            <Link href='/dental-blog' className="text-tertiary hover:underline">Dental Blog</Link>
+            <Link key="new-patient-forms" href='/new-patient-forms' className="text-tertiary hover:underline">New Patient Forms</Link>,
+            <Link key="financial-insurance" href='/financial-and-insurance' className="text-tertiary hover:underline">Financial & Insurance</Link>,
+            <Link key="patient-testimonials" href='/patient-testimonials' className="text-tertiary hover:underline">Patient Testimonials</Link>,
+            <Link key="dental-blog" href='/dental-blog' className="text-tertiary hover:underline">Dental Blog</Link>
         ]
     },
     {

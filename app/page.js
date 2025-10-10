@@ -1,4 +1,4 @@
-import Image from "next/image";
+import SEOImage from "../components/SEOImage";
 import Link from "next/link";
 import crown from "../public/images/crown.svg";
 import generalDentistry from "../public/images/general-dentistry.svg";
@@ -40,12 +40,14 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-full min-h-screen">
       <div id="welcome" className="w-11/12 flex flex-col items-center justify-center gap-4 rounded-lg my-6 relative min-h-[70vh]">
-        <Image
+        <SEOImage
           src={azLake}
-          alt="Arizona lake landscape"
+          alt="Beautiful Arizona lake landscape at sunset - Hentges Dental Mesa location backdrop"
+          title="Arizona Lake Landscape - Hentges Dental"
           fill
           className="object-cover rounded-lg"
-          priority
+          priority={true}
+          sizes="100vw"
         />
         <div className="relative z-10 flex flex-col items-center justify-center gap-4 w-full">
           <div className="flex flex-col items-center justify-center gap-4 md:gap-6 bg-primary p-4 md:p-8 rounded-lg opacity-90 text-secondary">
@@ -59,7 +61,15 @@ export default function Home() {
       <div className="flex flex-wrap items-center justify-center w-full bg-primary text-secondary px-2 md:px-4 py-8 gap-4">
         {icons.map((icon) => (
           <Link href={icon.link} key={icon.title} className="flex flex-col items-center justify-between gap-2 w-1/3 sm:w-1/4 lg:w-1/7 dental-icons p-2">
-            <Image src={icon.image} alt={icon.title} className="w-3/4 md:w-1/2" />
+            <SEOImage
+              src={icon.image}
+              alt={`${icon.title} dental service icon - ${icon.subtext} at Hentges Dental Mesa`}
+              title={`${icon.title} - Hentges Dental`}
+              width={64}
+              height={64}
+              className="w-3/4 md:w-1/2"
+              sizes="(max-width: 768px) 25vw, 12vw"
+            />
             <div className="flex flex-col items-center justify-center text-center">
               <h2 className="font-bold text-sm md:text-lg lg:text-2xl text-secondary">{icon.title}</h2>
               <p className="font-bold text-xs md:text-sm lg:text-xl text-tertiary">{icon.subtext}</p>
@@ -73,29 +83,37 @@ export default function Home() {
           {officePics.map((pic, index) => {
             if (index > 1) return;
             return (
-              <Image
+              <SEOImage
                 key={index}
                 src={pic}
-                alt={`Office Picture ${index + 1}`}
+                alt={`Hentges Dental office interior ${index + 1} - Modern dental practice in Mesa, Arizona`}
+                title={`Hentges Dental Office - Mesa, AZ`}
+                width={400}
+                height={300}
                 className="w-full lg:w-11/12 rounded-lg p-2 lg:p-4"
+                sizes="(max-width: 768px) 50vw, 25vw"
               />
             )
           })}
         </div>
         <div className="flex flex-col items-center justify-center gap-4 w-full lg:w-1/2 text-primary bg-secondary p-4">
           <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl py-2 text-center">WELCOME TO HENTGES DENTAL</h2>
-          <p className="text-center text-base md:text-lg lg:text-2xl px-4">Creating beautiful, confident smiles for Mesa families is what drives us at Hentges Dental. We believe exceptional dental care goes beyond treatment – it's about building lasting relationships with our patients. Our team combines advanced technology with personalized attention to ensure every visit exceeds your expectations. From routine cleanings to complex procedures, we're committed to making your dental experience comfortable, effective, and stress-free.</p>
+          <p className="text-center text-base md:text-lg lg:text-2xl px-4">Creating beautiful, confident smiles for Mesa families is what drives us at Hentges Dental. We believe exceptional dental care goes beyond treatment – it&apos;s about building lasting relationships with our patients. Our team combines advanced technology with personalized attention to ensure every visit exceeds your expectations. From routine cleanings to complex procedures, we&apos;re committed to making your dental experience comfortable, effective, and stress-free.</p>
           <button className="button-1 text-lg md:text-xl lg:text-2xl my-4 px-4 py-2"><Link href="/patient-testimonials">Read Our Reviews</Link></button>
         </div>
         <div className="flex lg:flex-col flex-row items-center justify-center w-1/3 sm:w-1/3 lg:w-1/4 gap-4">
           {officePics.map((pic, index) => {
             if (index < 2) return;
             return (
-              <Image
+              <SEOImage
                 key={index}
                 src={pic}
-                alt={`Office Picture ${index + 1}`}
+                alt={`Hentges Dental office interior ${index + 1} - Modern dental practice in Mesa, Arizona`}
+                title={`Hentges Dental Office - Mesa, AZ`}
+                width={400}
+                height={300}
                 className="w-full lg:w-11/12 rounded-lg p-2 lg:p-4"
+                sizes="(max-width: 768px) 50vw, 25vw"
               />
             )
           })}
@@ -123,10 +141,18 @@ export default function Home() {
       </div> */}
 
       <div className="flex flex-col lg:flex-row items-center justify-center gap-4 bg-primary text-quaternary p-4 w-full">
-        <Image src={DrHentgesAndFamilySmall2} alt="Dr. Hentges and Family" className="w-11/12 lg:w-1/3 rounded-lg" />
+        <SEOImage
+          src={DrHentgesAndFamilySmall2}
+          alt="Dr. Zach Hentges and his family - Trusted family dentist in Mesa, Arizona"
+          title="Dr. Zach Hentges and Family - Hentges Dental"
+          width={400}
+          height={300}
+          className="w-11/12 lg:w-1/3 rounded-lg"
+          sizes="(max-width: 768px) 90vw, 30vw"
+        />
         <div className="flex flex-col gap-4 lg:gap-6 w-full lg:w-2/3 p-4">
           <h2 className="font-bold text-3xl md:text-4xl lg:text-6xl text-center lg:text-left">Dr. Hentges and Family</h2>
-          <p className="font-bold text-base md:text-lg lg:text-2xl text-center lg:text-left">Dr. Zach Hentges is a dedicated and experienced dentist with over 10 years of practice. He grew up in Mesa, attended Mesa High School and graduated from Arizona State University before earning his dental degree from Midwestern University. He is married and a proud father of four children. In his free time, Dr. Hentges enjoys playing sports with his kids and wakeboarding. Dr. Hentges is committed to providing the same high-quality care and friendly service that you've come to expect at Christensen Family Dentistry. I'm confident that you will find him to be a caring and communicative provider who truly understands the needs of our community.</p>
+          <p className="font-bold text-base md:text-lg lg:text-2xl text-center lg:text-left">Dr. Zach Hentges is a dedicated and experienced dentist with over 10 years of practice. He grew up in Mesa, attended Mesa High School and graduated from Arizona State University before earning his dental degree from Midwestern University. He is married and a proud father of four children. In his free time, Dr. Hentges enjoys playing sports with his kids and wakeboarding. Dr. Hentges is committed to providing the same high-quality care and friendly service that you&apos;ve come to expect at Christensen Family Dentistry. I&apos;m confident that you will find him to be a caring and communicative provider who truly understands the needs of our community.</p>
         </div>
       </div>
     </div>
