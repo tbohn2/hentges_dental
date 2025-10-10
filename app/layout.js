@@ -2,6 +2,7 @@ import { Geist, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import AccessibilityTab from "../components/AccessibilityTab";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,6 +17,13 @@ const instrumentSans = Instrument_Sans({
 export const metadata = {
   title: "Dentist | Mesa, AZ | Hentges Dental (Formerly Christensen Family Dentistry)",
   description: "Looking for a trusted family dentist in Mesa, AZ? Hentges Dental (formerly Christensen Family Dentistry) provides expert dental care, including implants, veneers, crowns, root canals, and more. Book your appointment today!",
+  keywords: "dentist Mesa AZ, family dentist, dental implants, veneers, crowns, root canal, accessible dental care, WCAG compliant",
+  robots: "index, follow",
+  openGraph: {
+    title: "Accessible Dental Care in Mesa, AZ | Hentges Dental",
+    description: "WCAG 2.1 AA compliant dental website with accessibility features for all patients",
+    type: "website",
+  }
 };
 
 export default function RootLayout({ children }) {
@@ -70,7 +78,16 @@ export default function RootLayout({ children }) {
             "sameAs": [
               "https://www.facebook.com/hentgesdental",
               "https://www.google.com/maps/place/Hentges+Dental"
-            ]
+            ],
+            "accessibilityFeature": [
+              "textSize",
+              "highContrast",
+              "screenReaderCompatible",
+              "keyboardNavigation"
+            ],
+            "accessibilityHazard": "none",
+            "accessibilityAPI": "ARIA",
+            "accessibilityControl": "fullKeyboardControl"
           }),
         }}
       />
@@ -88,6 +105,7 @@ export default function RootLayout({ children }) {
             {children}
           </div>
           <Footer />
+          <AccessibilityTab />
         </main>
 
       </body>

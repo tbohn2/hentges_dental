@@ -134,3 +134,9 @@ button {
   box-shadow: 0 0 25px 0 var(--tertiary);
   transform: scale(1.1);
 }
+
+/* Accessibility Tab Vertical Text */
+.writing-mode-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
