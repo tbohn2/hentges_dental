@@ -35,8 +35,8 @@ export default function MobileNav() {
     ];
 
     return (
-        <div className="mobile-dropdown z-50 self-center relative">
-            <span className="text-2xl cursor-pointer text-primary" onClick={() => setIsOpen(!isOpen)}>☰</span>
+        <div className="mobile-dropdown z-50 self-center relative me-4">
+            <span className="text-3xl cursor-pointer text-primary" onClick={() => setIsOpen(!isOpen)}>☰</span>
             <ul className={`absolute right-0 top-full mt-2 w-64 border-2 border-tertiary z-51 divide-y-2 text-tertiary ${isOpen ? "block" : "hidden"}`}>
                 {mobileNavElements.map((item, index) => (
                     <li className="whitespace-nowrap inline-block bg-primary w-full" key={item.name}>

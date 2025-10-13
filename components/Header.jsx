@@ -25,7 +25,7 @@ export default function Header() {
     ];
 
     return (
-        <header className="flex flex-wrap justify-between py-2 px-4 lg:px-0">
+        <header className="flex flex-wrap justify-between py-4 px-4 lg:px-0">
             <Link href="/" className="w-auto md:mx-6 flex flex-row items-center justify-center gap-1 px-4 text-primary border-b-1 border-primary rounded-4xl md:self-start self-center">
                 <SEOImage
                     src={tooth}

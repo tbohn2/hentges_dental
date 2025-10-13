@@ -113,7 +113,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
       <div className="flex flex-col items-center justify-center w-full min-h-screen">
-        <div id="welcome" className="w-11/12 flex flex-col items-center justify-center gap-4 rounded-lg my-6 relative min-h-[70vh]">
+        <div id="welcome" className="w-11/12 flex flex-col items-center justify-center gap-4 rounded-lg mb-6 relative min-h-[70vh]">
           <SEOImage
             src={azLake}
             alt="Beautiful Arizona lake landscape at sunset - Hentges Dental Mesa location backdrop"
