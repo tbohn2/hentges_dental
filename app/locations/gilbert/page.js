@@ -70,7 +70,7 @@ export default function GilbertDentist() {
         {
             heading: "SCHEDULE YOUR FAMILY'S DENTAL CARE",
             text: [
-                <>Ready to experience exceptional dental care for your family? Contact Hentges Dental at <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a> to schedule your appointment. We're conveniently located in Mesa to serve Gilbert residents with the highest quality dental care in the East Valley.</>
+                <>Ready to experience exceptional dental care for your family? Contact Hentges Dental at <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a> to schedule your appointment. We&apos;re conveniently located in Mesa to serve Gilbert residents with the highest quality dental care in the East Valley.</>
             ]
         },
         {

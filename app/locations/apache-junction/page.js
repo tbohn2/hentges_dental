@@ -72,7 +72,7 @@ export default function ApacheJunctionDentist() {
         {
             heading: "BOOK YOUR APPOINTMENT TODAY",
             text: [
-                <>Experience the difference of exceptional dental care. Call Hentges Dental at <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a> to schedule your appointment. We're conveniently located in Mesa to serve Apache Junction residents with the finest dental care in the East Valley.</>
+                <>Experience the difference of exceptional dental care. Call Hentges Dental at <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a> to schedule your appointment. We&apos;re conveniently located in Mesa to serve Apache Junction residents with the finest dental care in the East Valley.</>
             ]
         },
         {

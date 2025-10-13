@@ -173,7 +173,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center gap-4 w-full lg:w-1/2 text-primary bg-secondary p-4">
             <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl py-2 flex flex-col items-center justify-center gap-4">WELCOME TO <br /> <span className="font-bold text-3xl md:text-4xl lg:text-5xl">HENTGES DENTAL</span></h2>
             <p className="text-center text-base md:text-lg lg:text-2xl px-4">
-              At Hentges Dental, patient satisfaction is at the heart of everything we do. We're proud to help North Mesa and East Valley families achieve healthy, beautiful smiles. Our commitment goes beyond treatment—we focus on building relationships and truly listening to our patients' needs. With personalized care and advanced technology, we strive to ensure every visit is comfortable, effective, and leaves you fully satisfied with your dental experience.
+              At Hentges Dental, patient satisfaction is at the heart of everything we do. We&apos;re proud to help North Mesa and East Valley families achieve healthy, beautiful smiles. Our commitment goes beyond treatment—we focus on building relationships and truly listening to our patients&apos; needs. With personalized care and advanced technology, we strive to ensure every visit is comfortable, effective, and leaves you fully satisfied with your dental experience.
             </p>
             <button className="button-1 text-lg md:text-xl lg:text-2xl my-4 px-4 py-2"><Link href="/patient-testimonials">Read Our Reviews</Link></button>
           </div>
