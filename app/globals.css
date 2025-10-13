@@ -135,6 +135,21 @@ button {
   transform: scale(1.1);
 }
 
+/* Blog */
+.blog-link {
+  border: 1px solid var(--secondary);
+  transition: all 0.5s ease;
+}
+
+.blog-link:hover {
+  border: 1px solid var(--tertiary);
+  box-shadow: 0 0 25px 0 var(--tertiary);
+}
+
+.blog-link:hover h2 {
+  text-decoration: underline;
+}
+
 /* Accessibility Tab Vertical Text */
 .writing-mode-vertical {
   writing-mode: vertical-rl;

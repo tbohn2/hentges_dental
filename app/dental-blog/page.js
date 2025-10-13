@@ -1,4 +1,6 @@
 import ContentDisplay from "../../components/ContentDisplay";
+import Link from "next/link";
+import { getPublishedPosts } from "../../lib/blogData";
 
 export const metadata = {
     title: "Dental Blog | Hentges Dental | Mesa, AZ",
@@ -6,30 +8,44 @@ export const metadata = {
     keywords: "dental blog Mesa AZ, oral health tips, dental care advice, dental procedures blog, Hentges Dental blog",
 };
 
+export const revalidate = 3600;
+
 export default function DentalBlog() {
     const title = "DENTAL BLOG";
+    const posts = getPublishedPosts();
+
+    if (posts.length === 0) {
+        const content = [
+            {
+                heading: "Dental Blog",
+                text: [
+                    "Our first article will be published soon. Check back every two weeks for new posts!"
+                ]
+            }
+        ];
+        return (
+            <ContentDisplay pageTitle={title} content={content} />
+        );
+    }
 
     const content = [
         {
-            heading: "Coming Soon",
-            text: [
-                "We're excited to announce that our dental blog is coming soon! Our team at Hentges Dental is working hard to bring you valuable content about oral health, dental procedures, and tips for maintaining a healthy smile.",
-                "",
-                "In the meantime, feel free to explore our website to learn more about our dental services, meet our team, and schedule your next appointment.",
-                "",
-                "Stay tuned for helpful articles on:",
-                "• Oral health tips and best practices",
-                "• Dental procedure explanations",
-                "• Preventive care advice",
-                "• Latest dental technology updates",
-                "• Patient success stories",
-                "",
-                "Thank you for your patience as we prepare this valuable resource for our patients and community."
-            ]
+            heading: "Latest Articles",
+            text: posts.map(p => `• ${p.title} — ${p.excerpt}`)
         }
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <div className="p-12 md:w-4/5 lg:w-2/3 w-11/12 self-center rounded-2xl flex flex-col justify-center bg-primary">
+            <h1 className="md:text-6xl text-3xl font-bold text-secondary pb-4">{title}</h1>
+            <div className="flex flex-col gap-4">
+                {posts.map(post => (
+                    <Link key={post.slug} href={`/dental-blog/${post.slug}`} className="p-4 blog-link rounded-xl">
+                        <h2 className="md:text-3xl text-xl font-bold text-tertiary hover:underline">{post.title}</h2>
+                        <p className="md:text-xl text-base">{post.excerpt}</p>
+                    </Link>
+                ))}
+            </div>
+        </div>
     );
 }
