@@ -43,6 +43,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${instrumentSans.variable} ${geistSans.variable}`}>
       <head>
+        <meta name="theme-color" content="#F9FAFB" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -50,7 +52,7 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Dentist",
               "name": "Hentges Dental",
-              "image": "https://hentgesdental.com/og-image.png",
+              "image": "https://hentgesdental.com/images/og-logo.png",
               "@id": "https://hentgesdental.com",
               "url": "https://hentgesdental.com",
               "telephone": "+14809642131",
@@ -78,8 +80,8 @@ export default function RootLayout({ children }) {
               ],
               "priceRange": "$$",
               "sameAs": [
-                "https://www.facebook.com/hentgesdental",
-                "https://www.google.com/maps/place/Hentges+Dental"
+                // "https://www.facebook.com/hentgesdental",
+                // "https://www.google.com/maps/place/Hentges+Dental"
               ],
               "accessibilityFeature": [
                 "textSize",
