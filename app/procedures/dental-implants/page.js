@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Dental Implants | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Dental Implants | Mesa, AZ",
     description: "Permanent tooth replacement with dental implants in Mesa, AZ. Titanium implants with natural-looking crowns. Restore your smile & confidence. Call (480) 964-2131.",
     keywords: "dental implants Mesa AZ, tooth replacement Mesa, titanium implants Mesa, permanent teeth Mesa, missing teeth Mesa, implant dentist Mesa",
 };

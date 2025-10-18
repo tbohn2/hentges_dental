@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Wisdom Tooth Extractions | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Wisdom Tooth Extractions | Mesa, AZ",
     description: "Safe, comfortable wisdom tooth extractions when necessary. Expert oral surgery at Hentges Dental in Mesa, AZ. Call today!",
 };
 

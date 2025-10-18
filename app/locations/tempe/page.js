@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Dentist in Tempe, AZ | Hentges Dental | Serving East Valley",
+    title: "Hentges Dental | Mesa Dentist Serving Tempe & East Valley",
     description: "Top-rated dentist serving Tempe, AZ from Mesa. Dr. Zach Hentges provides family, cosmetic & emergency dental care. Convenient East Valley location. Call (480) 964-2131.",
     keywords: "dentist Tempe AZ, Tempe dentist, East Valley dentist, family dentist Tempe, cosmetic dentist Tempe, emergency dentist Tempe, dental care Tempe AZ",
 };
@@ -97,8 +97,8 @@ export default function TempeDentist() {
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "33.4152",
-            "longitude": "-111.8315"
+            "latitude": "33.42583773881805",
+            "longitude": "-111.80566902401911"
         },
         "openingHours": [
             "Mo-Th 07:30-17:00"

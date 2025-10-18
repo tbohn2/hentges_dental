@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Night Mouthguard | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Night Mouthguard | Mesa, AZ",
     description: "Protect your teeth from grinding and clenching with custom night mouthguards. Get relief from TMJ and bruxism at Hentges Dental in Mesa, AZ.",
 };
 

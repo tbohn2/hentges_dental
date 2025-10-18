@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Dental Bonding | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Dental Bonding | Mesa, AZ",
     description: "Quick, affordable dental bonding in Mesa, AZ repairs chips, cracks & gaps. Tooth-colored composite resin for natural-looking restorations. Call (480) 964-2131.",
     keywords: "dental bonding Mesa AZ, tooth bonding Mesa, composite bonding Mesa, chipped tooth Mesa, cracked tooth Mesa, cosmetic bonding Mesa",
 };

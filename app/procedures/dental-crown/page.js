@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Dental Crown | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Dental Crown | Mesa, AZ",
     description: "Custom dental crowns in Mesa, AZ restore damaged teeth with porcelain caps. Strengthens & protects your smile with natural-looking crowns. Call (480) 964-2131.",
     keywords: "dental crowns Mesa AZ, porcelain crowns Mesa, tooth restoration Mesa, damaged teeth Mesa, crown dentist Mesa, tooth cap Mesa",
 };

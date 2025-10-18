@@ -2,7 +2,7 @@ import ContentDisplay from "../../components/ContentDisplay";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Restorative Dentistry | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Restorative Dentistry | Mesa, AZ",
     description: "Expert restorative dentistry in Mesa, AZ repairs damaged teeth with crowns, fillings, implants & bridges. Restores function & beauty. Call (480) 964-2131.",
     keywords: "restorative dentistry Mesa AZ, dental crowns Mesa, dental fillings Mesa, dental implants Mesa, dental bridges Mesa, tooth repair Mesa",
 };

@@ -4,7 +4,7 @@ import dentalXray from "../../public/images/dental-xray.jpg";
 import panoramicMachine from "../../public/images/panoramic-machine.jpg";
 
 export const metadata = {
-    title: "Dental Technology | Hentges Dental",
+    title: "Hentges Dental | Dental Technology | Mesa, AZ",
     description: "At Hentges Dental in Mesa, AZ, we use cutting-edge dental technology to provide you with safe, fast, and effective results! Call today!",
 };
 

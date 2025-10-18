@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Porcelain Crowns | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Porcelain Crowns | Mesa, AZ",
     description: "Restore damaged teeth with beautiful porcelain crowns. Natural-looking, durable dental crowns at Hentges Dental in Mesa, AZ.",
 };
 

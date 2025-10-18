@@ -1,7 +1,7 @@
 import ContentDisplay from "../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Privacy Policy | Hentges Dental",
+    title: "Hentges Dental | Privacy Policy | Mesa, AZ",
     description: "Learn about how Hentges Dental collects, uses, and protects your personal information.",
 };
 

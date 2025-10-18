@@ -17,8 +17,8 @@ import DrHentgesAndFamilySmall2 from "../public/images/DrHentgesAndFamilySmall2.
 import azLake from "../public/images/az-lake.jpg";
 
 export const metadata = {
-  title: "Dentist | Mesa, AZ | Hentges Dental",
-  description: "Trusted Mesa, AZ dentist Dr. Zach Hentges provides comprehensive dental care including implants, veneers, crowns & emergency services. Call (480) 964-2131!",
+  title: "Hentges Dental | Trusted Dentist in Mesa, AZ",
+  description: "Hentges Dental provides comprehensive dental care in Mesa, AZ. Dr. Zach Hentges offers implants, veneers, crowns, and emergency dental services. Call (480) 964-2131 today!",
   keywords: "dentist Mesa AZ, family dentist Mesa, cosmetic dentist Mesa AZ, dental implants Mesa, emergency dentist Mesa, teeth whitening Mesa, dental crowns Mesa, East Valley dentist, North Mesa dentist, Tempe dentist, Chandler dentist, Gilbert dentist, Apache Junction dentist",
 };
 
@@ -41,8 +41,8 @@ export default function Home() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "33.4152",
-      "longitude": "-111.8315"
+      "latitude": "33.42583773881805",
+      "longitude": "-111.80566902401911"
     },
     "openingHours": [
       "Mo-Th 07:30-17:00"

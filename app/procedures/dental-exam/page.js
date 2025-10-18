@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Dental Exam | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Dental Exam | Mesa, AZ",
     description: "A dental exam is a routine examination of your teeth, gums, and mouth. It is used to detect early signs of tooth decay, gum disease, and other oral health problems. Call today!",
 };
 

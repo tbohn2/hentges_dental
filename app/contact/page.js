@@ -3,7 +3,7 @@ import Link from "next/link";
 import receptionPhone from "../../public/images/reception-phone.jpg";
 
 export const metadata = {
-    title: "Contact Us | Hentges Dental | Mesa, AZ",
+    title: "Hentges Dental | Contact Us | Mesa, AZ",
     description: "Schedule your dental appointment in Mesa, AZ. Located at 560 N. Stapley Dr. Open Mon-Thu 7:30 AM-5:00 PM. Call (480) 964-2131!",
     keywords: "contact Hentges Dental, dental appointment Mesa AZ, dentist phone number Mesa, dental office hours Mesa AZ, schedule appointment Mesa, East Valley dentist contact, North Mesa dentist contact, Tempe dentist contact, Chandler dentist contact, Gilbert dentist contact, Apache Junction dentist contact",
 };
@@ -45,8 +45,8 @@ export default function Contact() {
             ],
             "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "33.4152",
-                "longitude": "-111.8315"
+                "latitude": "33.42583773881805",
+                "longitude": "-111.80566902401911"
             }
         }
     };

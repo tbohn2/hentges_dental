@@ -1,7 +1,7 @@
 import ContentDisplay from "../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Accessibility Information | Hentges Dental | Mesa, AZ",
+    title: "Hentges Dental | Accessibility Information | Mesa, AZ",
     description: "Learn about accessibility features and tools to help make your browsing experience more accessible on our dental website.",
 };
 

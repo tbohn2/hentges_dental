@@ -3,7 +3,7 @@ import Link from "next/link";
 import dentalExam from "../../public/images/dental-exam.jpg";
 
 export const metadata = {
-    title: "Services | Hentges Dental | Mesa, AZ",
+    title: "Hentges Dental | Services | Mesa, AZ",
     description: "Complete dental services in Mesa, AZ: family dentistry, cosmetic procedures, restorative treatments & emergency care. Expert dental care. Call (480) 964-2131.",
     keywords: "dental services Mesa AZ, family dentistry Mesa, cosmetic dentistry Mesa, restorative dentistry Mesa, emergency dental care Mesa, East Valley dental services, Tempe dental care, Chandler dental services, Gilbert dental care, Apache Junction dental services",
 };

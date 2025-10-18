@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Inlays and Onlays | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Inlays and Onlays | Mesa, AZ",
     description: "Inlays and onlays are custom-made dental restorations that repair damaged teeth. Learn about these conservative treatment options at Hentges Dental in Mesa, AZ.",
 };
 

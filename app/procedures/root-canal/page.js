@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Root Canal Treatment | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Root Canal Treatment | Mesa, AZ",
     description: "Save your tooth with comfortable root canal treatment in Mesa, AZ. Pain-free, effective endodontic care to relieve tooth pain & preserve your natural tooth. Call (480) 964-2131.",
     keywords: "root canal Mesa AZ, root canal treatment Mesa, endodontic treatment Mesa, tooth pain Mesa, save tooth Mesa, root canal dentist Mesa",
 };

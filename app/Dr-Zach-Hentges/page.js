@@ -2,7 +2,7 @@ import ContentDisplay from "../../components/ContentDisplay";
 import drHentgesAndFamily from "../../public/images/DrHentgesAndFamilySmall2.jpg";
 
 export const metadata = {
-    title: "Dr. Zach Hentges | Mesa, AZ Dentist | Hentges Dental",
+    title: "Hentges Dental | Dr. Zach Hentges | Mesa, AZ",
     description: "Dr. Zach Hentges, DMD - Experienced family dentist in Mesa, AZ with 10+ years practice. ASU & Midwestern University graduate. Call (480) 964-2131.",
     keywords: "Dr. Zach Hentges Mesa AZ, family dentist Mesa, experienced dentist Mesa, ASU dentist, Midwestern University dentist, Mesa dentist",
 };

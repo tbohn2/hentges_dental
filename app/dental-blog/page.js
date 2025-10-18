@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getPublishedPosts } from "../../lib/blogData";
 
 export const metadata = {
-    title: "Dental Blog | Hentges Dental | Mesa, AZ",
+    title: "Hentges Dental | Dental Blog | Mesa, AZ",
     description: "Stay informed with our dental blog featuring oral health tips, dental procedures, and dental care advice from Hentges Dental in Mesa, AZ.",
     keywords: "dental blog Mesa AZ, oral health tips, dental care advice, dental procedures blog, Hentges Dental blog",
 };

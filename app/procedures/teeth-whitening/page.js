@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Teeth Whitening | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Teeth Whitening | Mesa, AZ",
     description: "Professional teeth whitening in Mesa, AZ brightens your smile safely & effectively. In-office & take-home whitening treatments. Get dramatic results. Call (480) 964-2131.",
     keywords: "teeth whitening Mesa AZ, professional whitening Mesa, in-office whitening Mesa, take-home whitening Mesa, bright smile Mesa, whitening dentist Mesa",
 };

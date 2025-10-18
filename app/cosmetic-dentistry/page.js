@@ -2,7 +2,7 @@ import ContentDisplay from "../../components/ContentDisplay";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Cosmetic Dentistry | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Cosmetic Dentistry | Mesa, AZ",
     description: "Transform your smile with cosmetic dentistry in Mesa, AZ. Professional teeth whitening, porcelain veneers, dental crowns & bonding. Beautiful smiles. Call (480) 964-2131.",
     keywords: "cosmetic dentistry Mesa AZ, teeth whitening Mesa, porcelain veneers Mesa, dental crowns Mesa, smile makeover Mesa AZ",
 };

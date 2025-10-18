@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "TMJ Treatment | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | TMJ Treatment | Mesa, AZ",
     description: "Relieve TMJ pain and dysfunction with expert treatment. Custom TMJ therapy at Hentges Dental in Mesa, AZ. Get relief from jaw pain and headaches. Call today!",
 };
 

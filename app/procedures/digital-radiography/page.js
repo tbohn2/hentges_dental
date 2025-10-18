@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Digital Radiography | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Digital Radiography | Mesa, AZ",
     description: "Digital radiography offers advanced dental x-rays with less radiation, faster results, and improved diagnostics. Discover the benefits of digital dental x-rays at Hentges Dental in Mesa, AZ.",
 };
 

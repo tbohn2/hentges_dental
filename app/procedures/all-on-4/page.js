@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "All-on-4 | Dental Implants | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | All-on-4® Dental Implants | Mesa, AZ",
     description: "All-on-4 dental implants in Mesa, AZ replace full arch with 4 implants. Secure, natural-looking dentures. Call (480) 964-2131 today!",
 };
 

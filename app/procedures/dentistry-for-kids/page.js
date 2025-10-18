@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Dentistry for Kids | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Dentistry for Kids | Mesa, AZ",
     description: "Pediatric dentistry in Mesa, AZ provides fun, gentle dental care for children. Builds healthy habits early with kid-friendly treatments. Call (480) 964-2131.",
     keywords: "pediatric dentist Mesa AZ, kids dentist Mesa, children dentistry Mesa, family dentist Mesa, child dental care Mesa, pediatric dental Mesa",
 };

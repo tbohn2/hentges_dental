@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Oral Cancer Screening | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Oral Cancer Screening | Mesa, AZ",
     description: "Early detection saves lives. Get comprehensive oral cancer screenings at Hentges Dental in Mesa, AZ. Quick, painless, and potentially life-saving.",
 };
 

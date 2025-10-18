@@ -2,7 +2,7 @@ import ContentDisplay from "../../components/ContentDisplay";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Family Dentistry | Hentges Dental | Mesa, AZ",
+    title: "Hentges Dental | Family Dentistry | Mesa, AZ",
     description: "Comprehensive family dentistry in Mesa, AZ for all ages. Preventive care, cleanings, exams & pediatric dentistry. Gentle, expert care. Call (480) 964-2131.",
     keywords: "family dentistry Mesa AZ, pediatric dentist Mesa, dental cleanings Mesa, preventive dental care Mesa, family dentist Mesa AZ, East Valley family dentist, North Mesa family dentist, Tempe family dentist, Chandler family dentist, Gilbert family dentist, Apache Junction family dentist",
 };

@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Periodontal Care | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Periodontal Care | Mesa, AZ",
     description: "Expert gum disease treatment in Mesa, AZ with deep cleanings & periodontal care. Prevents tooth loss & maintains healthy gums. Call (480) 964-2131.",
     keywords: "periodontal care Mesa AZ, gum disease treatment Mesa, deep cleaning Mesa, periodontal disease Mesa, gum treatment Mesa, periodontist Mesa",
 };

@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Sleep Apnea Treatment | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Sleep Apnea Treatment | Mesa, AZ",
     description: "Treat sleep apnea with custom oral appliances. Non-invasive sleep apnea treatment at Hentges Dental in Mesa, AZ. Improve your sleep quality.",
 };
 

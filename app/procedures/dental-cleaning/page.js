@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Dental Cleaning | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Dental Cleaning | Mesa, AZ",
     description: "Gentle dental cleanings in Mesa, AZ remove plaque and tartar for a healthy smile. Prevent cavities and gum disease — call (480) 964-2131 today!",
 };
 

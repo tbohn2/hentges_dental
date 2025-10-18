@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Dental Veneers | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Dental Veneers | Mesa, AZ",
     description: "Transform your smile with porcelain veneers in Mesa, AZ. Custom-made veneers correct chips, gaps, stains & imperfections. Get your dream smile. Call (480) 964-2131.",
     keywords: "dental veneers Mesa AZ, porcelain veneers Mesa, smile makeover Mesa, cosmetic veneers Mesa, perfect smile Mesa, veneer dentist Mesa",
 };

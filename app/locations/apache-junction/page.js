@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Dentist in Apache Junction, AZ | Hentges Dental | East Valley Dental Care",
+    title: "Hentges Dental | Mesa Dentist Serving Apache Junction & East Valley",
     description: "Trusted dentist serving Apache Junction, AZ from Mesa. Dr. Zach Hentges provides family, cosmetic & emergency dental services. Convenient East Valley location. Call (480) 964-2131.",
     keywords: "dentist Apache Junction AZ, Apache Junction dentist, East Valley dentist, family dentist Apache Junction, cosmetic dentist Apache Junction, emergency dentist Apache Junction, dental care Apache Junction AZ",
 };

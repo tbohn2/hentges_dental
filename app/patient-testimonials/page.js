@@ -1,7 +1,7 @@
 import ReviewCarousel from "../../components/ReviewCarousel";
 
 export const metadata = {
-    title: "Patient Testimonials | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Patient Testimonials | Mesa, AZ",
     description: "Read real patient reviews & testimonials about Hentges Dental in Mesa, AZ. See why patients choose us for their dental care. Call (480) 964-2131.",
     keywords: "patient reviews Mesa AZ, dental testimonials Mesa, Hentges Dental reviews, dentist reviews Mesa, patient feedback Mesa, dental practice reviews Mesa",
 };

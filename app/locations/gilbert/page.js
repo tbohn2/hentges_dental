@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Dentist in Gilbert, AZ | Hentges Dental | East Valley Family Dentistry",
+    title: "Hentges Dental | Mesa Dentist Serving Gilbert & East Valley",
     description: "Hentges Dental proudly serves Gilbert, AZ residents from our Mesa office. Dr. Zach Hentges offers family, cosmetic & emergency dentistry near Gilbert. Call (480) 964-2131!",
     keywords: "dentist Gilbert AZ, Gilbert dentist, East Valley dentist, family dentist Gilbert, cosmetic dentist Gilbert, emergency dentist Gilbert, dental care Gilbert AZ",
 };

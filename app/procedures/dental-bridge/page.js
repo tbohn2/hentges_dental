@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Dental Bridge | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Dental Bridge | Mesa, AZ",
     description: "Replace missing teeth with custom dental bridges in Mesa, AZ. Restores your smile & bite function with natural-looking bridges. Call (480) 964-2131.",
     keywords: "dental bridges Mesa AZ, tooth replacement Mesa, missing teeth Mesa, dental bridge Mesa, bridge dentist Mesa, replace missing teeth Mesa",
 };

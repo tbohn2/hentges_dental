@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Oral Appliance Therapy | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Oral Appliance Therapy | Mesa, AZ",
     description: "Treat sleep apnea and TMJ disorders with custom oral appliances. Learn about oral appliance therapy at Hentges Dental in Mesa, AZ.",
 };
 

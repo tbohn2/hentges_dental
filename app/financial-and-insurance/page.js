@@ -2,7 +2,7 @@ import ContentDisplay from "../../components/ContentDisplay";
 import patientOnComputer from "../../public/images/patient-on-computer.jpg";
 
 export const metadata = {
-    title: "Financial & Insurance | Hentges Dental | Mesa, AZ",
+    title: "Hentges Dental | Financial & Insurance | Mesa, AZ",
     description: "Affordable dental care in Mesa, AZ with flexible payment options. Accepts most insurance plans & offers financing. Call (480) 964-2131.",
     keywords: "dental insurance Mesa AZ, affordable dental care Mesa, dental financing Mesa, payment plans Mesa, dental insurance accepted Mesa, dental costs Mesa",
 };

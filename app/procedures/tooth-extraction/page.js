@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Tooth Extraction | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Tooth Extraction | Mesa, AZ",
     description: "Safe, comfortable tooth extraction in Mesa, AZ when necessary. Expert oral surgery with minimal discomfort. Call (480) 964-2131.",
     keywords: "tooth extraction Mesa AZ, oral surgery Mesa, tooth removal Mesa, wisdom tooth extraction Mesa, extraction dentist Mesa, dental surgery Mesa",
 };

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-    title: "Dental Procedures | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Dental Procedures | Mesa, AZ",
     description: "Looking for a dentist in Mesa, AZ? Look no further! Hentges Dental offers dental services for the whole family. Check out our Dental Procedures!",
 };
 

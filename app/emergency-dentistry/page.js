@@ -1,7 +1,7 @@
 import ContentDisplay from "../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Emergency Dentistry | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Emergency Dentistry | Mesa, AZ",
     description: "Emergency dental care in Mesa, AZ. Same-day appointments for tooth pain, broken teeth, knocked-out teeth & dental trauma. Urgent care. Call (480) 964-2131.",
     keywords: "emergency dentist Mesa AZ, dental emergency Mesa, tooth pain Mesa, broken tooth Mesa, knocked out tooth Mesa, urgent dental care Mesa, East Valley emergency dentist, North Mesa emergency dentist, Tempe emergency dentist, Chandler emergency dentist, Gilbert emergency dentist, Apache Junction emergency dentist",
 };

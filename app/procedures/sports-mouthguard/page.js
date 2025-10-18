@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Sports Mouthguards | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Sports Mouthguards | Mesa, AZ",
     description: "Protect your teeth during sports with custom sports mouthguards. Professional-grade protection at Hentges Dental in Mesa, AZ.",
 };
 

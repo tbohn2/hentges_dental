@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Denture Repair | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Denture Repair | Mesa, AZ",
     description: "Restore your dentures with our repair service in Mesa, AZ. We fix cracks, wear, and damage so you can enjoy a natural-looking, functional smile. Call today!",
 };
 

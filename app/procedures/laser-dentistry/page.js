@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Laser Dentistry | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Laser Dentistry | Mesa, AZ",
     description: "Experience advanced laser dentistry for precise, comfortable treatments. Learn about laser dental procedures at Hentges Dental in Mesa, AZ.",
 };
 

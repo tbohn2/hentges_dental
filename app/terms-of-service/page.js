@@ -1,7 +1,7 @@
 import ContentDisplay from "../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Terms of Service | Hentges Dental",
+    title: "Hentges Dental | Terms of Service | Mesa, AZ",
     description: "Read the terms and conditions for using Hentges Dental's website and services.",
 };
 

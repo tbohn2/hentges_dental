@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Dentist in Chandler, AZ | Hentges Dental | East Valley Dental Care",
+    title: "Hentges Dental | Mesa Dentist Serving Chandler & East Valley",
     description: "Premier dentist serving Chandler, AZ from Mesa. Dr. Zach Hentges offers family, cosmetic & emergency dental services. Trusted East Valley dental practice. Call (480) 964-2131.",
     keywords: "dentist Chandler AZ, Chandler dentist, East Valley dentist, family dentist Chandler, cosmetic dentist Chandler, emergency dentist Chandler, dental care Chandler AZ",
 };

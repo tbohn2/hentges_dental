@@ -2,7 +2,7 @@ import ContentDisplay from "../../../components/ContentDisplay";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Dentures | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Dentures | Mesa, AZ",
     description: "Custom complete & partial dentures in Mesa, AZ restore your smile naturally. Comfortable, natural-looking dentures for optimal function. Call (480) 964-2131.",
     keywords: "dentures Mesa AZ, complete dentures Mesa, partial dentures Mesa, custom dentures Mesa, denture dentist Mesa, false teeth Mesa",
 };

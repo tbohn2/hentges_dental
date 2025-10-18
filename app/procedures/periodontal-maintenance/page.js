@@ -1,7 +1,7 @@
 import ContentDisplay from "../../../components/ContentDisplay";
 
 export const metadata = {
-    title: "Periodontal Maintenance | Mesa, AZ | Hentges Dental",
+    title: "Hentges Dental | Periodontal Maintenance | Mesa, AZ",
     description: "Maintain healthy gums with regular periodontal maintenance. Prevent gum disease recurrence with professional care at Hentges Dental in Mesa, AZ. Call today!",
 };
 
