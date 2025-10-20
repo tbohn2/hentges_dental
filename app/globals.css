@@ -6,6 +6,7 @@
   --color-tertiary: var(--tertiary);
   --color-dark: var(--dark);
   --color-success: var(--success);
+  --breakpoint-xs: 480px;
 }
 
 :root {

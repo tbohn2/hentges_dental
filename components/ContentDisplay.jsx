@@ -3,10 +3,10 @@ import SEOImage from "./SEOImage";
 export default function ContentDisplay({ pageTitle, content }) {
     return (
         <div className="p-12 md:w-4/5 lg:w-2/3 w-11/12 self-center rounded-2xl flex flex-col justify-center bg-primary">
-            <h1 className="md:text-6xl text-3xl font-bold text-secondary pb-4">{pageTitle}</h1>
+            <h1 className="lg:text-6xl md:text-5xl sm:text-4xl xs:text-3xl text-2xl font-bold text-secondary pb-4">{pageTitle}</h1>
             {content.map((item, index) => (
                 <div key={index} className="flex flex-wrap gap-4 w-full">
-                    {item.heading && <h2 className="md:text-4xl text-2xl font-bold w-full">{item.heading}</h2>}
+                    {item.heading && <h2 className="lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl text-lg font-bold w-full">{item.heading}</h2>}
                     <div className="w-full">
                         {item.imgSrc && (
                             <SEOImage

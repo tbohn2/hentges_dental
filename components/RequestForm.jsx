@@ -17,11 +17,11 @@ export default function RequestForm() {
     const [loading, setLoading] = useState(false);
 
     const inputFields = [
-        { name: "type", placeholder: "Appointment Type", label: "What is the reason for the appointment?", type: "select", options: ["Emergency/Specific Concern", "Routine Cleaning & Checkup", "Get Established as New Patient", "Cosmetic Consultation", "Other"] },
+        { name: "type", placeholder: "Appointment Type", label: "Reason for the Appointment", type: "select", options: ["Emergency/Specific Concern", "Routine Cleaning & Checkup", "Get Established as New Patient", "Cosmetic Consultation", "Other"] },
         { name: "name", placeholder: "John Doe", type: "text", label: "First and Last Name" },
         { name: "number", placeholder: "(480) 555-0198", type: "text", label: "Phone Number" },
         { name: "email", placeholder: "john.doe@example.com", type: "email", label: "Email" },
-        { name: "preferredContactMethod", placeholder: "Preferred Contact Method", label: "What is your preferred Contact Method?", type: "select", options: ["Phone Call", "Text Message", "Email"] }
+        { name: "preferredContactMethod", placeholder: "Preferred Contact Method", label: "Preferred Contact Method", type: "select", options: ["Phone Call", "Text Message", "Email"] }
     ];
 
     const validatePhoneNumber = (phone) => {
@@ -51,8 +51,6 @@ export default function RequestForm() {
         const formDataObj = new FormData(e.target);
         const data = Object.fromEntries(formDataObj);
 
-        console.log(data);
-
         try {
             const response = await fetch('/api/send-email', {
                 method: 'POST',
@@ -75,7 +73,7 @@ export default function RequestForm() {
         <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4">
             {inputFields.map((field) => (
                 <div key={field.name} className="w-full flex flex-col gap-2">
-                    <label className="text-lg font-bold text-dark">{field.label}</label>
+                    <label className="sm:text-lg text-base font-bold text-dark">{field.label}</label>
                     {field.type === "select" ? (
                         <select key={field.name} name={field.name} defaultValue="" onChange={handleChange} className="text-dark border-1 border-dark font-semibold rounded-md p-2" required>
                             <option value="" disabled>Select {field.placeholder}</option>
