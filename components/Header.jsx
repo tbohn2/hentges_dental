@@ -21,7 +21,7 @@ export default function Header() {
         <Dropdown title="Services" items={servicesItems} />,
         <Link href="/contact" className="hover:opacity-50 ease-in-out duration-300">Contact</Link>,
         <button className="button-1"><Link href="/request-appointment">Request Appointment</Link></button>,
-        <button className="button-2"><Link href="">Pay Online</Link></button>
+        <button className="button-2"><Link href="https://api.ipospays.com/v1/sl/Vm-KB_131124125929">Pay Online</Link></button>
     ];
 
     return (
