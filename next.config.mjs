@@ -11,6 +11,22 @@ const nextConfig = {
     images: {
         qualities: [75, 85, 95, 100],
     },
+    trailingSlash: false,
+
+    async redirects() {
+        return [
+            {
+                source: '/index.html',
+                destination: '/',
+                permanent: true,
+            },
+            {
+                source: '/index.php',
+                destination: '/',
+                permanent: true,
+            }
+        ];
+    },
 };
 
 export default nextConfig;
