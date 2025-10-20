@@ -19,11 +19,22 @@ export default function ContentDisplay({ pageTitle, content }) {
                                 sizes="(max-width: 768px) 80vw, 25vw"
                             />
                         )}
-                        {item.text.map((text, index) => (
-                            <p key={index} className="md:text-2xl text-base text-wrap pb-4">
-                                {text}
-                            </p>
-                        ))}
+                        {item.text.map((text, index) => {
+                            // Check if the text is a React element (like ul, li, etc.)
+                            if (typeof text === 'object' && text !== null) {
+                                return (
+                                    <div key={index} className="md:text-2xl text-base text-wrap pb-4">
+                                        {text}
+                                    </div>
+                                );
+                            }
+                            // Regular text content
+                            return (
+                                <p key={index} className="md:text-2xl text-base text-wrap pb-4">
+                                    {text}
+                                </p>
+                            );
+                        })}
                     </div>
                 </div>
             ))}
