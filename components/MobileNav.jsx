@@ -31,7 +31,7 @@ export default function MobileNav() {
         { name: "Patient Information", href: "/patient-information", subitems: [{ name: "New Patient Forms", href: "/new-patient-forms" }, { name: "Financial & Insurance", href: "/financial-and-insurance" }, { name: "Patient Testimonials", href: "/patient-testimonials" }, { name: "Dental Blog", href: "/dental-blog" }] },
         { name: "Services", href: "/services", subitems: [{ name: "Emergency Dentistry", href: "/emergency-dentistry" }, { name: "Family Dentistry", href: "/family-dentistry" }, { name: "Restorative Dentistry", href: "/restorative-dentistry" }, { name: "Cosmetic Dentistry", href: "/cosmetic-dentistry" }, { name: "Dental Procedures", href: "/dental-procedures" }] },
         { name: "Contact", href: "/contact" },
-        { name: "Pay Online", href: "" }
+        { name: "Pay Online", href: "https://api.ipospays.com/v1/sl/Vm-KB_131124125929" }
     ];
 
     return (
