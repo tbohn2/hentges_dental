@@ -124,11 +124,13 @@ export default function Home() {
             sizes="100vw"
           />
           <div className="relative z-10 flex flex-col items-center justify-center gap-4 w-full">
-            <div className="flex flex-col items-center justify-center gap-4 md:gap-6 bg-primary p-4 md:p-8 rounded-lg opacity-90 text-secondary">
+            <div className="flex flex-col items-center justify-center gap-2 xs:gap-4 md:gap-6 bg-primary opacity-90 p-4 md:p-8 rounded-lg text-secondary">
               <h1 className="font-bold text-4xl md:text-6xl lg:text-8xl text-center">Hentges Dental</h1>
-              <p className="font-bold text-lg md:text-2xl lg:text-3xl italic text-center px-4">Best Family & Cosmetic Dentist in Mesa, AZ</p>
+              <p className="font-semibold text-md md:text-2xl lg:text-3xl text-center px-2">Formerly <Link href="/Dr-Leo-Christensen" className="hover:text-tertiary underline">Christensen Family Dentistry</Link></p>
+              <p className="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl italic text-center px-4">Best Family Dentist in Mesa, AZ</p>
+              {/* <p className="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl italic text-center px-4">Best Family & Cosmetic Dentist in Mesa, AZ</p> */}
             </div>
-            <button className="button-2 text-xl md:text-2xl lg:text-4xl font-semibold my-4 px-4 py-2 md:px-6 md:py-3"><Link href="/about">Book Appointment</Link></button>
+            <button className="button-2 text-xl md:text-2xl lg:text-4xl my-4 px-4 py-2 md:px-6 md:py-3"><Link href="/request-appointment">Book Appointment</Link></button>
           </div>
         </div>
 
