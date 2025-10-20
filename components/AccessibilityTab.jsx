@@ -22,18 +22,13 @@ const AccessibilityTab = () => {
                                 <path fillRule="evenodd" clipRule="evenodd" fill="currentColor" d="M343.4199219,451.5908203  c-30.4472656,60.1875-94.1748047,99.8398438-162.1503906,99.8398438C81.4296875,551.4306641,0,470.0009766,0,370.1611328  c0-70.1005859,42.4853516-135.2436523,105.8818359-164.1210938l4.1025391,53.5375977  c-37.4970703,23.628418-60.6123047,66.262207-60.6123047,110.9506836c0,72.4267578,59.0712891,131.4970703,131.4970703,131.4970703  c66.2617188,0,122.7646484-50.8515625,130.4697266-116.0869141L343.4199219,451.5908203z" />
                             </svg>
                         </div>
-                        {/* {['A', 'C', 'C', 'E', 'S', 'S', 'I', 'B', 'I', 'L', 'I', 'T', 'Y'].map((letter, index) => (
-                            <span key={index} className="font-bold leading-none text-sm">
-                                {letter}
-                            </span>
-                        ))} */}
                     </div>
                 </div>
             </div>
 
             {/* Accessibility Panel */}
             {isHovered && (
-                <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="fixed right-0 top-3/5 scroll-m-4 transform -translate-y-1/2 z-40 bg-white border border-gray-300 rounded-l-lg shadow-xl p-6 w-80 mr-8">
+                <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="fixed right-0 top-2/3 scroll-m-4 transform -translate-y-1/2 z-40 bg-white border border-gray-300 rounded-l-lg shadow-xl p-6 w-80 mr-8">
 
                     <div className="space-y-4">
                         <div>
@@ -41,28 +36,17 @@ const AccessibilityTab = () => {
                             <p className="text-gray-600 mb-4 text-xl">
                                 Need help making our website more accessible? We've compiled helpful resources and tools to improve your browsing experience.
                             </p>
-
-                            <Link
-                                href="/accessibility"
-                                className="w-full bg-tertiary text-white py-3 px-4 rounded-lg hover:bg-secondary transition-colors duration-200 flex items-center justify-center gap-2"
-                            >
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                                </svg>
-                                <span className="text-xl text-center">View Accessibility Guide</span>
-                            </Link>
-                        </div>
-
-                        <div className="pt-4 border-t border-gray-200">
                             <p className="text-gray-600 mb-2 text-xl">
                                 Learn about browser settings, screen readers, and other tools to make our website more accessible.
                             </p>
-                            <div className="flex items-center gap-2 text-gray-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                                </svg>
-                                <span className="text-xl">Accessibility Features</span>
-                            </div>
+
+                            <Link
+                                href="/accessibility"
+                                onClick={() => setIsHovered(false)}
+                                className="w-full bg-tertiary text-white p-3 rounded-lg hover:bg-secondary transition-colors duration-200 flex items-center justify-center gap-2"
+                            >
+                                <span className="text-xl text-center">View Accessibility Guide</span>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -42,17 +42,17 @@ export default function MobileNav() {
                     <li className="whitespace-nowrap inline-block bg-primary w-full" key={item.name}>
                         {item.subitems ? (
                             <div className="w-full px-1 py-2 flex flex-row items-center justify-between cursor-pointer">
-                                <Link href={item.href} className="w-full pr-2 border-e border-tertiary active:bg-tertiary active:text-primary">{item.name}</Link>
+                                <Link href={item.href} className="w-full pr-2 border-e border-tertiary active:bg-tertiary active:text-primary" onClick={() => setIsOpen(false)}>{item.name}</Link>
                                 <span onClick={() => setOpenIndex(openIndex === index ? null : index)} className={`px-2 transition-transform ${openIndex === index ? "rotate-180" : "rotate-0"}`}>︾</span>
                             </div>
                         ) : (
-                            <Link href={item.href} className="block w-full px-1 py-2 active:bg-tertiary active:text-primary">{item.name}</Link>
+                            <Link href={item.href} className="block w-full px-1 py-2 active:bg-tertiary active:text-primary" onClick={() => setIsOpen(false)}>{item.name}</Link>
                         )}
                         {item.subitems && (
                             <ul className={`z-10 border-t-2 border-tertiary divide-y-2 text-tertiary ${openIndex === index ? "block" : "hidden"}`}>
                                 {item.subitems.map((subitem) => (
                                     <li className="whitespace-nowrap float-right inline-block bg-primary w-full" key={subitem.name}>
-                                        <Link href={subitem.href} className="block w-full px-1 py-2 active:bg-tertiary active:text-primary">{subitem.name}</Link>
+                                        <Link href={subitem.href} className="block w-full px-1 py-2 active:bg-tertiary active:text-primary" onClick={() => setIsOpen(false)}>{subitem.name}</Link>
                                     </li>
                                 ))}
                             </ul>
