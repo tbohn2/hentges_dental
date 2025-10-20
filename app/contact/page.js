@@ -53,6 +53,7 @@ export default function Contact() {
 
     return (
         <>
+            <link rel="canonical" href="https://hentgesdental.com/contact" />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}

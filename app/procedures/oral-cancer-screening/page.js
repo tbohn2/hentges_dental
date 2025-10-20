@@ -68,7 +68,10 @@ export default function OralCancerScreening() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/oral-cancer-screening" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

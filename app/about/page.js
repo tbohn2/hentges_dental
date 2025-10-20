@@ -18,6 +18,9 @@ const pageContent = [
 
 export default function About() {
     return (
-        <ContentDisplay pageTitle="ABOUT US" content={pageContent} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/about" />
+            <ContentDisplay pageTitle="ABOUT US" content={pageContent} />
+        </>
     );
 }

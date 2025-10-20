@@ -102,6 +102,7 @@ export default function DentalCrown() {
 
     return (
         <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/dental-crown" />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}

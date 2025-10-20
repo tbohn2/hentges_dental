@@ -54,7 +54,10 @@ export default function DentalCleaning() {
     ]
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/dental-cleaning" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

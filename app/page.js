@@ -108,6 +108,7 @@ export default function Home() {
 
   return (
     <>
+      <link rel="canonical" href="https://hentgesdental.com" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}

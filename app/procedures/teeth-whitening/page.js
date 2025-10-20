@@ -118,6 +118,7 @@ export default function TeethWhitening() {
 
     return (
         <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/teeth-whitening" />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}

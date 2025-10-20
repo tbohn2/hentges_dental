@@ -60,7 +60,10 @@ export default function OralApplianceTherapy() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/oral-appliance-therapy" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

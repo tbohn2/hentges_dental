@@ -61,7 +61,10 @@ export default function SportsMouthguard() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/sports-mouthguard" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

@@ -116,6 +116,7 @@ export default function DentalImplants() {
 
     return (
         <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/dental-implants" />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}

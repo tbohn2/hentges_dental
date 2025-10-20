@@ -155,6 +155,7 @@ export default function TempeDentist() {
 
     return (
         <>
+            <link rel="canonical" href="https://hentgesdental.com/locations/tempe" />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}

@@ -33,7 +33,10 @@ export default function DentalBonding() {
 
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/dental-bonding" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

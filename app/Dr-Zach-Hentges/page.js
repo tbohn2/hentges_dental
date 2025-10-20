@@ -73,6 +73,7 @@ export default function DrZachHentges() {
 
     return (
         <>
+            <link rel="canonical" href="https://hentgesdental.com/Dr-Zach-Hentges" />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}

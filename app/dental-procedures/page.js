@@ -39,13 +39,16 @@ export default function DentalProcedures() {
     ]
 
     return (
-        <div className="flex flex-wrap items-center justify-evenly gap-4 bg-primary py-12 md:w-11/12 3xl:w-2/3 self-center rounded-2xl">
-            <h1 className="text-4xl font-bold text-secondary w-full text-center">DENTAL PROCEDURES</h1>
-            {articles.map((article) => (
-                <button key={article.name} className="button-3 w-11/12 md:w-4/11 xl:w-3/10 text-center">
-                    <Link href={article.link} className="md:text-lg lg:text-xl 3xl:text-2xl font-bold">{article.name}</Link>
-                </button>
-            ))}
-        </div>
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/dental-procedures" />
+            <div className="flex flex-wrap items-center justify-evenly gap-4 bg-primary py-12 md:w-11/12 3xl:w-2/3 self-center rounded-2xl">
+                <h1 className="text-4xl font-bold text-secondary w-full text-center">DENTAL PROCEDURES</h1>
+                {articles.map((article) => (
+                    <button key={article.name} className="button-3 w-11/12 md:w-4/11 xl:w-3/10 text-center">
+                        <Link href={article.link} className="md:text-lg lg:text-xl 3xl:text-2xl font-bold">{article.name}</Link>
+                    </button>
+                ))}
+            </div>
+        </>
     );
 }

@@ -67,7 +67,10 @@ export default function ToothExtraction() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/tooth-extraction" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

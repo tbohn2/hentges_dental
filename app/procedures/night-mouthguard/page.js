@@ -55,7 +55,10 @@ export default function NightMouthguard() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/night-mouthguard" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

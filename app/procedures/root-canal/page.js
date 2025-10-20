@@ -115,6 +115,7 @@ export default function RootCanal() {
 
     return (
         <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/root-canal" />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}

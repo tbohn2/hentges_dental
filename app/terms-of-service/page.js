@@ -117,6 +117,9 @@ export default function TermsOfService() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/terms-of-service" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }

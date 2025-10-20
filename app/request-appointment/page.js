@@ -13,11 +13,14 @@ export default function RequestAppointment() {
 
 
     return (
-        <div className="bg-primary md:w-4/5 lg:w-2/3 w-11/12 rounded-2xl sm:p-12 p-6 flex flex-wrap justify-center">
-            <h1 className="text-2xl font-bold text-secondary pb-4 w-full text-center">REQUEST APPOINTMENT</h1>
-            <p className="text-xl text-wrap pb-4 font-semibold w-full">Please fill out the form below to request an appointment with Hentges Dental in Mesa, AZ</p>
-            <RequestForm />
-        </div>
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/request-appointment" />
+            <div className="bg-primary md:w-4/5 lg:w-2/3 w-11/12 rounded-2xl sm:p-12 p-6 flex flex-wrap justify-center">
+                <h1 className="text-2xl font-bold text-secondary pb-4 w-full text-center">REQUEST APPOINTMENT</h1>
+                <p className="text-xl text-wrap pb-4 font-semibold w-full">Please fill out the form below to request an appointment with Hentges Dental in Mesa, AZ</p>
+                <RequestForm />
+            </div>
+        </>
     );
 }
 

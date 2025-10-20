@@ -32,7 +32,10 @@ const content = [
 
 export default function NewPatientForms() {
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/new-patient-forms" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

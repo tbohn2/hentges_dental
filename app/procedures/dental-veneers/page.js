@@ -108,6 +108,7 @@ export default function DentalVeneers() {
 
     return (
         <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/dental-veneers" />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}

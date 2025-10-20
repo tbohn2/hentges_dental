@@ -92,6 +92,7 @@ export default function CosmeticDentistry() {
 
     return (
         <>
+            <link rel="canonical" href="https://hentgesdental.com/cosmetic-dentistry" />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}

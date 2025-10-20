@@ -81,6 +81,9 @@ export default function ChandlerDentist() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/locations/chandler" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }

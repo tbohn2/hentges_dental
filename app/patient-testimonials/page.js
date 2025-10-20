@@ -15,12 +15,15 @@ export default function PatientTestimonials() {
     ]
 
     return (
-        <div className="bg-primary w-full p-12 flex flex-col gap-4 items-center justify-center">
-            <h1 className="text-6xl font-bold text-secondary w-full text-center">PATIENT TESTIMONIALS</h1>
-            <p className="text-2xl text-wrap font-semibold w-full text-center">We love hearing from our patients, take a moment to leave us a review on <a href="https://www.google.com/maps/place/Christensen+Family+Dentistry/@33.4259409,-111.8054747,15z/data=!4m2!3m1!1s0x0:0x374a353f4672cf6f?sa=X&ved=2ahUKEwifhLnC_4jmAhXgJzQIHQhMBBIQ_BIwCnoECAwQCA" className="text-tertiary hover:underline">Google</a></p>
-            <p className="text-2xl text-wrap font-semibold w-full text-center pb-4">Thank you for your feedback!</p>
-            <ReviewCarousel reviews={reviews} />
-        </div>
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/patient-testimonials" />
+            <div className="bg-primary w-full p-12 flex flex-col gap-4 items-center justify-center">
+                <h1 className="text-6xl font-bold text-secondary w-full text-center">PATIENT TESTIMONIALS</h1>
+                <p className="text-2xl text-wrap font-semibold w-full text-center">We love hearing from our patients, take a moment to leave us a review on <a href="https://www.google.com/maps/place/Christensen+Family+Dentistry/@33.4259409,-111.8054747,15z/data=!4m2!3m1!1s0x0:0x374a353f4672cf6f?sa=X&ved=2ahUKEwifhLnC_4jmAhXgJzQIHQhMBBIQ_BIwCnoECAwQCA" className="text-tertiary hover:underline">Google</a></p>
+                <p className="text-2xl text-wrap font-semibold w-full text-center pb-4">Thank you for your feedback!</p>
+                <ReviewCarousel reviews={reviews} />
+            </div>
+        </>
     );
 }
 

@@ -61,7 +61,10 @@ export default function SleepApnea() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/sleep-apnea" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

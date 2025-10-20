@@ -49,7 +49,10 @@ export default function DentistryForKids() {
     ]
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/dentistry-for-kids" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

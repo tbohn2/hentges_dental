@@ -41,7 +41,10 @@ const pageContent = [
 
 export default function PatientInformation() {
     return (
-        <ContentDisplay pageTitle={title} content={pageContent} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/patient-information" />
+            <ContentDisplay pageTitle={title} content={pageContent} />
+        </>
     );
 }
 

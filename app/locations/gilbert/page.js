@@ -82,6 +82,9 @@ export default function GilbertDentist() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/locations/gilbert" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }

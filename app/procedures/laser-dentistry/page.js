@@ -55,7 +55,10 @@ export default function LaserDentistry() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/laser-dentistry" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

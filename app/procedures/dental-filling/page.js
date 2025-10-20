@@ -43,6 +43,9 @@ export default function DentalFilling() {
     ]
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/dental-filling" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }

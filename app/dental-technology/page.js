@@ -60,7 +60,10 @@ export default function DentalTechnology() {
     ]
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/dental-technology" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

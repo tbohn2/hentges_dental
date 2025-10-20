@@ -84,6 +84,9 @@ export default function ApacheJunctionDentist() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/locations/apache-junction" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }

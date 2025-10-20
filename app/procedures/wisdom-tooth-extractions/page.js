@@ -42,6 +42,9 @@ export default function WisdomToothExtractions() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/wisdom-tooth-extractions" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }

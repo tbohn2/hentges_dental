@@ -66,6 +66,9 @@ const content = [
 
 export default function Accessibility() {
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/accessibility" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }

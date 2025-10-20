@@ -29,7 +29,10 @@ export default function RestorativeDentistry() {
 
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/restorative-dentistry" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

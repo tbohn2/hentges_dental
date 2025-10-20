@@ -65,7 +65,10 @@ export default function PeriodontalCare() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/periodontal-care" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

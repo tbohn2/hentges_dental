@@ -52,6 +52,9 @@ export default function DigitalRadiography() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/digital-radiography" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }

@@ -19,7 +19,10 @@ export default function AllOn4() {
     ]
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/all-on-4" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

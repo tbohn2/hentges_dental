@@ -76,6 +76,7 @@ export default function DrLeoChristensen() {
 
     return (
         <>
+            <link rel="canonical" href="https://hentgesdental.com/Dr-Leo-Christensen" />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}

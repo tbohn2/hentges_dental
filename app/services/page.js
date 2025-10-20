@@ -58,7 +58,10 @@ const pageContent = [
 
 export default function Services() {
     return (
-        <ContentDisplay pageTitle={title} content={pageContent} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/services" />
+            <ContentDisplay pageTitle={title} content={pageContent} />
+        </>
     );
 }
 

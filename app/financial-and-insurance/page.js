@@ -51,7 +51,10 @@ export default function FinancialAndInsurance() {
     ]
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/financial-and-insurance" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

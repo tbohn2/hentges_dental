@@ -24,7 +24,10 @@ export default function DentalBlog() {
             }
         ];
         return (
-            <ContentDisplay pageTitle={title} content={content} />
+            <>
+                <link rel="canonical" href="https://hentgesdental.com/dental-blog" />
+                <ContentDisplay pageTitle={title} content={content} />
+            </>
         );
     }
 
@@ -36,16 +39,19 @@ export default function DentalBlog() {
     ];
 
     return (
-        <div className="p-12 md:w-4/5 lg:w-2/3 w-11/12 self-center rounded-2xl flex flex-col justify-center bg-primary">
-            <h1 className="md:text-6xl text-3xl font-bold text-secondary pb-4">{title}</h1>
-            <div className="flex flex-col gap-4">
-                {posts.map(post => (
-                    <Link key={post.slug} href={`/dental-blog/${post.slug}`} className="p-4 blog-link rounded-xl">
-                        <h2 className="md:text-3xl text-xl font-bold text-tertiary hover:underline">{post.title}</h2>
-                        <p className="md:text-xl text-base">{post.excerpt}</p>
-                    </Link>
-                ))}
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/dental-blog" />
+            <div className="p-12 md:w-4/5 lg:w-2/3 w-11/12 self-center rounded-2xl flex flex-col justify-center bg-primary">
+                <h1 className="md:text-6xl text-3xl font-bold text-secondary pb-4">{title}</h1>
+                <div className="flex flex-col gap-4">
+                    {posts.map(post => (
+                        <Link key={post.slug} href={`/dental-blog/${post.slug}`} className="p-4 blog-link rounded-xl">
+                            <h2 className="md:text-3xl text-xl font-bold text-tertiary hover:underline">{post.title}</h2>
+                            <p className="md:text-xl text-base">{post.excerpt}</p>
+                        </Link>
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
     );
 }

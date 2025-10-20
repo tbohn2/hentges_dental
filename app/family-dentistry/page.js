@@ -101,6 +101,7 @@ export default function FamilyDentistry() {
 
     return (
         <>
+            <link rel="canonical" href="https://hentgesdental.com/family-dentistry" />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}

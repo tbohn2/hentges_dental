@@ -106,6 +106,7 @@ export default function EmergencyDentistry() {
 
     return (
         <>
+            <link rel="canonical" href="https://hentgesdental.com/emergency-dentistry" />
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}

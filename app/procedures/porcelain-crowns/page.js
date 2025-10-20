@@ -64,7 +64,10 @@ export default function PorcelainCrowns() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/procedures/porcelain-crowns" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
 

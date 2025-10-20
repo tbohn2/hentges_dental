@@ -111,6 +111,9 @@ export default function PrivacyPolicy() {
     ];
 
     return (
-        <ContentDisplay pageTitle={title} content={content} />
+        <>
+            <link rel="canonical" href="https://hentgesdental.com/privacy-policy" />
+            <ContentDisplay pageTitle={title} content={content} />
+        </>
     );
 }
