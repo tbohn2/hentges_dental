@@ -38,7 +38,8 @@ h6 {
   font-family: var(--font-geist-sans) !important;
 }
 
-button {
+button,
+.button {
   border-radius: 10px;
   border: 1px;
   border-style: solid;
@@ -64,6 +65,12 @@ button {
 }
 
 .button-2:hover {
+  background-color: var(--primary);
+  color: var(--tertiary);
+  box-shadow: 0 0 25px 0 var(--tertiary);
+}
+
+.button-2.pay-online:hover {
   background-color: var(--tertiary);
   color: var(--primary);
   box-shadow: 0 0 25px 0 var(--primary);
