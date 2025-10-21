@@ -24,18 +24,12 @@ const nextConfig = {
 
     async redirects() {
         return [
-            {
-                source: '/index.html',
-                destination: '/',
-                permanent: true,
-            },
-            {
-                source: '/index.php',
-                destination: '/',
-                permanent: true,
-            }
+            { source: '/index', destination: '/', permanent: true },
+            { source: '/index.html', destination: '/', permanent: true },
+            { source: '/index.php', destination: '/', permanent: true }
         ];
     },
+
 };
 
 export default nextConfig;
