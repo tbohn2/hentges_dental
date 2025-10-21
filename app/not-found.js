@@ -4,14 +4,13 @@ import logo from "../public/images/og-logo.png";
 
 export const metadata = {
     title: "404 - Page Not Found | Hentges Dental",
-    description: "The page you're looking for doesn't exist. Return to Hentges Dental homepage for dental services in Mesa, AZ.",
+    description: "The page you&apos;re looking for doesn&apos;t exist. Return to Hentges Dental homepage for dental services in Mesa, AZ.",
     robots: "noindex, nofollow"
 };
 
 export default function NotFound() {
     return (
         <div className="flex flex-col items-center justify-center gap-8 bg-primary/95 backdrop-blur-sm p-8 md:p-12 rounded-xl shadow-2xl border border-white/20 text-secondary max-w-2xl w-full">
-            {/* 404 Icon */}
             <SEOImage
                 src={logo}
                 alt="Hentges Dental logo - 404 error"
@@ -19,16 +18,14 @@ export default function NotFound() {
                 className="xs:w-1/2 w-full rounded-lg"
             />
 
-            {/* 404 Text */}
             <div className="text-center">
                 <h1 className="font-bold text-6xl md:text-8xl text-tertiary mb-4">404</h1>
                 <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-4">Page Not Found</h2>
                 <p className="text-lg md:text-xl text-secondary/80 mb-8">
-                    Sorry, the page you're looking for doesn't exist or has been moved.
+                    Sorry, the page you&apos;re looking for doesn&apos;t exist or has been moved.
                 </p>
             </div>
 
-            {/* Action Buttons */}
             <div className="flex flex-wrap justify-center gap-4 w-full max-w-md">
                 <Link
                     href="/"
@@ -44,10 +41,9 @@ export default function NotFound() {
                 </Link>
             </div>
 
-            {/* Additional Help */}
             <div className="text-center mt-6">
                 <p className="text-sm text-secondary/70 mb-2">
-                    Need help finding what you're looking for?
+                    Need help finding what you&apos;re looking for?
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 text-sm">
                     <Link href="/services" className="hover:text-tertiary underline transition-colors">
