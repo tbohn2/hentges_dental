@@ -8,11 +8,15 @@ import AccessibilityTab from "../components/AccessibilityTab";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 const instrumentSans = Instrument_Sans({
   variable: "--font-instrument-sans",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 export const metadata = {
@@ -48,6 +52,9 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="theme-color" content="#F9FAFB" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -118,7 +125,7 @@ export default function RootLayout({ children }) {
             ))}
           </div>
           <Header />
-          <div className="w-full flex flex-col items-center justify-center my-4 page-fade-in">
+          <div className="w-full flex flex-col items-center justify-center my-2 page-fade-in">
             {/* <PageTransition> */}
             {children}
             {/* </PageTransition> */}

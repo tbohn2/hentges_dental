@@ -23,6 +23,22 @@ body {
   font-family: var(--font-instrument-sans);
   background: linear-gradient(90deg, var(--tertiary) 0%, var(--secondary) 100%);
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile-first optimizations */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Reduce layout shifts */
+  img {
+    height: auto;
+    max-width: 100%;
+  }
 }
 
 .geist-sans {
@@ -164,11 +180,11 @@ button,
   text-orientation: mixed;
 }
 
-/* Smooth page load animation */
+/* Smooth page load animation - optimized for mobile */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
 
   to {
@@ -178,7 +194,21 @@ button,
 }
 
 .page-fade-in {
-  animation: fadeInUp 0.8s ease-out forwards;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  .page-fade-in {
+    animation: fadeInUp 0.4s ease-out forwards;
+  }
+
+  /* Reduce motion for better performance */
+  @media (prefers-reduced-motion: reduce) {
+    .page-fade-in {
+      animation: none;
+    }
+  }
 }
 
 /* @keyframes fadeOutDown {

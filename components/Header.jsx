@@ -36,6 +36,7 @@ export default function Header() {
                     className="lg:w-1/4 md:w-1/8 w-1/12"
                     priority={true}
                     sizes="(max-width: 768px) 8vw, 4vw"
+                    quality={85}
                 />
                 <div className="flex lg:flex-col lg:gap-0 gap-2 flex-row justify-center geist-sans text-3xl md:text-4xl font-semibold ">
                     <span className="flex items-center">Hentges</span>

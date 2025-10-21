@@ -113,25 +113,26 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
-      <div className="flex flex-col items-center justify-center w-full min-h-screen">
-        <div id="welcome" className="w-11/12 flex flex-col items-center justify-center gap-4 rounded-lg mb-6 relative min-h-[70vh]">
+      <div className="flex flex-col items-center justify-center w-full">
+        <div id="welcome" className="w-full flex flex-col items-center justify-center gap-4 rounded-lg">
           <SEOImage
             src={azLake}
             alt="Beautiful Arizona lake landscape at sunset - Hentges Dental Mesa location backdrop"
             title="Arizona Lake Landscape - Hentges Dental"
             fill
-            className="object-cover rounded-lg"
+            className="object-cover"
             priority={true}
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+            quality={75}
           />
-          <div className="relative z-10 flex flex-col items-center justify-center gap-4 w-full">
+          <div className="z-10 flex flex-col items-center justify-center gap-4 w-full">
             <div className="flex flex-col items-center justify-center gap-2 xs:gap-4 md:gap-6 bg-primary opacity-90 p-4 md:p-8 rounded-lg text-secondary">
-              <h1 className="font-bold text-4xl md:text-6xl lg:text-8xl text-center">Hentges Dental</h1>
+              <h1 className="font-bold text-4xl md:text-6xl xl:text-7xl text-center">Hentges Dental</h1>
               <p className="font-semibold text-md md:text-2xl lg:text-3xl text-center px-2">Formerly <Link href="/Dr-Leo-Christensen" className="hover:text-tertiary underline">Christensen Family Dentistry</Link></p>
               <p className="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl italic text-center px-4">Best Family Dentist in Mesa, AZ</p>
               {/* <p className="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl italic text-center px-4">Best Family & Cosmetic Dentist in Mesa, AZ</p> */}
             </div>
-            <button className="button-2 text-xl md:text-2xl lg:text-4xl my-4 px-4 py-2 md:px-6 md:py-3"><Link href="/request-appointment">Book Appointment</Link></button>
+            <button className="button-2 text-xl md:text-2xl lg:text-4xl px-4 py-2 md:px-6 md:py-3"><Link href="/request-appointment">Book Appointment</Link></button>
           </div>
         </div>
 
@@ -146,6 +147,8 @@ export default function Home() {
                 height={64}
                 className="w-3/4 md:w-1/2"
                 sizes="(max-width: 768px) 25vw, 12vw"
+                quality={85}
+                loading="lazy"
               />
               <div className="flex flex-col items-center justify-center text-center">
                 <h2 className="font-bold text-sm md:text-lg lg:text-xl text-secondary">{icon.title}</h2>
@@ -169,6 +172,8 @@ export default function Home() {
                   height={300}
                   className="w-full lg:w-11/12 rounded-lg p-2 lg:p-4"
                   sizes="(max-width: 768px) 50vw, 25vw"
+                  quality={75}
+                  loading={index === 0 ? "eager" : "lazy"}
                 />
               )
             })}
@@ -193,6 +198,8 @@ export default function Home() {
                   height={300}
                   className="w-full lg:w-11/12 rounded-lg p-2 lg:p-4"
                   sizes="(max-width: 768px) 50vw, 25vw"
+                  quality={75}
+                  loading="lazy"
                 />
               )
             })}
@@ -208,6 +215,8 @@ export default function Home() {
             height={300}
             className="w-11/12 md:w-1/2 lg:w-1/3 rounded-lg"
             sizes="(max-width: 768px) 90vw, 30vw"
+            quality={75}
+            loading="lazy"
           />
           <div className="flex flex-col gap-4 lg:gap-6 w-full lg:w-2/3 p-4">
             <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left">Dr. Hentges and Family</h2>

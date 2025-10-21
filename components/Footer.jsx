@@ -88,6 +88,7 @@ export default function Footer() {
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
                                 className="rounded-lg"
+                                title="Hentges Dental Location Map"
                             ></iframe>
                         </div>
                     </div>

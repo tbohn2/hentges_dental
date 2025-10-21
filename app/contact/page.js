@@ -58,34 +58,27 @@ export default function Contact() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
             />
-            <div className="bg-primary w-full p-4 flex flex-wrap justify-center">
-                <div className="flex flex-wrap justify-start bg-primary w-11/12 lg:w-2/3">
-                    <h1 className="md:text-6xl text-3xl font-bold text-secondary pb-4 w-full">CONTACT US</h1>
-
-                    <div className="flex md:flex-row-reverse flex-wrap justify-start md:justify-end gap-4">
-                        {/* <Image src={receptionPhone} alt="Receptionist on Phone" className="w-1/2 sm:w-1/3 md:w-1/5 lg:w-1/6 h-1/2 sm:h-auto md:h-3/4 lg:h-3/4 md:object-cover object-contain" /> */}
-                        <div className="flex flex-col w-full md:w-2/3">
-                            <p className="text-xl text-wrap pb-4 font-semibold w-full">
-                                New patients are always welcome at Hentges Dental! Contact our North Mesa dental office with any questions about dental treatments, insurance, or your oral health—our knowledgeable team is here to assist you. We proudly serve patients from North Mesa, Tempe, Chandler, Gilbert, Apache Junction, and throughout the East Valley.
-                            </p>
-                            <p className="text-xl text-wrap pb-4 font-semibold w-full">You may also request an appointment through our <Link href="/request-appointment" className="text-tertiary hover:underline">Online Appointment Request Form</Link>.</p>
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-center justify-start gap-4 w-full md:w-1/3">
+            <div className="bg-primary w-full p-4 rounded-lg flex flex-col items-center justify-center w-11/12 lg:w-2/3 p-4">
+                <h1 className="md:text-6xl text-3xl font-bold text-secondary pb-4">CONTACT US</h1>
+                <p className="text-xl text-wrap pb-4 font-semibold w-full">
+                    New patients are always welcome at Hentges Dental! Contact our North Mesa dental office with any questions about dental treatments, insurance, or your oral health—our knowledgeable team is here to assist you. We proudly serve patients from North Mesa, Tempe, Chandler, Gilbert, Apache Junction, and throughout the East Valley.
+                </p>
+                <p className="text-xl text-wrap pb-4 font-semibold w-full">You may also request an appointment through our <Link href="/request-appointment" className="text-tertiary hover:underline">Online Appointment Request Form</Link>.</p>
+                <div className="flex flex-wrap justify-center gap-4 w-full">
+                    <div className="flex flex-col items-center gap-4 w-full md:w-9/20">
                         <h2 className="text-4xl font-bold w-full">Hentges Dental</h2>
                         <p className="text-xl text-wrap pb-4 font-semibold w-full">Address: <br /> 560 N. Stapley Dr. Ste 2 <br /> Mesa, AZ 85203</p>
                         <p className="text-xl text-wrap pb-4 font-semibold w-full">Phone: <a href="tel:(480) 964-2131" className="text-tertiary hover:underline">(480) 964-2131</a></p>
                         <p className="text-xl text-wrap pb-4 font-semibold w-full">Email: <a href="mailto:hentgesdental@gmail.com" className="text-tertiary hover:underline">hentgesdental@gmail.com</a></p>
                     </div>
-                    <div className="flex flex-col items-center justify-start gap-1 w-full md:w-1/3">
+                    <div className="flex flex-col items-center justify-start gap-1 w-full md:w-9/20">
                         <h2 className="text-4xl font-bold w-full">Hours</h2>
                         {hours.map((hour) => (
                             <p key={hour.day} className="text-xl text-wrap pb-4 font-semibold w-full">{hour.day}: {hour.hours}</p>
                         ))}
                     </div>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d588.6481704760856!2d-111.80604301062473!3d33.425932075436734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba6345c8228bb%3A0x374a353f4672cf6f!2sChristensen%20Family%20Dentistry!5e0!3m2!1sen!2sus!4v1758577250768!5m2!1sen!2sus" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-full md:w-2/3 min-h-[450px]"></iframe>
-
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d588.6481704760856!2d-111.80604301062473!3d33.425932075436734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba6345c8228bb%3A0x374a353f4672cf6f!2sChristensen%20Family%20Dentistry!5e0!3m2!1sen!2sus!4v1758577250768!5m2!1sen!2sus" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-full md:w-2/3 h-[250px] md:h-[350px] border-1 border-secondary rounded-lg"></iframe>
             </div>
         </>
     );
