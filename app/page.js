@@ -121,8 +121,9 @@ export default function Home() {
             title="Arizona Lake Landscape - Hentges Dental"
             fill
             className="object-cover"
+            sizes="(max-width: 768px) 100vw, 2500px"
+            quality={100}
             priority={true}
-            quality={75}
           />
           <div className="z-10 flex flex-col items-center justify-center gap-4 w-full">
             <div className="flex flex-col items-center justify-center gap-2 xs:gap-4 md:gap-6 bg-primary opacity-90 p-4 md:p-8 rounded-lg text-secondary">

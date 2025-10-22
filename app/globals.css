@@ -71,23 +71,6 @@ img {
   transform: translateZ(0);
 }
 
-/* Optimize critical layout */
-.flex {
-  display: flex;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
 /* Prevent layout shifts and forced reflows */
 .layout-stable {
   contain: layout style;
