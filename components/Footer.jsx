@@ -39,7 +39,7 @@ export default function Footer() {
                                 </svg>
                                 <div>
                                     <p className="font-semibold">Address:</p>
-                                    <p>560 N. Stapley Dr.<br />Mesa, AZ 85203</p>
+                                    <a href="https://maps.app.goo.gl/1wkmpjrZoohED9qz5" target="_blank" className="text-primary hover:text-tertiary transition-colors">560 N. Stapley Dr.<br />Mesa, AZ 85203</a>
                                 </div>
                             </div>
                             <div className="flex items-center gap-3">
