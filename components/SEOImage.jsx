@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 
 const SEOImage = ({
@@ -10,7 +12,7 @@ const SEOImage = ({
     priority = false,
     loading,
     sizes = '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
-    quality = 85,
+    quality = 75,
     placeholder = 'blur',
     blurDataURL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAEBAQEB' +
     'AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB' +
@@ -18,16 +20,9 @@ const SEOImage = ({
     'AAAAAAAAAAAAAAAAAA/9oACAEBAAA/AD//2Q==',
     ...props
 }) => {
-    // Generate SEO-friendly alt text if not provided
     const seoAlt = alt || `Dental care image - ${title || 'Hentges Dental'}`;
-
-    // Generate title from alt text if not provided
     const seoTitle = title || alt || 'Hentges Dental Image';
-
-    // Check if the image is an SVG
     const isSVG = typeof src === 'string' && src.includes('.svg');
-
-    // Handle priority vs loading conflict
     const imageProps = {
         src,
         alt: seoAlt,
@@ -46,10 +41,11 @@ const SEOImage = ({
         imageProps.blurDataURL = blurDataURL;
     }
 
-    // Only set priority OR loading, not both
     if (priority) {
         imageProps.priority = true;
         imageProps.fetchPriority = 'high';
+    } else if (props.loading !== 'eager') {
+        imageProps.fetchPriority = 'auto';
     } else {
         imageProps.loading = loading || 'lazy';
     }

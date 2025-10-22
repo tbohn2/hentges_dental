@@ -4,11 +4,9 @@ import Link from "next/link";
 import Dropdown from "./Dropdown";
 import SEOImage from "./SEOImage";
 import tooth from "../public/images/tooth.png";
-import { useMobile } from "../hooks/useMobile";
 import MobileNav from "./MobileNav";
 
 export default function Header() {
-    const isMobile = useMobile();
 
     const aboutItems = [{ name: "Zach Hentges, DMD", href: "/Dr-Zach-Hentges" }, { name: "Leo Christensen, DDS", href: "/Dr-Leo-Christensen" }, { name: "About Us", href: "/about" }, { name: "Dental Technology", href: "/dental-technology" }];
     const patientInformationItems = [{ name: "Patient Information", href: "/patient-information" }, { name: "New Patient Forms", href: "/new-patient-forms" }, { name: "Financial & Insurance", href: "/financial-and-insurance" }, { name: "Patient Testimonials", href: "/patient-testimonials" }, { name: "Dental Blog", href: "/dental-blog" }];
@@ -43,17 +41,16 @@ export default function Header() {
                     <span className="flex items-center">Dental</span>
                 </div>
             </Link>
-            {isMobile ? (
+            <div className="mobile-only">
                 <MobileNav />
-            ) : (
-                <nav className="flex flex-grow py-2">
-                    <ul className="flex flex-grow flex-wrap justify-evenly items-center font-light xl:text-2xl md:text-lg sm:text-base text-primary">
-                        {navElements.map((element, index) => (
-                            <li className="md:text-xl xl:text-2xl" key={index}>{element}</li>
-                        ))}
-                    </ul>
-                </nav>
-            )}
+            </div>
+            <nav className="desktop-only flex flex-grow py-2">
+                <ul className="flex flex-grow flex-wrap justify-evenly items-center font-light xl:text-2xl md:text-lg sm:text-base text-primary">
+                    {navElements.map((element, index) => (
+                        <li className="md:text-xl xl:text-2xl" key={index}>{element}</li>
+                    ))}
+                </ul>
+            </nav>
         </header>
     );
 }

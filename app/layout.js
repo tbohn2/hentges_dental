@@ -53,8 +53,12 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#F9FAFB" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        {/* Critical resource hints - load in parallel */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Preload critical resources */}
+        <link rel="preload" href="/images/az-lake.jpg" as="image" type="image/jpeg" />
+        <link rel="preload" href="/images/tooth.png" as="image" type="image/png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -122,7 +122,6 @@ export default function Home() {
             fill
             className="object-cover"
             priority={true}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
             quality={75}
           />
           <div className="z-10 flex flex-col items-center justify-center gap-4 w-full">

@@ -27,19 +27,80 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Mobile-first optimizations */
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  /* Reduce layout shifts */
-  img {
-    height: auto;
-    max-width: 100%;
+/* Critical CSS for mobile performance - Above the fold */
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
   }
 }
+
+@media screen and (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+/* Reduce layout shifts and improve LCP */
+img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+/* Optimize hero section for faster FCP */
+#welcome {
+  min-height: 50vh;
+  position: relative;
+}
+
+/* Critical above-the-fold styles */
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* Reduce animation complexity for mobile */
+.page-fade-in {
+  animation: none;
+}
+
+/* Optimize button rendering */
+.button-1,
+.button-2 {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Optimize critical layout */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* Prevent layout shifts and forced reflows */
+.layout-stable {
+  contain: layout style;
+  will-change: auto;
+}
+
+/* Optimize for mobile performance */
+.mobile-optimized {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
 
 .geist-sans {
   font-family: var(--font-geist-sans) !important;
