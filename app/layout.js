@@ -1,4 +1,4 @@
-import { Geist, Instrument_Sans } from "next/font/google";
+import { Geist, Instrument_Sans, Quicksand } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -17,6 +17,14 @@ const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
   display: "swap",
   preload: true,
+});
+
+const quicksand = Quicksand({
+  variable: "--font-quicksand",
+  subsets: ["latin"],
+  display: "swap",
+  preload: true,
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -48,7 +56,7 @@ export default function RootLayout({ children }) {
   }];
 
   return (
-    <html lang="en" className={`${instrumentSans.variable} ${geistSans.variable}`}>
+    <html lang="en" className={`${instrumentSans.variable} ${geistSans.variable} ${quicksand.variable}`}>
       <head>
         <meta name="theme-color" content="#F9FAFB" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -121,15 +129,13 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`flex flex-col min-h-screen`}>
         <main className="flex flex-col justify-between w-full min-h-screen text-dark">
-          <div className="p-3 font-bold lg:text-xl md:text-lg sm:text-base flex flex-row flex-wrap items-center justify-evenly gap-2 w-full bg-primary border-b-2 border-secondary sticky top-0 z-50">
+          <div className="sm:h-[50px] h-[85px] p-3 font-bold lg:text-xl md:text-lg sm:text-base flex flex-row flex-wrap items-center justify-evenly gap-2 w-full bg-primary border-b-2 border-secondary sticky top-0 z-50">
             {contactItems.map((item, index) => (
-              <div className="flex flex-row flex-nowrap items-center justify-center gap-2" key={index}>
-                <a href={item.href} className="flex justify-center items-center gap-2 flex-nowrap hover:underline">{item.svg}{item.name}</a>
-              </div>
+              <a key={index} href={item.href} className="w-full sm:w-auto flex justify-center items-center gap-2 flex-nowrap hover:underline">{item.svg}{item.name}</a>
             ))}
           </div>
           <Header />
-          <div className="w-full flex flex-col items-center justify-center my-2 page-fade-in">
+          <div className="w-full flex flex-col items-center justify-center page-fade-in">
             {/* <PageTransition> */}
             {children}
             {/* </PageTransition> */}

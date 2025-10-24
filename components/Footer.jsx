@@ -97,12 +97,8 @@ export default function Footer() {
                 {/* Call to Action Buttons */}
                 <div className="mt-12 pt-8 border-t border-primary border-opacity-20">
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <button className="button-1 text-lg px-8 py-3">
-                            <Link href="/request-appointment" className="text-lg px-8 py-3">Request Appointment</Link>
-                        </button>
-                        <button className="button-2 text-lg px-8 py-3">
-                            <Link href="/contact" className="text-lg px-8 py-3">Contact Us</Link>
-                        </button>
+                        <Link href="/request-appointment" className="text-lg button button-2 px-8 py-3">Request Appointment</Link>
+                        <Link href="/contact" className="text-lg button button-2 px-8 py-3">Contact Us</Link>
                     </div>
                 </div>
 

@@ -1,4 +1,5 @@
 import ContentDisplay from "../../components/ContentDisplay";
+import Link from "next/link";
 import drHentgesAndFamily from "../../public/images/DrHentgesAndFamilySmall2.jpg";
 
 export const metadata = {
@@ -12,7 +13,12 @@ const title = "DR. ZACH HENTGES";
 const pageContent = [
     {
         heading: "",
-        text: ["Dr. Zach Hentges is a dedicated and experienced dentist with over 10 years of practice. He grew up in Mesa, attended Mesa High School and graduated from Arizona State University before earning his dental degree from Midwestern University. He is married and a proud father of four children. In his free time, Dr. Hentges enjoys playing sports with his kids and wakeboarding. Dr. Hentges is committed to providing the same high-quality care and friendly service that you've come to expect at Christensen Family Dentistry. I'm confident that you will find him to be a caring and communicative provider who truly understands the needs of our community."],
+        text: [
+            <>Dr. Zach Hentges brings over a decade of dedicated dental experience to Mesa, Arizona. A Mesa native, he attended Mesa High School and graduated from Arizona State University before earning his Doctor of Dental Medicine (DMD) degree at Midwestern University. His extensive experience spans all aspects of family dentistry, from routine cleanings to complex restorative procedures, and he takes pride in getting to know each patient personally while developing treatment plans that work best for their individual needs. He is committed to providing the friendly, high-quality care that patients have come to expect at&nbsp;
+                <Link href="/Dr-Leo-Christensen" className="text-secondary hover:text-tertiary underline">Christensen Family Dentistry</Link>
+                , ensuring you receive attentive, communicative, and compassionate dental service as part of our community.</>,
+            "Dr. Hentges is a proud husband and father of four, and his family is at the center of everything he does. He loves spending time with his kids, often in the form of outdoor activities and sports that keep the whole family active and connected. Whether it's coaching his kids' teams, playing catch in the backyard, or wakeboarding, he finds joy in creating lasting memories with his family.",
+        ],
         imgSrc: drHentgesAndFamily
     }
 ]

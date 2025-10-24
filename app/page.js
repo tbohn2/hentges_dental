@@ -14,7 +14,7 @@ import facebook from "../public/images/facebook.svg";
 import instagram from "../public/images/instagram.svg";
 import google from "../public/images/google.svg";
 import DrHentgesAndFamilySmall2 from "../public/images/DrHentgesAndFamilySmall2.jpg";
-import azLake from "../public/images/az-lake.jpg";
+import happyFamily from "../public/images/happy-family.jpg";
 
 export const metadata = {
   title: "Hentges Dental | Trusted Dentist in Mesa, AZ",
@@ -113,25 +113,28 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
-      <div className="flex flex-col items-center justify-center w-full">
-        <div id="welcome" className="w-full flex flex-col items-center justify-center gap-4 rounded-lg">
+      <div className="quicksand flex flex-col items-center justify-center w-full bg-primary">
+        <div id="welcome" className="w-full flex flex-col items-center justify-center gap-4 rounded-lg h-[calc(100vh-160px)] sm:h-[calc(100vh-155px)] xl:h-[calc(100vh-165px)]"        >
           <SEOImage
-            src={azLake}
+            src={happyFamily}
             alt="Beautiful Arizona lake landscape at sunset - Hentges Dental Mesa location backdrop"
             title="Arizona Lake Landscape - Hentges Dental"
             fill
-            className="object-cover"
+            className="opacity-80 object-cover object-[55%_30%]"
             sizes="(max-width: 768px) 100vw, 2500px"
             quality={100}
             priority={true}
           />
-          <div className="z-10 flex flex-col items-center justify-center gap-4 w-full">
-            <div className="flex flex-col items-center justify-center gap-2 xs:gap-4 md:gap-6 bg-primary opacity-90 p-4 md:p-8 rounded-lg text-secondary">
-              <h1 className="font-bold text-4xl md:text-6xl xl:text-7xl text-center">Hentges Dental</h1>
+          <div className="z-10 flex flex-col items-center justify-center gap-2 md:gap-4 xl:gap-10 p-4 md:p-8 rounded-lg bg-primary/60">
+            <div className="geist-sans flex flex-col items-center justify-center gap-2 rounded-lg text-secondary">
+              <h1 className="font-bold text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl text-center">Hentges Dental</h1>
               <p className="font-semibold text-md md:text-2xl lg:text-3xl text-center px-2">Formerly <Link href="/Dr-Leo-Christensen" className="hover:text-tertiary underline">Christensen Family Dentistry</Link></p>
-              <p className="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl italic text-center px-4">Best Family Dentist in Mesa, AZ</p>
-              {/* <p className="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl italic text-center px-4">Best Family & Cosmetic Dentist in Mesa, AZ</p> */}
             </div>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl text-center italic">
+              Exceptional Family Dentistry for Every Generation<br />
+              Mesa, AZ
+            </p>
+            {/* <p className="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl italic text-center px-4">Best Family & Cosmetic Dentist in Mesa, AZ</p> */}
             <button className="button-2 text-xl md:text-2xl lg:text-4xl px-4 py-2 md:px-6 md:py-3"><Link href="/request-appointment">Book Appointment</Link></button>
           </div>
         </div>
@@ -151,8 +154,8 @@ export default function Home() {
                 loading="lazy"
               />
               <div className="flex flex-col items-center justify-center text-center">
-                <h2 className="font-bold text-sm md:text-lg lg:text-xl text-secondary">{icon.title}</h2>
-                <p className="font-bold text-xs md:text-sm lg:text-lg text-tertiary">{icon.subtext}</p>
+                <h2 className="geist-sans font-bold text-sm md:text-lg lg:text-xl text-secondary">{icon.title}</h2>
+                <p className="quicksand font-semibold text-xs md:text-sm lg:text-lg text-tertiary">{icon.subtext}</p>
               </div>
             </Link>
           ))}
@@ -179,11 +182,11 @@ export default function Home() {
             })}
           </div>
           <div className="flex flex-col items-center justify-center gap-4 w-full lg:w-1/2 text-primary bg-secondary p-4">
-            <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl py-2 flex flex-col items-center justify-center gap-4">WELCOME TO <br /> <span className="font-bold text-3xl md:text-4xl lg:text-5xl">HENTGES DENTAL</span></h2>
-            <p className="text-center text-base md:text-lg lg:text-2xl px-4">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl py-2 flex flex-col items-center justify-center gap-4">WELCOME TO <br /> <span className="geist-sans font-bold text-3xl md:text-4xl lg:text-5xl">HENTGES DENTAL</span></h2>
+            <p className="text-center text-base md:text-lg lg:text-2xl 2xl:text-3xl px-4">
               At Hentges Dental, patient satisfaction is at the heart of everything we do. We&apos;re proud to help North Mesa and East Valley families achieve healthy, beautiful smiles. Our commitment goes beyond treatment—we focus on building relationships and truly listening to our patients&apos; needs. With personalized care and advanced technology, we strive to ensure every visit is comfortable, effective, and leaves you fully satisfied with your dental experience.
             </p>
-            <button className="button-1 text-lg md:text-xl lg:text-2xl my-4 px-4 py-2"><Link href="/patient-testimonials">Read Our Reviews</Link></button>
+            <button className="button-1 font-semibold text-lg md:text-xl lg:text-2xl my-4 px-4 py-2"><Link href="/patient-testimonials">Read Our Reviews</Link></button>
           </div>
           <div className="flex lg:flex-col flex-row items-center justify-center w-1/3 sm:w-1/3 lg:w-1/4 gap-4">
             {officePics.map((pic, index) => {
@@ -218,9 +221,9 @@ export default function Home() {
             quality={75}
             loading="lazy"
           />
-          <div className="flex flex-col gap-4 lg:gap-6 w-full lg:w-2/3 p-4">
+          <div className="geist-sans flex flex-col gap-4 lg:gap-6 w-full lg:w-2/3 p-4">
             <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left">Dr. Hentges and Family</h2>
-            <p className="font-bold text-base sm:text-lg md:text-xl lg:text-2xl text-center lg:text-left">Dr. Zach Hentges is a dedicated and experienced dentist with over 10 years of practice. As one of the best dentists in North Mesa AZ, he grew up in Mesa, attended Mesa High School and graduated from Arizona State University before earning his dental degree from Midwestern University. He is married and a proud father of four children. In his free time, Dr. Hentges enjoys playing sports with his kids and wakeboarding. Dr. Hentges is committed to providing the same high-quality care and friendly service that you&apos;ve come to expect at Christensen Family Dentistry. I&apos;m confident that you will find him to be a caring and communicative provider who truly understands the needs of our East Valley community.</p>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl text-center lg:text-left">Dr. Zach Hentges is a dedicated and experienced dentist with over 10 years of practice. As one of the best dentists in North Mesa AZ, he grew up in Mesa, attended Mesa High School and graduated from Arizona State University before earning his dental degree from Midwestern University. He is married and a proud father of four children. In his free time, Dr. Hentges enjoys playing sports with his kids and wakeboarding. Dr. Hentges is committed to providing the same high-quality care and friendly service that you&apos;ve come to expect at Christensen Family Dentistry. I&apos;m confident that you will find him to be a caring and communicative provider who truly understands the needs of our East Valley community.</p>
           </div>
         </div>
       </div>

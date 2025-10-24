@@ -18,13 +18,13 @@ export default function Header() {
         <Dropdown title="Resources" items={patientInformationItems} />,
         <Dropdown title="Services" items={servicesItems} />,
         <Link href="/contact" className="hover:opacity-50 ease-in-out duration-300">Contact</Link>,
-        <button className="button-1"><Link href="/request-appointment">Request Appointment</Link></button>,
+        <button className="button-2"><Link href="/request-appointment">Request Appointment</Link></button>,
         <button className="button-2 pay-online"><Link href="https://api.ipospays.com/v1/sl/Vm-KB_131124125929">Pay Online</Link></button>
     ];
 
     return (
-        <header className="flex flex-wrap justify-between py-4 px-4 lg:px-0">
-            <Link href="/" className="w-auto md:mx-6 flex flex-row items-center justify-center gap-1 px-4 text-primary border-b-1 border-primary rounded-4xl md:self-start self-center">
+        <header className="xl:h-[115px] lg:h-[105px] h-[75px] flex flex-wrap justify-between py-4 px-1 lg:px-4 text-primary">
+            <Link href="/" className="flex flex-row items-center justify-center gap-1 px-4 border-b-1 border-primary rounded-4xl self-start self-center">
                 <SEOImage
                     src={tooth}
                     alt="Hentges Dental logo - Tooth icon representing family dentistry in Mesa, Arizona"
@@ -36,18 +36,16 @@ export default function Header() {
                     sizes="(max-width: 768px) 8vw, 4vw"
                     quality={85}
                 />
-                <div className="flex lg:flex-col lg:gap-0 gap-2 flex-row justify-center geist-sans text-3xl md:text-4xl font-semibold ">
+                <div className="flex lg:flex-col lg:gap-0 gap-2 flex-row justify-center geist-sans text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-semibold ">
                     <span className="flex items-center">Hentges</span>
                     <span className="flex items-center">Dental</span>
                 </div>
             </Link>
-            <div className="mobile-only">
-                <MobileNav />
-            </div>
-            <nav className="desktop-only flex flex-grow py-2">
-                <ul className="flex flex-grow flex-wrap justify-evenly items-center font-light xl:text-2xl md:text-lg sm:text-base text-primary">
+            <MobileNav />
+            <nav className="desktop-only flex flex-grow">
+                <ul className="flex flex-grow flex-wrap justify-end gap-4 xl:gap-8 items-center font-light xl:text-2xl text-xl">
                     {navElements.map((element, index) => (
-                        <li className="md:text-xl xl:text-2xl" key={index}>{element}</li>
+                        <li key={index}>{element}</li>
                     ))}
                 </ul>
             </nav>
