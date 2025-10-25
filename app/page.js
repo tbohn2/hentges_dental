@@ -117,8 +117,8 @@ export default function Home() {
         <div id="welcome" className="w-full flex flex-col items-center justify-center gap-4 rounded-lg h-[calc(100vh-160px)] sm:h-[calc(100vh-155px)] xl:h-[calc(100vh-165px)]"        >
           <SEOImage
             src={happyFamily}
-            alt="Beautiful Arizona lake landscape at sunset - Hentges Dental Mesa location backdrop"
-            title="Arizona Lake Landscape - Hentges Dental"
+            alt="Happy family - Hentges Dental Mesa, Arizona"
+            title="Happy family - Hentges Dental Mesa, Arizona"
             fill
             className="opacity-80 object-cover object-[55%_30%]"
             sizes="(max-width: 768px) 100vw, 2500px"
