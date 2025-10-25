@@ -7,7 +7,7 @@ export default function RequestForm() {
     const [formData, setFormData] = useState({
         type: "",
         name: "",
-        number: "",
+        phone: "",
         email: "",
         preferredContactMethod: "",
     });
@@ -19,7 +19,7 @@ export default function RequestForm() {
     const inputFields = [
         { name: "type", placeholder: "Appointment Type", label: "Reason for the Appointment", type: "select", options: ["Emergency/Specific Concern", "Routine Cleaning & Checkup", "Get Established as New Patient", "Cosmetic Consultation", "Other"] },
         { name: "name", placeholder: "John Doe", type: "text", label: "First and Last Name" },
-        { name: "number", placeholder: "(480) 555-0198", type: "text", label: "Phone Number" },
+        { name: "phone", placeholder: "(480) 555-0198", type: "text", label: "Phone Number" },
         { name: "email", placeholder: "john.doe@example.com", type: "email", label: "Email" },
         { name: "preferredContactMethod", placeholder: "Preferred Contact Method", label: "Preferred Contact Method", type: "select", options: ["Phone Call", "Text Message", "Email"] }
     ];
@@ -41,7 +41,7 @@ export default function RequestForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if (!validatePhoneNumber(formData.number)) {
+        if (!validatePhoneNumber(formData.phone)) {
             setError('Please enter a valid 10-digit phone number');
             return;
         }
@@ -52,17 +52,25 @@ export default function RequestForm() {
         const data = Object.fromEntries(formDataObj);
 
         try {
-            const response = await fetch('/api/send-email', {
+            const response = await fetch('/api/requests/create', {
                 method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
                 body: JSON.stringify(data),
             });
+
             if (!response.ok) {
-                throw new Error('Failed to send request');
+                const errorData = await response.json();
+                throw new Error(errorData.error || 'Failed to send request');
             }
+
+            const result = await response.json();
             setSuccess('Request sent successfully');
+            setFormData({ type: "", name: "", phone: "", email: "", preferredContactMethod: "" });
         } catch (error) {
             console.error('Error sending request', error);
-            setError('Failed to send request. Please try again later or contact us directly at (480) 964-2131.');
+            setError(error.message || 'Failed to send request. Please try again later or contact us directly at (480) 964-2131.');
         } finally {
             setLoading(false);
         }

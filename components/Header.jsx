@@ -5,8 +5,13 @@ import Dropdown from "./Dropdown";
 import SEOImage from "./SEOImage";
 import tooth from "../public/images/tooth.png";
 import MobileNav from "./MobileNav";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+    const pathname = usePathname();
+    if (pathname === "/admin") {
+        return null;
+    }
 
     const aboutItems = [{ name: "Zach Hentges, DMD", href: "/Dr-Zach-Hentges" }, { name: "Leo Christensen, DDS", href: "/Dr-Leo-Christensen" }, { name: "About Us", href: "/about" }, { name: "Dental Technology", href: "/dental-technology" }];
     const patientInformationItems = [{ name: "Patient Information", href: "/patient-information" }, { name: "New Patient Forms", href: "/new-patient-forms" }, { name: "Financial & Insurance", href: "/financial-and-insurance" }, { name: "Patient Testimonials", href: "/patient-testimonials" }, { name: "Dental Blog", href: "/dental-blog" }];

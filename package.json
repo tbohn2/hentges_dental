@@ -9,16 +9,20 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "bcryptjs": "^2.4.3",
+    "crypto-js": "^4.2.0",
+    "jsonwebtoken": "^9.0.2",
     "next": "15.5.3",
-    "nodemailer": "^6.9.13"
+    "nodemailer": "^6.9.13",
+    "postgres": "^3.4.7",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4"
   }
 }

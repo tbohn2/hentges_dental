@@ -1,8 +1,16 @@
+"use client";
+
 import Link from "next/link";
 import SEOImage from "./SEOImage";
 import tooth from "../public/images/tooth.png";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+    const pathname = usePathname();
+    if (pathname === "/admin") {
+        return null;
+    }
+
     return (
         <footer className="bg-secondary text-primary">
             <div className="max-w-7xl mx-auto px-4 py-12">
