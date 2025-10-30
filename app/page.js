@@ -125,7 +125,7 @@ export default function Home() {
             quality={100}
             priority={true}
           />
-          <div className="z-10 flex flex-col items-center justify-center gap-2 md:gap-4 xl:gap-10 p-4 md:p-8 rounded-lg bg-primary/60">
+          <div className="z-10 flex flex-col items-center justify-center gap-2 md:gap-0 xl:gap-10 p-4 md:p-8 rounded-lg bg-primary/60 max-h-[calc(100vh-165px)] sm:max-h-[calc(100vh-175px)] xl:max-h-[calc(100vh-185px)]">
             <div className="geist-sans flex flex-col items-center justify-center gap-2 rounded-lg text-secondary">
               <h1 className="font-bold text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl text-center">Hentges Dental</h1>
               <p className="font-semibold text-md md:text-2xl lg:text-3xl text-center px-2">Formerly <Link href="/Dr-Leo-Christensen" className="hover:text-tertiary underline">Christensen Family Dentistry</Link></p>
