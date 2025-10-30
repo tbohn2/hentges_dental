@@ -32,6 +32,7 @@ export default function Footer() {
                                 <span className="text-2xl font-bold geist-sans">Dental</span>
                             </div>
                         </Link>
+                        <p className="text-lg mb-4">Formerly <Link href="/Dr-Leo-Christensen" className="text-tertiary hover:underline">Christensen Family Dentistry</Link></p>
                         <p className="text-lg mb-4">
                             Your trusted family dentist in Mesa, Arizona. Providing exceptional dental care with a personal touch.
                         </p>

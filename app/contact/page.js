@@ -61,7 +61,7 @@ export default function Contact() {
             <div className="bg-primary w-full p-4 rounded-lg flex flex-col items-center justify-center w-11/12 lg:w-2/3 p-4">
                 <h1 className="md:text-6xl text-3xl font-bold text-secondary pb-4">CONTACT US</h1>
                 <p className="text-xl text-wrap pb-4 font-semibold w-full">
-                    New patients are always welcome at Hentges Dental! Contact our North Mesa dental office with any questions about dental treatments, insurance, or your oral health—our knowledgeable team is here to assist you. We proudly serve patients from North Mesa, Tempe, Chandler, Gilbert, Apache Junction, and throughout the East Valley.
+                    New patients are always welcome at Hentges Dental (formerly <Link href="/Dr-Leo-Christensen" className="text-tertiary hover:underline">Christensen Family Dentistry</Link>)! Contact our North Mesa dental office with any questions about dental treatments, insurance, or your oral health—our knowledgeable team is here to assist you. We proudly serve patients from North Mesa, Tempe, Chandler, Gilbert, Apache Junction, and throughout the East Valley.
                 </p>
                 <p className="text-xl text-wrap pb-4 font-semibold w-full">You may also request an appointment through our <Link href="/request-appointment" className="text-tertiary hover:underline">Online Appointment Request Form</Link>.</p>
                 <div className="flex flex-wrap justify-center gap-4 w-full">

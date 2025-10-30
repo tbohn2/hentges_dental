@@ -62,10 +62,11 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Dentist",
+              "@type": ["Dentist", "LocalBusiness"],
               "@id": "https://hentgesdental.com/#dentist",
               "name": "Hentges Dental",
-              "image": "https://hentgesdental.com/images/og-logo.png",
+              "alternateName": "Christensen Family Dentistry",
+              "description": "Hentges Dental (formerly Christensen Family Dentistry) is a family and cosmetic dental practice in Mesa, AZ providing comprehensive dental care including implants, veneers, crowns, and emergency services",
               "url": "https://hentgesdental.com",
               "telephone": "+14809642131",
               "email": "hentgesdental@gmail.com",
@@ -96,11 +97,12 @@ export default function RootLayout({ children }) {
                 "latitude": 33.42583773881805,
                 "longitude": -111.80566902401911
               },
-              // "sameAs": [
-              //   "https://www.facebook.com/hentgesdental",
-              //   "https://www.google.com/maps/place/Hentges+Dental"
-              // ],
+              "sameAs": [
+                "https://www.facebook.com/christensenfamilydentistry",
+                "https://www.google.com/maps/place/Christensen+Family+Dentistry/@33.4258806,-111.8063439,19z"
+              ],
               "image": [
+                "https://hentgesdental.com/images/og-logo.png",
                 "https://hentgesdental.com/images/office1.jpg",
                 "https://hentgesdental.com/images/office2.jpg",
                 "https://hentgesdental.com/images/office3.jpg",
